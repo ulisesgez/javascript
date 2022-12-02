@@ -20,3 +20,13 @@ numero = 50
 /* 
 Scope: Alcance de las variable, es mala práctica usar var, es mejor let, tiene menos alcance.
 */
+
+//Declarada e inicializada (varias)
+
+let numero1, numero2, numero3;
+
+numero1 = 3;
+numero2 = 6;
+numero3 = 9;
+
+let numero4 = 3, numero5 = 6, numero6 = 9;
