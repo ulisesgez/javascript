@@ -1,7 +1,15 @@
 /**
  * Aritméticos: Toman valores númericos( ya sean literales o variables) como sus operandos y retornan un valor númerico único.
  */
+numero = 20
+numero--
+//Resta 1
+alert(numero)
 
+//En cambio es deferente:
+numero = 100
+//Aqui no se resta 1, por que la resta se hace despues de que se procesa.
+alert(numero--)
 
 /**
  * De Asignación: Asigna un valor al operando de la izquierda basado en el valor del operando de la derecha.
