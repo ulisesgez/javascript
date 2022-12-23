@@ -39,3 +39,32 @@ do {
     document.write(numerocuatro + "<br>");
 }
 while (numerocuatro <= 6);
+
+/**
+ * For:
+ * - Declaramos
+ * - Inicializamos
+ * - Iteramos
+ */
+
+for (let i = 0; i < 6; i++){
+    document.write(i);
+};
+
+//Imprime hasta 11:
+
+for (let i = 0; i < 20; i++){
+    if(i == 12) {
+        break;
+    }
+    document.write(i);
+};
+
+//Se salta el 12:
+
+for (let i = 0; i < 20; i++){
+    if(i == 12) {
+        continue;
+    }
+    document.write(i);
+};
