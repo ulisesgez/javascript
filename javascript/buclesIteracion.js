@@ -68,3 +68,28 @@ for (let i = 0; i < 20; i++){
     }
     document.write(i);
 };
+/**
+ * For in y for of
+ */
+
+let animales = ["gato", "perro", "pajaro"];
+
+// Imprime 0 1 2, devuelve la posición
+
+for (animal in animales){
+    document.write(animal + "<br>");
+}
+
+// Asi imprimimos los animales:
+
+for (animal in animales){
+    document.write(animales[animal] + "<br>");
+}
+
+document.write("<br>");
+
+// Imprime gato perro pajaro, devuelve el valor de los elementos
+
+for (animal of animales){
+    document.write(animal + "<br>");
+}
