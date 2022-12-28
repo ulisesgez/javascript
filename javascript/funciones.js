@@ -1,7 +1,13 @@
 /**
- * Funciones: 
+ * Funciones: Conjunto de sentencias que nosotros podemos utilizar para generar ciertas acciones con los valores que ya guardamos antes en la variables.
  */
+//Funcion declarativa:
 
+function miFuncion(){
+    return 3;
+}
+
+// Otro ejemplo de función:
 function saludar(){
     respuesta = prompt("hello, how is your day today?");
     if (respuesta == "bien"){
@@ -16,6 +22,16 @@ function saludar(){
 saludar();
 saludar();
 saludar();
+
+//Función de expresión:
+//ojo, se hace uso de parametros
+let miFuncionDos = function(a, b){
+    return a + b;
+}
+
+miFuncion();
+
+miFuncionDos();
 
 //Asigar funcion en variable:
 
@@ -39,3 +55,13 @@ function saludardos(){
 
 let saludo = saludardos();
 document.write(saludo);
+
+//Parametros:
+
+function suma(num1, num2){
+    let res = num1 + num2;
+    document.write(res);
+    document.write("<br>");
+}
+suma(1, 2);
+suma(5, 10);

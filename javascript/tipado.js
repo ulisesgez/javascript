@@ -1,3 +1,7 @@
+/**
+ * Primitivos: string, number, boolean, null, undefined, NaN.
+ * Compuestos: object, array, function, class, etc
+ */
 //Ejemplo:
 
 4 + "7"; // 47
