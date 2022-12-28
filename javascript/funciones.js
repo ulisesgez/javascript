@@ -65,3 +65,12 @@ function suma(num1, num2){
 }
 suma(1, 2);
 suma(5, 10);
+
+//Usando return:
+
+function resta(num3, num4){
+    let res = num3 - num4;
+    return res;
+}
+let resultado = resta(10, 5);
+document.write(resultado);
