@@ -1,5 +1,5 @@
 /**
- * Array: Conjunto de datos, alos que despues podemos llamar, estos estan asociados a un indice, el primer elemento se encuentra en la posicion 0
+ * Array: Estructura de datos - lista de datos. Conjunto de datos, alos que despues podemos llamar, estos estan asociados a un indice, el primer elemento se encuentra en la posicion 0
  */
 //Ejemplo:
 let numeros = ["uno", 2, "tres", 4];
