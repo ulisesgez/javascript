@@ -32,3 +32,22 @@ for (let estudiante of estudiantes){
  *  Hola, Rosa
  *  Hola, Daniel
  */
+
+//While:
+
+let frutas = ["Manzana", "Pera", "Uva", "Cereza"];
+
+function comprarFrutas(fruta){
+    console.log(`Yo compre ${fruta}`);
+}
+while (frutas.length > 0){
+    let fruta = frutas.shift();
+    comprarFrutas(fruta);
+}
+
+/**
+ *  Yo compre Manzana
+ *  Yo compre Pera
+ *  Yo compre Uva
+ *  Yo compre Cereza
+ */
