@@ -10,6 +10,25 @@ document.write(numeros[0]);
 //Tira undefined, por que no esta definido - declarada:
 document.write(numeros[4]);
 
+//Push, con esto agremgamos elementos a nuestro array:
+
+let frutas = ["Manzana", "Platano", "Cerezas", "Fresas"];
+let masFrutas = frutas.push("Uvas");
+
+//Esto imprime : Manzana, Platano, Cerezas, Fresas, Uvas
+
+//Unshift, con esto agrego mas elementos all inicio de nuestro array:
+
+let automovil = ["uno", "dos", "tres"];
+let otroAutomovil = automovil.unshift("cuatro");
+
+//Esto imprime: uno, dos, tres, cuatro
+
+//Pop, con esto eliminamos un elemento al final, para hacerlo al inicio seria con shift:
+
+let ultimo = frutas.pop("Uvas");
+document.write(frutas)
+
 /**
  * Arrays Asociativos: Parecidos al formato json
  */
