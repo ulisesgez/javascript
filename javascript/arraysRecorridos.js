@@ -1,3 +1,5 @@
+//Recorridos con arrays:
+
 let products = [
     { name: "bike", cost: 3000 },
     { name: "tv", cost: 2500 },
@@ -46,4 +48,80 @@ console.log(brandComputers);
 
 //Metodos para recorrer el contenido del array:
 
-//Find: 
+//Find: Nos va a ayudar a encontrar algo adentro del array, valida un true o un false, genera un nuevo array en caso de que exista lo que buscamos:
+
+let televisions = [
+    { brand: "tcl", cost: 10000 },
+    { brand: "sony", cost: 30500 },
+    { brand: "samsung", cost: 13000 },
+    { brand: "hisense", cost: 25000 },
+    { brand: "panasonic", cost: 20000 },
+    { brand: "sharp", cost: 15000 },
+    { brand: "philips", cost: 12000 }
+];
+
+let findTelevision = televisions.find(function(television){
+    return television.brand === "sony"
+});
+
+console.log(findTelevision);
+
+//Metodos para recorrer el contenido del array:
+
+//For Each: No generara un nuevo array solo hara el filtrado sobre el array anterior sin modificarlo:
+
+televisions.forEach(function(television){
+    console.log(television.brand);
+});
+
+//Metodos para recorrer el contenido del array:
+
+//Some: De igualñ forma regresa una validacion de verdadero o falso para articulos que cumplan cone sa validacion:
+
+let cheapTelevisions = televisions.some(function(television){
+    return television.cost <= 15000;
+});
+
+console.log(cheapTelevisions);//true
+
+/**
+ * El método .push() nos permite agregar uno o más elementos al final 
+ * de un array. A continuación veremos un ejemplo aplicado con un array 
+ * que contiene números:
+ */
+
+let numArray = [1,2,3,4,5]
+
+function newNum(){
+  numArray.push(6,7)
+}
+
+newNum()
+
+/**
+ * Shift: Ahora pasemos a la otra cara de la moneda donde necesitamos 
+ * eliminar un elemento del array. .shift() eliminar el primer elemento 
+ * de un array, es decir, elimina el elemento que esté en el índice 0.
+ */
+
+//Creamos el array
+let array = [1,2,3,4,5]
+console.log(array)
+
+// Aplicamos .shift()
+let shiftArray = array.shift()
+
+//Revisamos. El output debe de ser [2,3,4,5]
+console.log(array)
+
+// --- POP ---
+
+//Creamos el array
+let arrayDos = [1,2,3,4,5]
+console.log(arrayDos)
+
+// Aplicamos .shift()
+let shiftArrayDos = arrayDos.pop()
+
+//Revisamos. El output debe de ser [1,2,3,4]
+console.log(arrayDos)
