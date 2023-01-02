@@ -25,7 +25,7 @@ saludar();
 
 //Función de expresión:
 //ojo, se hace uso de parametros
-let miFuncionDos = function(a, b){
+const miFuncionDos = function(a, b){
     return a + b;
 }
 
