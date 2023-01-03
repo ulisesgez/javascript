@@ -5,9 +5,13 @@ class animal{
         this.color = color;
         this.info = `Soy ${this.especie}, tengo ${this.edad} años y soy de color ${this.color}`;
     }
+    //metodo:
+    verInfo(){
+        document.write(this.info + "<br>");
+    }
 }
 
-let perro = new animal("perro", 5, "marron");
+/* let perro = new animal("perro", 5, "marron");
 let gato = new animal("gato", 6, "negro");
 let pajaro = new animal("pajaro", 7, "verde");
 
@@ -17,6 +21,8 @@ console.log(perro);
 
 document.write(perro.info);
 document.write(gato.info);
-document.write(pajaro.info);
+document.write(pajaro.info); */
 
-//Relacion con seccion de metodos
+perro.verInfo();
+gato.verInfo();
+pajaro.verInfo();
