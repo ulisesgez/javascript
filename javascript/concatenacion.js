@@ -89,3 +89,14 @@ let ourStr = "I come first. ";
 ourStr += "I come second.";
 
 // ourStrahora tiene un valor de la cadena I come first. I come second..
+
+//Construcción de cadenas con variables:
+
+/*
+A veces necesitará construir una cadena.
+Al usar el operador de concatenación ( +),
+puede insertar una o más variables en una cadena que está creando.
+*/
+
+const ourName = "freeCodeCamp";
+const helloStr = "Hello, our name is " + ourName + ", how are you?";
