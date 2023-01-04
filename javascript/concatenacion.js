@@ -100,3 +100,17 @@ puede insertar una o más variables en una cadena que está creando.
 
 const ourName = "freeCodeCamp";
 const helloStr = "Hello, our name is " + ourName + ", how are you?";
+
+//Agregar variables a cadenas
+
+/*
+Así como podemos construir una cadena en varias líneas a partir de literales 
+de cadena , también podemos agregar variables a una cadena usando 
+el +=operador más igual ( ).
+*/
+
+const anAdjective = "awesome!";
+let freeStr = "freeCodeCamp is ";
+ourStr += anAdjective;
+
+//ourStrtendría el valor freeCodeCamp is awesome!.
