@@ -17,6 +17,8 @@ esto en la consola, obtendría:
 Alan said, "Peter is learning JavaScript".
 */
 
+//Citar Cadenas:
+
 /*
 Los valores de cadena en JavaScript se pueden escribir con comillas simples o
 dobles, siempre que comience y termine con el mismo tipo de comillas.
