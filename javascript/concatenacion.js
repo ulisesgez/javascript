@@ -134,3 +134,24 @@ const firstName = "Charles";
 const firstLetter = firstName[0];
 
 //firstLettertendría un valor de la cadena C.
+
+//Comprender la inmutabilidad de cadenas
+
+/*
+En JavaScript, Stringlos valores son inmutables , lo que significa que no se
+pueden modificar una vez creados.
+
+Por ejemplo, el siguiente código generará un error porque la letra Bde la
+cadena Bobno se puede cambiar a la letra J:
+*/
+
+let myStr = "Bob";
+myStr[0] = "J";
+
+/*
+Tenga en cuenta que esto no significa que myStrno se pueda reasignar.
+La única forma de cambiar myStrsería asignarle un nuevo valor, así:
+*/
+
+let myStr = "Bob";
+myStr = "Job";
