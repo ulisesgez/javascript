@@ -155,3 +155,20 @@ La única forma de cambiar myStrsería asignarle un nuevo valor, así:
 
 let myStr = "Bob";
 myStr = "Job";
+
+//Use la notación de corchetes para encontrar el último carácter en una cadena
+
+/*
+Para obtener la última letra de una cadena, puede restar una de la longitud de
+la cadena.
+
+Por ejemplo, si const firstName = "Ada", puede obtener el valor de la última
+letra de la cadena usando firstName[firstName.length - 1].
+*/
+
+const secondName = "Ada";
+const lastLetter = secondName[secondName.length - 1];
+const thirdToLastLetter = secondName[secondName.length - 3];
+
+//lastLettertendría un valor de la cadena a.
+//thirdToLastLettertendría un valor de la cadena s.
