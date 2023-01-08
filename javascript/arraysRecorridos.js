@@ -145,14 +145,34 @@ removedFromOurArraytendría un valor de la cadena Stimpsony ourArraytendría ["J
  */
 
 //Creamos el array
-let array = [1,2,3,4,5]
-console.log(array)
+let array = [1,2,3,4,5];
+console.log(array);
 
 // Aplicamos .shift()
-let shiftArray = array.shift()
+let shiftArray = array.shift();
 
 //Revisamos. El output debe de ser [2,3,4,5]
-console.log(array)
+console.log(array);
+
+//Manipular matrices con unshift()
+
+/*
+No sólo puede shiftsacar elementos del principio de una matriz, sino que también puede 
+unshiftagregar elementos al principio de una matriz, es decir, agregar elementos 
+delante de la matriz.
+
+.unshift()funciona exactamente igual que .push(), pero en lugar de agregar el 
+elemento al final de la matriz, unshift()agrega el elemento al principio de la matriz.
+*/
+
+const myArray = ["Stimpson", "J", "cat"];
+myArray.shift();
+myArray.unshift("Happy");
+
+/*
+Después de shift, ourArraytendría el valor ["J", "cat"].
+Después de unshift, ourArraytendría el valor ["Happy", "J", "cat"].
+*/
 
 // Manipular arreglos con pop()
 

@@ -1,6 +1,22 @@
-/**
- * Funciones: Conjunto de sentencias que nosotros podemos utilizar para generar ciertas acciones con los valores que ya guardamos antes en la variables.
+/*
+Funciones: Conjunto de sentencias que nosotros podemos utilizar para generar ciertas
+acciones con los valores que ya guardamos antes en la variables.
+
+En JavaScript, podemos dividir nuestro código en partes reutilizables llamadas funciones .
+
+He aquí un ejemplo de una función:
  */
+
+function functionName() {
+    console.log("Hello World");
+}
+
+/*
+Puede llamar o invocar esta función usando su nombre seguido de paréntesis, así: functionName();
+Cada vez que se llame a la función, se imprimirá el mensaje Hello Worlden la consola de desarrollo.
+Todo el código entre llaves se ejecutará cada vez que se llame a la función.
+*/
+
 //Funcion declarativa:
 
 function miFuncion(){
