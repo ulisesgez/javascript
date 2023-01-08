@@ -110,3 +110,21 @@ function resta(num3, num4){
 }
 let resultado = resta(10, 5);
 document.write(resultado);
+
+//Devolver un valor de una función con retorno
+
+/*
+Podemos pasar valores a una función con argumentos .
+Puede usar una returndeclaración para enviar un valor de vuelta fuera de una función.
+*/
+
+function plusThree(num) {
+    return num + 3;
+}
+
+const answer = plusThree(5);
+
+/*
+answertiene el valor 8.
+plusThreetoma un argumento a favor numy devuelve un valor igual a num + 3.
+*/
