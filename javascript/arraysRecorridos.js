@@ -119,6 +119,25 @@ function newNum(){
 
 newNum()
 
+//Manipular matrices con shift ()
+
+/*
+pop()siempre elimina el último elemento de una matriz.
+¿Qué sucede si desea eliminar el primero?
+
+Ahí es donde .shift()entra en juego. Funciona igual que .pop(), excepto que elimina 
+el primer elemento en lugar del último.
+
+Ejemplo:
+*/
+
+const ourArray = ["Stimpson", "J", ["cat"]];
+const removedFromOurArray = ourArray.shift();
+
+/*
+removedFromOurArraytendría un valor de la cadena Stimpsony ourArraytendría ["J", ["cat"]].
+*/
+
 /**
  * Shift: Ahora pasemos a la otra cara de la moneda donde necesitamos 
  * eliminar un elemento del array. .shift() eliminar el primer elemento 
