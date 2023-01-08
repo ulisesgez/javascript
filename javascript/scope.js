@@ -47,3 +47,25 @@ La myTest()llamada a la función mostrará la cadena fooen la consola.
 La console.log(loc)línea (fuera de la myTestfunción) arrojará un error,
 ya locque no está definidafuera de la función.
 */
+
+//Comprender el valor indefinido devuelto por una función
+
+/*
+Una función puede incluir la returndeclaración pero no tiene que hacerlo.
+En el caso de que la función no tenga una returndeclaración, cuando la llama,
+la función procesa el código interno pero el valor devuelto es undefined.
+Ejemplo:
+*/
+
+let sum = 0;
+
+function addSum(num) {
+  sum = sum + num;
+}
+
+addSum(3);
+
+/*
+addSumes una función sin returnsentencia.
+La función cambiará la sumvariable global pero el valor devuelto de la función es undefined.
+*/
