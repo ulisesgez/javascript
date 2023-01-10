@@ -20,10 +20,19 @@ function test (myCondition) {
       return "It was true";
     }
     return "It was false";
-  }
+}
   
-  test(true);
-  test(false);
+test(true);
+test(false);
+
+/*
+test(true)devuelve la cadena It was truey test(false)devuelve la cadena It was false.
+
+Cuando testse llama con un valor de true, la ifdeclaración evalúa myConditionpara ver
+si es así trueo no. Como lo es true, la función devuelve It was true. Cuando llamamos
+testcon un valor de false, no lomyCondition es y la declaración entre llaves no se ejecuta
+y la función regresa . trueIt was false
+*/
 
 /*
 Condicionales: Reglas que aplicamos para validar si algo es verdadero o falso 
