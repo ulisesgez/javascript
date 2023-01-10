@@ -128,3 +128,24 @@ const answer = plusThree(5);
 answertiene el valor 8.
 plusThreetoma un argumento a favor numy devuelve un valor igual a num + 3.
 */
+
+//Comprender el valor indefinido devuelto por una función
+
+/*
+Una función puede incluir la returndeclaración pero no tiene que hacerlo.
+En el caso de que la función no tenga una returndeclaración, cuando la llama,
+la función procesa el código interno pero el valor devuelto es undefined.
+*/
+
+let sum = 0;
+
+function addSum(num) {
+  sum = sum + num;
+}
+
+addSum(3);
+
+/*
+addSumes una función sin returnsentencia.
+La función cambiará la sumvariable global pero el valor devuelto de la función es undefined.
+*/
