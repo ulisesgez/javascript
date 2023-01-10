@@ -1,6 +1,34 @@
-/**
- * Condicionales: Reglas que aplicamos para validar si algo es verdadero o falso y podamos nopsotros generar ciertas acciones con ello.
- */
+//Utilice la lógica condicional con declaraciones If
+
+/*
+ifLas declaraciones se utilizan para tomar decisiones en el código.
+La palabra clave ifle dice a JavaScript que ejecute el código entre llaves
+bajo ciertas condiciones, definidas entre paréntesis. Estas condiciones se
+conocen como Booleancondiciones y solo pueden ser trueo false.
+
+Cuando la condición se evalúa como true, el programa ejecuta la declaración
+dentro de las llaves. Cuando la condición booleana se evalúa como false,
+la declaración dentro de las llaves no se ejecutará.
+
+if ( la condición es verdadera ) { la
+  declaración se ejecuta
+}
+*/
+
+function test (myCondition) {
+    if (myCondition) {
+      return "It was true";
+    }
+    return "It was false";
+  }
+  
+  test(true);
+  test(false);
+
+/*
+Condicionales: Reglas que aplicamos para validar si algo es verdadero o falso 
+y podamos nopsotros generar ciertas acciones con ello.
+*/
 
 if (true){
     console.log("hola");//hola
