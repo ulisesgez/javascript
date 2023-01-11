@@ -116,6 +116,23 @@ Ejemplos
 '7' >=  9  // false
 */
 
+/*
+Comparación con el operador menor que
+
+El operador menor que ( <) compara los valores de dos números.
+Si el número de la izquierda es menor que el número de la derecha,
+devuelve true. De lo contrario, vuelve false. Al igual que el operador
+de igualdad, el operador menor que convierte los tipos de datos al comparar.
+
+Ejemplos
+
+2   < 5 // true
+'3' < 7 // true
+5   < 5 // false
+3   < 2 // false
+'8' < 4 // false
+*/
+
 /**
  * Operadores de compración: Comparan dos expresiones y
  * devuelven un valor Boolean que representa la relación de sus valores
