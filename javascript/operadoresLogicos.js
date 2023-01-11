@@ -20,12 +20,40 @@ return "No";
 
 if (num > 5 && num < 10) {
     return "Yes";
-  }
+}
+return "No";
+
+//Comparaciones con el operador lógico o
+
+/*
+El operador lógico o|| ( ) devuelve truesi alguno de los operandos es true.
+De lo contrario, vuelve false.
+
+El operador lógico o se compone de dos símbolos de tubería: ( ||).
+Por lo general, esto se puede encontrar entre las teclas Retroceso y Intro.
+
+El siguiente patrón debería resultarle familiar por los puntos de ruta anteriores:
+*/
+
+if (num > 10) {
   return "No";
+}
+if (num < 5) {
+  return "No";
+}
+return "Yes";
+
+//regresará Yessolo si numestá entre 5y 10(5 y 10 incluidos).
+//La misma lógica se puede escribir como:
+
+if (num > 10 || num < 5) {
+  return "No";
+}
+return "Yes";
 
 /*
  Nos devuelven unresultado a partir de que se cumpla (o no)
- una condicióiin, su resultado es booleano y 
+ una condición, su resultado es booleano y 
  sus operandos son valores logicos o asimilables a ellos
  */
 
