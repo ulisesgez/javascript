@@ -133,6 +133,24 @@ Ejemplos
 '8' < 4 // false
 */
 
+/*
+Comparación con el operador menor o igual que
+
+El operador menor o igual que ( <=) compara los valores de dos números.
+Si el número de la izquierda es menor o igual que el número de la derecha,
+devuelve true. Si el número de la izquierda es mayor que el número de la
+derecha, devuelve false. Al igual que el operador de igualdad, el operador
+menor o igual que convierte los tipos de datos.
+
+Ejemplos
+
+4   <= 5 // true
+'7' <= 7 // true
+5   <= 5 // true
+3   <= 2 // false
+'8' <= 4 // false
+*/
+
 /**
  * Operadores de compración: Comparan dos expresiones y
  * devuelven un valor Boolean que representa la relación de sus valores
