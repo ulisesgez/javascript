@@ -65,6 +65,20 @@ Ejemplos
 0 != false // false
 */
 
+/*
+Comparación con el Operador de Desigualdad Estricta
+El operador de desigualdad estricta ( !==) es el opuesto lógico del 
+operador de igualdad estricta. Significa "Estrictamente no igual" y 
+regresa falsedonde regresaría la igualdad estricta truey viceversa .
+El operador de desigualdad estricta no convertirá tipos de datos.
+
+Ejemplos
+
+3 !==  3  // false
+3 !== '3' // true
+4 !==  3  // true
+*/
+
 /**
  * Operadores de compración: Comparan dos expresiones y
  * devuelven un valor Boolean que representa la relación de sus valores
