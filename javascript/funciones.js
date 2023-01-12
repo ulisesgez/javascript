@@ -60,6 +60,28 @@ saludar = function(){
     }
 }
 
+//Devolver patrón temprano para funciones:
+
+/*
+Cuando returnse llega a una declaración, la ejecución de la función actual se detiene
+y el control vuelve a la ubicación de llamada.
+
+Ejemplo
+*/
+
+function myFun() {
+    console.log("Hello");
+    return "World";
+    console.log("byebye")
+  }
+  myFun();
+
+/*
+Lo anterior mostrará la cadena Helloen la consola y devolverá la cadena World.
+La cadena byebyenunca se mostrará en la consola, porque la función
+finaliza en la returndeclaración.
+*/
+
 //Return en funciones, sin la linea return "exit", marca undefined:
 //saludo es igual a lo que retorna.
 
