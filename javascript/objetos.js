@@ -23,6 +23,17 @@ Incluso puede omitir las comillas para las propiedades de cadena de una sola pal
 de la siguiente manera:
 */
 
+const anotherObject = {
+    make: "Ford",
+    5: "five",
+    "model": "focus"
+  };
+
+  /*
+  Sin embargo, si su objeto tiene propiedades que no son cadenas,
+  JavaScript las encasillará automáticamente como cadenas.
+  */
+
 /*
 Objeto: Algo fisico al paradigma de javascript
  */
