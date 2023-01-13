@@ -69,15 +69,15 @@ Aquí hay una muestra del uso de la notación de corchetes para leer
 la propiedad de un objeto:
 */
 
-const myObj = {
+const myObjThree = {
     "Space Name": "Kirk",
     "More Space": "Spock",
     "NoSpace": "USS Enterprise"
 };
   
-myObj["Space Name"];
-myObj['More Space'];
-myObj["NoSpace"];
+myObjThree["Space Name"];
+myObjThree['More Space'];
+myObjThree["NoSpace"];
 
 /*
 myObj["Space Name"]sería la cadena Kirk, myObj['More Space']sería la cadena 
