@@ -89,7 +89,8 @@ deben estar entre comillas (simples o dobles).
 
 /*
 Objeto: Algo fisico al paradigma de javascript
- */
+*/
+
 // detalleAuto es un metodo de objeto
 let auto = {
     marca: "toyota",
