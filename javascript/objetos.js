@@ -1,4 +1,28 @@
 /*
+Objeto: Algo fisico al paradigma de javascript
+*/
+
+// detalleAuto es un metodo de objeto
+let auto = {
+    marca: "toyota",
+    modelo: "Corolla",
+    anio: 2020,
+    detalleAuto: function(){
+        console.log(`Auto: ${this.modelo} ${this.anio}`);
+    }
+};
+
+console.log(auto);
+
+//Queremos algo especifico?
+
+console.log(auto.marca);
+
+//Entrar a el metodo, que es la funcion que esta dentro del objeto:
+
+console.log(auto.detalleAuto());
+
+/*
 Construir objetos de JavaScript
 
 Es posible que haya escuchado el término objectantes.
@@ -172,26 +196,30 @@ const yourDog = {
 
 yourDog.bark = "bow-wow";
 
+//Eliminar propiedades de un objeto de JavaScript
+
 /*
-Objeto: Algo fisico al paradigma de javascript
+También podemos eliminar propiedades de objetos como este:
+delete ourDog.bark;
+Ejemplo:
 */
 
-// detalleAuto es un metodo de objeto
-let auto = {
-    marca: "toyota",
-    modelo: "Corolla",
-    anio: 2020,
-    detalleAuto: function(){
-        console.log(`Auto: ${this.modelo} ${this.anio}`);
-    }
+const miPerro = {
+    "name": "Camper",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["everything!"],
+    "bark": "bow-wow"
 };
 
-console.log(auto);
+delete miPerro.bark;
 
-//Queremos algo especifico?
-
-console.log(auto.marca);
-
-//Entrar a el metodo, que es la funcion que esta dentro del objeto:
-
-console.log(auto.detalleAuto());
+/*
+Después de la última línea que se muestra arriba, ourDogse ve así:
+{
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+}
+*/
