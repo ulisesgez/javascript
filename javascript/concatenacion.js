@@ -39,7 +39,7 @@ document.write(frasecompleta);
 
 //Mejor y con esto evitamos muchos errores:
 frase1 = "bruno";
-frasecompleta = `soy ${frase1} y estoy caminando`;
+frasecompleta = `soy ${frase1} y estoy caminando`;//Interpolación de variables
 
 document.write(frasecompleta);
 
