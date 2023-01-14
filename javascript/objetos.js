@@ -87,6 +87,36 @@ Tenga en cuenta que los nombres de propiedad con espacios en ellos
 deben estar entre comillas (simples o dobles).
 */
 
+//Acceso a propiedades de objetos con variables
+
+/*
+Otro uso de la notación de corchetes en objetos es acceder a
+una propiedad que se almacena como el valor de una variable.
+Esto puede ser muy útil para iterar a través de las propiedades
+de un objeto o al acceder a una tabla de búsqueda.
+
+Aquí hay un ejemplo del uso de una variable para acceder a una propiedad:
+*/
+
+const dogs = {
+    Fido: "Mutt",
+    Hunter: "Doberman",
+    Snoopie: "Beagle"
+};
+
+const myDog = "Hunter";
+const myBreed = dogs[myDog];
+console.log(myBreed);
+
+/*
+La cadena Dobermanse mostraría en la consola.
+
+Tenga en cuenta que no usamos comillas alrededor
+del nombre de la variable cuando lo usamos para
+acceder a la propiedad porque estamos usando el
+valor de la variable, no el nombre .
+*/
+
 /*
 Objeto: Algo fisico al paradigma de javascript
 */
