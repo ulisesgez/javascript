@@ -253,3 +253,22 @@ articleAuthores la cadena Kaashan Hussain, articleLinkes la cadena
 https://www.freecodecamp.org/news/a-complete-guide-to-creating-objects-in-javascript-b0e2450655e8/
 y valueLookupes la cadena How to create objects in JavaScript.
 */
+
+/*
+Probar objetos para propiedades
+
+A veces es útil verificar si la propiedad de un objeto dado existe o no.
+Podemos usar el .hasOwnProperty(propname)método de objetos para determinar
+si ese objeto tiene el nombre de propiedad dado. .hasOwnProperty()
+devoluciones trueo falsesi la propiedad se encuentra o no.
+*/
+
+const newObj = {
+  top: "hat",
+  bottom: "pants"
+};
+
+newObj.hasOwnProperty("top");
+newObj.hasOwnProperty("middle");
+
+//El primero hasOwnPropertyregresa true, mientras que el segundo regresa false.
