@@ -310,3 +310,32 @@ que tiene una clave de artisty un valor de Daft Punk.
 Nota: Deberá colocar una coma después de cada objeto de la matriz,
 a menos que sea el último objeto de la matriz.
 */
+
+/*
+Acceso a objetos anidados
+
+Se puede acceder a las subpropiedades de los objetos encadenando la notación
+de punto o corchete.
+Aquí hay un objeto anidado:
+*/
+
+const ourStorage = {
+  "desk": {
+    "drawer": "stapler"
+  },
+  "cabinet": {
+    "top drawer": { 
+      "folder1": "a file",
+      "folder2": "secrets"
+    },
+    "bottom drawer": "soda"
+  }
+};
+
+ourStorage.cabinet["top drawer"].folder2;
+ourStorage.desk.drawer;
+
+/*
+ourStorage.cabinet["top drawer"].folder2sería la cadena secrets,
+y ourStorage.desk.drawersería la cadena stapler.
+*/
