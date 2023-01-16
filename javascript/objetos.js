@@ -223,3 +223,33 @@ Después de la última línea que se muestra arriba, ourDogse ve así:
   "friends": ["everything!"]
 }
 */
+
+/*
+Uso de objetos para búsquedas
+Los objetos se pueden considerar como un almacenamiento de clave/valor,
+como un diccionario. Si tiene datos tabulares, puede usar un objeto
+para buscar valores en lugar de una switchdeclaración o una if/elsecadena.
+Esto es más útil cuando sabe que sus datos de entrada están limitados a un cierto rango.
+
+Este es un ejemplo de un objeto de artículo:
+*/
+
+const article = {
+    "title": "How to create objects in JavaScript",
+    "link": "https://www.freecodecamp.org/news/a-complete-guide-to-creating-objects-in-javascript-b0e2450655e8/",
+    "author": "Kaashan Hussain",
+    "language": "JavaScript",
+    "tags": "TECHNOLOGY",
+    "createdAt": "NOVEMBER 28, 2018"
+};
+const articleAuthor = article["author"];
+const articleLink = article["link"];
+  
+const value = "title";
+const valueLookup = article[value];
+
+/*
+articleAuthores la cadena Kaashan Hussain, articleLinkes la cadena 
+https://www.freecodecamp.org/news/a-complete-guide-to-creating-objects-in-javascript-b0e2450655e8/
+y valueLookupes la cadena How to create objects in JavaScript.
+*/
