@@ -33,3 +33,11 @@ console.log(d);// Nos dira que es un string
 var e = String(c);// Nos dira que es un string
 
 var f = Number(e);// Nos dira que es un number
+
+//Covertir un string a un number:
+
+let falseNumber = "33";
+
+console.log(Number(falseNumber) + 7);//40
+//console.log(parseInt(falseNumber) + 7); numero entero, tambien lo convierte
+//console.log(parseFloat(falseNumber) + 7); l0o convierte a decimal
