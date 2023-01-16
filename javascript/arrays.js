@@ -79,3 +79,40 @@ como array [0][0]e incluso esto array [0] [0]no está permitido.
 Aunque JavaScript puede procesar esto correctamente, esto puede confundir a 
 otros programadores al leer su código.
 */
+
+/*
+Acceso a matrices anidadas
+
+Como hemos visto en ejemplos anteriores, los objetos pueden contener 
+tanto objetos anidados como matrices anidadas. De manera similar al 
+acceso a objetos anidados, la notación de corchete de matriz se puede 
+encadenar para acceder a matrices anidadas.
+
+Aquí hay un ejemplo de cómo acceder a una matriz anidada:
+*/
+
+const ourPets = [
+  {
+    animalType: "cat",
+    names: [
+      "Meowzer",
+      "Fluffy",
+      "Kit-Cat"
+    ]
+  },
+  {
+    animalType: "dog",
+    names: [
+      "Spot",
+      "Bowser",
+      "Frankie"
+    ]
+  }
+];
+
+ourPets[0].names[1];
+ourPets[1].names[0];
+
+/*
+ourPets[0].names[1]sería la cadena Fluffy, y ourPets[1].names[0]sería la cadena Spot.
+*/
