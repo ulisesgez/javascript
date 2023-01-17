@@ -93,3 +93,27 @@ document.write("<br>");
 for (animal of animales){
     document.write(animal + "<br>");
 }
+
+/*
+Anidamiento de bucles:
+
+Si tiene una matriz multidimensional, puede usar la misma lógica que el
+punto de referencia anterior para recorrer tanto la matriz como las sub-matrices.
+Aquí hay un ejemplo:
+*/
+
+const arr = [
+    [1, 2], [3, 4], [5, 6]
+  ];
+  
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr[i].length; j++) {
+      console.log(arr[i][j]);
+    }
+  }
+
+  /*
+  Esto da salida a cada subelemento de arruno en uno.
+  Tenga en cuenta que para el bucle interno, estamos comprobando .lengthof arr[i], 
+  ya que arr[i]es en sí mismo una matriz.
+  */
