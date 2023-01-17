@@ -1,16 +1,17 @@
 //Tipo de valor verdadero y falso:
 
-Boolean(0);//falso
-Boolean(null);
-Boolean(NaN);
-Boolean(undefined);
-Boolean(false);
-Boolean("");
+console.log(Boolean(0));//falso
+console.log(Boolean(null));
+console.log(Boolean(NaN));
+console.log(Boolean(undefined));
+console.log(Boolean(false));
+console.log(Boolean(""));
 
-Boolean(1);//Verdadero
-Boolean("a");
-Boolean([]);
-Boolean({});
+console.log(Boolean(1));//Verdadero
+console.log(Boolean(-7));
+console.log(Boolean("a"));
+console.log(Boolean([]));
+console.log(Boolean({}));
 
 //Comprender los valores booleanos
 
@@ -24,3 +25,8 @@ Nota: los valores booleanos nunca se escriben entre comillas.
 Las cadenas "true"y "false"no son booleanas y no tienen un
 significado especial en JavaScript
 */
+
+//Usando el constructor:
+
+let v = Boolean(true);
+let f = Boolean(false);
