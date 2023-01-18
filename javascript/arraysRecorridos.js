@@ -76,7 +76,7 @@ televisions.forEach(function(television){
 
 //Metodos para recorrer el contenido del array:
 
-//Some: De igualñ forma regresa una validacion de verdadero o falso para articulos que cumplan cone sa validacion:
+//Some: De igual forma regresa una validacion de verdadero o falso para articulos que cumplan cone sa validacion:
 
 let cheapTelevisions = televisions.some(function(television){
     return television.cost <= 15000;

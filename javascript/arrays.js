@@ -116,3 +116,12 @@ ourPets[1].names[0];
 /*
 ourPets[0].names[1]sería la cadena Fluffy, y ourPets[1].names[0]sería la cadena Spot.
 */
+
+//ECMA6:
+
+const anArray = Array.of("x", "y", "z", 1, 2, 3);
+console.log(anArray);//["x", "y", "z", 1, 2, 3]
+
+//Crear un array con 100 elementos
+const falseArray = Array(100).fill(false);
+console.log(falseArray);//[false, false, false, false, .....]
