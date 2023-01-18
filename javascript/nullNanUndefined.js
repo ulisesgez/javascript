@@ -20,4 +20,4 @@ let numero = null;
 let numero2 = 5;
 let numero3 = "pedro";
 
-alert(numero2 * numero3);
+alert(numero2 * numero3);//NaN

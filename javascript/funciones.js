@@ -4,6 +4,8 @@ acciones con los valores que ya guardamos antes en la variables.
 
 En JavaScript, podemos dividir nuestro código en partes reutilizables llamadas funciones .
 
+La sfunciones son consideradas objetos.
+
 He aquí un ejemplo de una función:
  */
 
@@ -17,11 +19,52 @@ Cada vez que se llame a la función, se imprimirá el mensaje Hello Worlden la c
 Todo el código entre llaves se ejecutará cada vez que se llame a la función.
 */
 
-//Funcion declarativa:
+/*
+Funcion declarativa / funcion declarada:
+A diefrencia de una funcion expresada esta puede ser llamada en cualquier parte y funcionara:
+*/
+funcionDeclarada();
+
+function funcionDeclarada() {
+    console.log("Puedo invocarme en cualquier parte del codigo, incluso antes");
+};
+
+funcionDeclarada();
+
+//Funcion declarativa / funcion declarada, ademas de
+//que devuelve un valor por el return:
 
 function miFuncion(){
     return 3;
 }
+
+let result = miFuncion();
+console.log(result);
+
+/*
+Es muy diferente a esto:
+*/
+
+function imprimeLogs() {
+    console.log("a");
+    console.log("b");
+    console.log("c");
+    return "d";//Solo imprimira a, b, c
+}
+
+/*
+Tambien es muy diferente a esto:
+*/
+
+function imprimirLogReturn() {
+    console.log("a");
+    return "d";
+    console.log("b");
+    console.log("c");
+}
+
+let imprimir = imprimirLogReturn();
+console.log(imprimir);//Solo imprimira a y d
 
 // Otro ejemplo de función:
 function saludar(){
@@ -33,21 +76,38 @@ function saludar(){
     }
 }
 
-//Se repetira 3 veces:
+//Invocacion de funcion. Se repetira 3 veces:
 
 saludar();
 saludar();
 saludar();
 
-//Función de expresión:
+//Función de expresión / funcion expresada / funcion anonima:
+
+//funcionExpresada(); Marca error
+
+const funcionExpresada = function() {
+    console.log("No puedo invocarme en cualquier parte del codigo como una funcion declarada");
+};
+
+funcionExpresada();
+
+//Función de expresión / funcion expresada / funcion anonima:
 //ojo, se hace uso de parametros
 const miFuncionDos = function(a, b){
     return a + b;
 }
 
-miFuncion();
-
 miFuncionDos();
+
+/*
+Asignar valor a los parametros:
+*/
+
+function saludo (nombre = "jesus", edad = 24) {
+    console.log(`hola mi nombre es ${nombre} y tengo ${edad} años`);
+}
+saludo();//hola mi nombre es jesus y tengo 24 años
 
 //Asigar funcion en variable:
 
