@@ -231,3 +231,9 @@ addSum(3);
 addSumes una función sin returnsentencia.
 La función cambiará la sumvariable global pero el valor devuelto de la función es undefined.
 */
+
+//Funciones Self Invoking, se ejecuta asi misma una vez:
+
+(function (a, b){
+    console.log("La suma es: " + (a + b));//La suma es: 7
+}(3, 4));
