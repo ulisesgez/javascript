@@ -69,3 +69,18 @@ addSum(3);
 addSumes una función sin returnsentencia.
 La función cambiará la sumvariable global pero el valor devuelto de la función es undefined.
 */
+
+//Ejemplo con arrow function:
+
+const fruits  = () => {
+  if(true) {
+      var fruit1 = 'apple';//function scope, global, si imprime
+      let fruit2 = 'kiwi';//block scope, solo pueden ser accedidas dentro del bloque donde son declaradas
+      const fruit3 = 'banana';//block scope, solo pueden ser accedidas dentro del bloque donde son declaradas
+  }
+  console.log(fruit1);
+  console.log(fruit2);
+  console.log(fruit3);
+}
+
+fruits();//Error
