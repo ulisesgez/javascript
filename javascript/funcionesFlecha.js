@@ -20,13 +20,13 @@ function comparacion(num) {
 
 //Arrow function:
 
-const comparacion = (num) => {
+const comparacionUno = (num) => {
     return num* num;
 };
 
 //Arrow function, rteturn implicito:
 
-const comparacion = num => num * num;
+const comparacionDos = num => num * num;
 
 //Otro ejemplo:
 
@@ -41,3 +41,63 @@ const saludar = (nombre)=>{
     document.write(frase);
 }
 saludar("oscar");
+
+/*
+En esta sección se retomara el mismo tema pero de otra fuente:
+
+Función expresada se genera cuando a una variable le asignas el valor de una función anonima.
+Funcion anonima:
+*/
+
+const bienvenido = function() {
+    console.log(`Hola, bienvenido`);
+}
+
+bienvenido();
+
+//Arrow Function:
+
+const adios = () => {
+    console.log(`Adios, nos vemos`);
+}
+
+adios();
+
+/*
+Cuando tenemos una sola linea en la funcion, podemos omitir la llaves y dejar la funcion asi:
+Mas expresivo, aqui no recibe parametros por lo que se colocan parentesis: () =>:
+
+const adios = () => console.log(`Adios, nos vemos`);
+
+adios();
+
+Recibir parametros en funciones flecha, aqui podemos quitar los parentesis: () => ,
+esto solo ocurre si tenemos un parametro:
+*/
+
+const miNombre = otroNombre => console.log(`Hola me llamo Ulises y tu nombre es ${otroNombre}`);
+miNombre('Irma');
+
+
+//Return implicito:
+
+const multiplicar = (a, b) => a + b;
+console.log(multiplicar(9, 9));//81
+
+const funcionVariasLineas = () => {
+    console.log('a');
+    console.log('b');
+    console.log('c');
+}
+
+funcionVariasLineas();// a b c
+
+//Iteracion:
+
+const numeros = [1, 2, 3, 4, 5];
+numeros.forEach((element, index) => console.log(`${element} esta en la posición ${index}`));
+//1 esta en la posición 0
+//2 esta en la posición 1
+//3 esta en la posición 2
+//4 esta en la posición 3
+//5 esta en la posición 4
