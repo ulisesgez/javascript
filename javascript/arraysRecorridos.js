@@ -74,6 +74,22 @@ televisions.forEach(function(television){
     console.log(television.brand);
 });
 
+//Otro ejemplo:
+
+/*
+Convertir:
+
+let nombres = ["Emmanuel", "Jose", "Paco", "Toño", "Ulises"];
+
+for(let i = 0; i < nombres.length; i++) {
+    console.log(nombres[i]);
+}
+*/
+
+let nombres = ["Emmanuel", "Jose", "Paco", "Toño", "Ulises"];
+
+nombres.forEach(nombre => console.log(nombre));
+
 //Metodos para recorrer el contenido del array:
 
 //Some: De igual forma regresa una validacion de verdadero o falso para articulos que cumplan cone sa validacion:
