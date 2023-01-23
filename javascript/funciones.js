@@ -242,6 +242,17 @@ addSumes una función sin returnsentencia.
 La función cambiará la sumvariable global pero el valor devuelto de la función es undefined.
 */
 
+//Parámetros por exceso:
+
+function pasarValores() {
+    alert("El numero de valores es "+arguments.length);
+    for (let i = 0; i < arguments.length; i++) {
+        alert("Argumentos " + i + "=" + arguments[i]);
+    };
+};
+
+pasarValores(4, 5, 6, 7, 8, 9, 0);
+
 //Funciones Self Invoking, se ejecuta asi misma una vez:
 
 (function (a, b){
