@@ -253,6 +253,28 @@ function pasarValores() {
 
 pasarValores(4, 5, 6, 7, 8, 9, 0);
 
+
+//Parámetros por defecto, antes de ECMAS6:
+
+function newUser(name, age, country) {
+    let name = name || 'oscar';
+    let age = age || 30;
+    let country = country || 'MX';
+    console.log(name, age, country);
+}
+
+newUser();//Oscar 30 MX
+newUser('David', 15, 'CO');//David 15 CO
+
+//Parámetros por defecto con ECMAS6
+
+function newAdmin(name = 'Oscar', age = 31, country = 'CL') {
+    console.log(name, age, country);
+}
+
+newAdmin();//Oscar 31 CL
+newAdmin('Ana', 20, 'PE');//Ana 20 PE
+
 //Funciones Self Invoking, se ejecuta asi misma una vez:
 
 (function (a, b){

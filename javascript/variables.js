@@ -52,3 +52,20 @@ mutables (objetos y matrices). Aprenderá más sobre objetos, matrices y valores
 inmutables y mutables en desafíos posteriores. También en desafíos posteriores, 
 verá ejemplos de identificadores de variables en mayúsculas, minúsculas o 
 camelCase. */
+
+//Template literals:
+
+/*
+Nos va a permitir concatenar strings de una forma mas amigable,
+jugar con variables, elementos:
+*/
+
+let hello = 'hello';
+let world = 'world';
+
+let epicPhrase = hello + ' ' + world + '!';
+console.log(epicPhrase);
+
+//Ahora con template literals:
+
+let phraseTemplateLiterals = `${hello} ${world}!`;
