@@ -29,18 +29,32 @@ let persona = {
 En este caso, con los objetos tenemos que nombrar las variables,
 con el mismo nombre de la propiedad, mal ejemplo:
 
-let {name, lastname, age} = persona;
-console.log(name, lastname, age);//error
+let {nombre, apellido, age} = persona;
+console.log(nombre, apellido, age);//error
 
 Lo siguiente es posible:
 */
 
 let {nombre, apellido, edad} = persona;
-console.log(nombre, apellido, edad);//name lastName, 20
+console.log(nombre, apellido, edad);//ulises gutierrez 20
 
 /*
 Esto si funciona, si se reconoce:
 
 let {nombre, edad, apellido} = persona;
-console.log(nombre, apellido, edad);//name lastName, 20
+console.log(nombre, apellido, edad);//ulises gutierrez 20
 */
+
+//Destructuración con arrays:
+
+let fruits = ['apple', 'banana'];
+let [a, b] = fruits;
+console.log(a, b);//apple banana
+console.log(a, fruits[1]);//apple banana
+
+//Destructuración con objects:
+
+let user = {username: 'ulises', age: 40};
+let { username, age} = user;
+console.log(username, age);
+console.log(username, user.age);
