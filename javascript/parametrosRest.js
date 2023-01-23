@@ -87,3 +87,26 @@ console.log(sumar(1, 2));//3
 console.log(sumar(1, 2, 3));//6
 console.log(sumar(1, 2, 3, 4));//10
 console.log(sumar(1, 2, 3, 4, 5));//15
+
+//Otro ejemplo:
+
+function sumaRest(num, ...values) {
+    console.log(values);
+    console.log(num + values[0]);
+    return num + values[0];
+}
+
+sumaRest(1, 1, 2, 3);
+/*
+Se imprime lo siguiente:
+
+[1 ,2, 3]
+2
+
+¿Por que no aparece el primer uno?
+Por que ese ya esta asignado a el nombre num or lo tanto no es parte de values,
+no esta siendo agredado al array.
+
+El valor 2 ya es el resultante de lo que es el valor num mas el primer elemento del array
+que estaria dentro de values --> 1 + 1
+*/
