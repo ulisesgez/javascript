@@ -30,3 +30,26 @@ const dog = {
 
 console.log(dog);
 dog.ladrar();
+
+//En funciones (antes):
+
+/*
+function newUser(user, age, country) {
+    return {
+        user: user,
+        age: age,
+        country: country
+    }
+}
+Ahora:
+*/
+
+function newUser(user, age, country) {
+    return {
+        user,
+        age,
+        country
+    }
+}
+
+console.log(newUser("yo", 20, "MX"));// { user: 'yo', age: 20, country: 'MX' }
