@@ -82,7 +82,7 @@ saludar();
 saludar();
 saludar();
 
-//Función de expresión / funcion expresada / funcion anonima:
+//Función de expresión / funcion expresada / funcion ma:
 
 //funcionExpresada(); Marca error
 
@@ -92,13 +92,23 @@ const funcionExpresada = function() {
 
 funcionExpresada();
 
-//Función de expresión / funcion expresada / funcion anonima:
+//Función de expresión / funcion expresada / funcion anonima, no tiene nombre:
 //ojo, se hace uso de parametros
 const miFuncionDos = function(a, b){
     return a + b;
 }
 
 miFuncionDos();
+
+//Funcion anonima usando el constructor funcion:
+
+const miFuncionTres = new Function ("a", "b", "return a*b");
+const resultadoTres = miFuncionTres(5, 7);
+alert(resultadoTres);
+
+//Funcion anonima autoinvocada:
+
+(function () {alert("helloWorld");}());
 
 /*
 Asignar valor a los parametros:
