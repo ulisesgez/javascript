@@ -19,10 +19,10 @@ console.log(lolaBunny);
 
 //Funcion constructora, donde asignamos los metodos al prototipo, no a la función como tal:
 
-function Carro(modelo, año) {
+function Carro(modelo, anio) {
     //Atributos:
     this.modelo = modelo;
-    this.año = año;
+    this.anio = anio;
 
 }
 
