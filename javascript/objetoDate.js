@@ -18,5 +18,3 @@ console.log(fecha.toLocaleString());
 console.log(fecha.toLocaleDateString());
 console.log(fecha.toLocaleTimeString());
 console.log(fecha.getTimezoneOffset());
-
-
