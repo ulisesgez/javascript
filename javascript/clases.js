@@ -5,6 +5,32 @@ un nuevo modelo de herencia orientada a objetos en JavaScript. Las clases de Jav
 proveen una sintaxis mucho más clara y simple para crear objetos y lidiar con la herencia.
 */
 //El constructor es un método especial que se ejecuta en el momento de instanciar la clase.
+
+class User {
+    //metodo:
+    greeting() {
+        return "hello";
+    }
+};
+
+const jesus = new User();
+console.log(jesus.greeting);
+
+class UserTwo {
+    constructor(name) {
+        this.name = name;
+    }
+    speak() {
+        return "hello";
+    }
+    greeting() {
+        return `${this.speak()} ${this.name}`;
+    }
+};
+
+const ana = new UserTwo('Ana');
+console.log(ana.greeting());//Hello Ana
+
 //Relacion con seccion de prototipos:
 
 class Carro {
