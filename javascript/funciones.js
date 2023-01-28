@@ -110,6 +110,48 @@ alert(resultadoTres);
 
 (function () {alert("helloWorld");}());
 
+//Otro ejemplo:
+
+(function() {
+    console.log("Mi primer IIFE");
+})();
+
+(function() {
+    console.log("Mi segunda IIFE");
+})();
+
+//Con paso de parametros:
+
+(function(d, w, c) {
+    console.log("Mi tercera IIFE");
+    console.log(d);//Imprime document
+    console.log(w);//Imprime window
+    console.log(c);//Imprime console
+    c.log("Este es un console log")
+})(document, window, console);//Estamos pasando esto a los parametros
+
+//Formas de escribir las funciones anonimas autoejecutables:
+
+//Clasica:
+(function(){
+    console.log("versión clásica");
+})();
+
+//Crockford (Javascript The Good Parts)
+((function() {
+    console.log("versión crockford");
+})());
+
+//Unaria:
++function(){
+    console.log("versión Unaria");
+}();
+
+//Facebook:
+!function(){
+    console.log("versión Facebook");
+}();
+
 /*
 Asignar valor a los parametros:
 */
