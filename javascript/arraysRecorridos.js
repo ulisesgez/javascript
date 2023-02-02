@@ -90,6 +90,14 @@ let nombres = ["Emmanuel", "Jose", "Paco", "Toño", "Ulises"];
 
 nombres.forEach(nombre => console.log(nombre));
 
+//Otro ejemplo:
+let lenguajes = new Array("php", "js", "java", "c#", "c", "pascal", "go");
+
+lenguajes.forEach((elemento, index , data) => {
+    console.log(data);
+    console.log(`${index}: ${elemento}`);
+});
+
 //Metodos para recorrer el contenido del array:
 
 //Some: De igual forma regresa una validacion de verdadero o falso para articulos que cumplan cone sa validacion:
@@ -100,6 +108,12 @@ let cheapTelevisions = televisions.some(function(television){
 
 console.log(cheapTelevisions);//true
 
+//Otro ejemplo:
+
+let precios = [10, 15, 20, 30, 45, 70, 100];
+
+let busqueda = precios.some(precio => precio < 100);
+console.log(busqueda);//true
 
 //Manipular arreglos con push()
 

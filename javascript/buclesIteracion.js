@@ -88,11 +88,23 @@ for (animal in animales){
 
 document.write("<br>");
 
+
 // Imprime gato perro pajaro, devuelve el valor de los elementos
 
 for (animal of animales){
     document.write(animal + "<br>");
 }
+//Otro ejemplo:
+let lenguajes = new Array("php", "js", "java", "c#", "c", "pascal", "go");
+
+for(let lenguaje in lenguajes) {
+    console.log(lenguajes[lenguaje]);
+};
+
+//Haciendo uso de busquedas:
+
+let busqueda = lenguajes.find(lenguaje => lenguaje == "php");
+console.log(busqueda);//php
 
 /*
 Anidamiento de bucles:
