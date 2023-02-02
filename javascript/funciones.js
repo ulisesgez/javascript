@@ -152,8 +152,40 @@ alert(resultadoTres);
     console.log("versión Facebook");
 }();
 
+
 /*
-Asignar valor a los parametros:
+Funcion anonima, otro ejemplo:
+Funcion que no tiene nombre, es decir que ese conjunto de instrucciones no va a
+tener ningun nombre y nosotros lo podemos guardar dentro de una variable.
+*/
+
+let pelicula = function(nombre) {
+    return "La pellicula es " + nombre;
+}
+
+/*
+Introduccion a callback:
+Es una funcion que se ejecuta dentro de otra, es una funcion dentro de otra funcion.
+*/
+
+function sumame (numeroUno, numeroDos, sumaYmuestra, sumaPorDos){
+    let sumar = numeroUno + numeroDos;
+
+    sumaYmuestra(sumar);
+    sumaPorDos(sumar);
+
+    return sumar;
+}
+sumame(5, 7, function(dato) {
+    console.log("la suma es ", dato);//la suma es 12
+},
+function (dato) {
+    console.log("La suma por dos es ", (dato*2));//la suma es 24
+}
+)
+
+/*
+Asignar valor a los parametros || parametros opcionales:
 */
 
 function saludo (nombre = "jesus", edad = 24) {
@@ -175,7 +207,7 @@ saludar = function(){
 //Devolver patrón temprano para funciones:
 
 /*
-Cuando returnse llega a una declaración, la ejecución de la función actual se detiene
+Cuando return se llega a una declaración, la ejecución de la función actual se detiene
 y el control vuelve a la ubicación de llamada.
 
 Ejemplo

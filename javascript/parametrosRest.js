@@ -110,3 +110,22 @@ no esta siendo agredado al array.
 El valor 2 ya es el resultante de lo que es el valor num mas el primer elemento del array
 que estaria dentro de values --> 1 + 1
 */
+
+//Otro ejemplo:
+
+function listadoFrutas (fruta1, fruta2) {
+    console.log("fruta 1: ", frruta1);
+    console.log("fruta 2: ", frruta2);
+}
+
+listadoFrutas("Naranja", "Manzana");
+
+//queremos pasar una serie de paarmetros que son indefinidos:
+//listadoFrutas("Naranja", "Manzana", "Sandia", "Pera", "Melón", "Coco");
+
+function listadoFrutasDos (fruta1, fruta2, ...restoDeFrutas) {
+    console.log("fruta 1: ", frruta1);
+    console.log("fruta 2: ", frruta2);
+}
+//Imprime un array ["Sandia", "Pera", "Melón", "Coco"]
+listadoFrutasDos("Naranja", "Manzana", "Sandia", "Pera", "Melón", "Coco");

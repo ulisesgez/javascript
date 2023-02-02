@@ -30,3 +30,13 @@ let person = {name: 'luis', age: 29};
 let country = 'MX';
 let data = { id: 1, ...person, country};
 console.log(data);//{id: 1, name: 'luis', age: 29, country: 'MX'}
+
+//Otro ejemplo:
+
+function listadoFrutasDos (fruta1, fruta2, ...restoDeFrutas) {
+    console.log("fruta 1: ", frruta1);
+    console.log("fruta 2: ", frruta2);
+}
+
+let frutas = ["Naranja", "Manzana"];//fruta 1 y fruta 2
+listadoFrutasDos(...frutas, "Sandia", "Pera", "Melón", "Coco");
