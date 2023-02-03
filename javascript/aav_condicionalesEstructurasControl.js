@@ -152,3 +152,20 @@ la lectura del código. Por ejemplo:
 function findGreaterOrEqual(a, b) {
     return (a === b) ? "a and b are equal" : (a > b) ? "a is greater" : "b is greater";
 }
+
+//switch:
+
+let numeros = 1;
+switch (numeros){
+    case 1:
+        console.log("soy uno");
+        break;
+    case 10:
+        console.log("soy diez");
+        break;
+    case 100:
+        console.log("Soy un 100");
+        break;
+    default:
+        console.log("No es un numero");
+}
