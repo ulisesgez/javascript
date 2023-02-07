@@ -75,7 +75,7 @@ function cuadradoCallback(value, callback) {
     }, 0 | Math.random()*100);
 }
 
-//callbackhell
+//callbackhell, mala idea para manejo de errores, mejor recurrir a las promesas.
 
 cuadradoCallback(0, (value, result) => {
     console.log("Inicia callback");
