@@ -1,6 +1,34 @@
 /*
 Van a esperar a que algo se cumpla para poder seguir ejecutando el proceso.
 */
+
+const fnAsync = () => {
+    return new Promise((resolve, reject) => {
+        (true)
+        ? setTimeout(() => resolve("async"), 2000)
+        : reject(new Error('error!'));
+    });
+}
+
+const anotherFn = async () => {
+    const something = await fnAsync();
+    console.log(something);
+    console.log('hello');
+}
+
+console.log('before');
+anotherFn();
+console.log('after');
+
+/*
+before
+after
+async!!
+hello!
+*/
+
+//otro ejemplo:
+
 function cuadradoPromise(value) {
     if(typeof value !== "number") {
         return Promise.reject(`Èrror, el valor ${value} no es un numero`);
