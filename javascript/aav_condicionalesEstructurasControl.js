@@ -169,3 +169,62 @@ switch (numeros){
     default:
         console.log("No es un numero");
 }
+
+//otro ejemplo:
+
+function nivelVolumen(valor) {
+    var volumen;
+    switch(valor) {
+        case 1:
+            volumen = "bajo";
+        break;
+        case 2:
+        case 3:
+            volumen = "intermedio";
+        break;
+        case 4:
+        case 5:
+            volumen = "alto";
+        break;
+    }
+    return volumen;
+}
+
+console.log(nivelVolumen(3));//intermedio
+
+//Otro ejemplo:
+
+var conteo = 0;
+
+function contarCartas(carta) {
+    var decision;
+
+    switch (carta) {
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+            conteo++;//incrementar 1
+        break;
+        case 10:
+        case "J":
+        case "Q":
+        case "K":
+        case "A":
+            conteo--;//disminuir 1
+        break;
+    }
+    if(conteo > 0) {
+        decision = "apostar";
+    } else {
+        decision = "esperar"
+    }
+    return conteo + " " + decision;
+}
+
+console.log(contarCartas(2));//1 Apostar
+console.log(contarCartas(3));//2 Apostar
+console.log(contarCartas(7));//2 Apostar
+console.log(contarCartas("K"));//1 Apostar
+console.log(contarCartas("A"));//0 Esperar
