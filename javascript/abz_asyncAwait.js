@@ -29,6 +29,17 @@ hello!
 
 //otro ejemplo:
 
+async function arrayOfNames(array) {
+    for await (let value of array) {
+        console.log(value);
+    }
+}
+
+const names = arrayOfNames(['ulises', 'oscar', 'david']);
+console.log('after');
+
+//otro ejemplo:
+
 function cuadradoPromise(value) {
     if(typeof value !== "number") {
         return Promise.reject(`Èrror, el valor ${value} no es un numero`);
