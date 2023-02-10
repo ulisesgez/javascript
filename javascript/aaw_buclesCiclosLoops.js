@@ -84,7 +84,7 @@ while (numerotres < 6) {
     document.write(numerotres);
 }
 
-//Do while:
+//Do while, hacer mientras:
 
 let numerocuatro = 0;
 
@@ -95,7 +95,7 @@ do {
 while (numerocuatro <= 6);
 
 /**
- * For:
+ * For: lo utilizamos cuando sabemos cuantas iteraciones van a ser necesarias.
  * - Declaramos
  * - Inicializamos
  * - Iteramos
