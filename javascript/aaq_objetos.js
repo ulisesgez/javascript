@@ -391,3 +391,16 @@ ourStorage.desk.drawer;
 ourStorage.cabinet["top drawer"].folder2sería la cadena secrets,
 y ourStorage.desk.drawersería la cadena stapler.
 */
+
+//Objetos Inmutable:
+
+let colores = {
+  "r": "red",
+  "g": "green",
+  "b": "blue"
+};
+
+Object.freeze(colores);
+
+delete colores.r;//no es posible eliminar
+colores.b = "azul"//ya no es posible modificarla
