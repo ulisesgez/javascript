@@ -1,6 +1,39 @@
 /*
-Objeto: Algo fisico al paradigma de javascript
+Objeto: Algo fisico al paradigma de javascript.
+Acceder de distintas formas:
 */
+
+let accesoObjeto = {
+  1: "1",
+  "dos": 2,
+  tres: 3,
+  "soy cuatro": 4,
+  "cinco": 5
+}
+let posicionUno = 1
+console.log(accesoObjeto[posicionUno]);//1
+console.log(accesoObjeto["dos"]);//2
+console.log(accesoObjeto.tres);//3
+console.log(accesoObjeto["soy cuatro"]);//4
+console.log(accesoObjeto.cinco);//5
+
+//Otro ejemplo:
+
+function buscarElementoQuimico(simbolo) {
+  let simbolosQuimicos = {
+    "Al": "Aluminio",
+    "S": "Azufre",
+    "Cl": "Cloro",
+    "He": "Helio",
+    "B": "Boro",
+    "Li": "Litio"
+  }
+  return simbolosQuimicos[simbolo];
+}
+
+console.log(buscarElementoQuimico( "Al"));
+console.log(buscarElementoQuimico( "S"));
+console.log(buscarElementoQuimico( "B"));
 
 // detalleAuto es un metodo de objeto
 let auto = {
@@ -268,10 +301,29 @@ const newObj = {
   bottom: "pants"
 };
 
-newObj.hasOwnProperty("top");
-newObj.hasOwnProperty("middle");
+newObj.hasOwnProperty("top");//true
+newObj.hasOwnProperty("middle");//false
 
 //El primero hasOwnPropertyregresa true, mientras que el segundo regresa false.
+
+//otro ejemplo:
+
+function verificarPropiedad(obj, propiedad) {
+  if(obj.hasOwnProperty(propiedad)) {
+    return "Propiedad: " + obj[propiedad];
+  } else {
+    return "El objeto no tiene esta propiedad";
+  }
+}
+
+var miCuaderno = {
+  "color": "verde",
+  "categoria": 3,
+  "precio": 4.56
+}
+
+console.log(verificarPropiedad(miCuaderno, "color"));//Propiedad: verde
+console.log(verificarPropiedad(miCuaderno, "origen"));//El objeto no tiene esta propiedad
 
 /*
 Manipulación de objetos complejos
