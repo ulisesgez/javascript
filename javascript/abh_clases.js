@@ -6,6 +6,19 @@ proveen una sintaxis mucho más clara y simple para crear objetos y lidiar con l
 */
 //El constructor es un método especial que se ejecuta en el momento de instanciar la clase.
 
+class TransbordadorEspacial {
+    constructor(planetaDestino) {
+        this.planetaDestino = planetaDestino;//Asignamos el valor del parametro
+        //a la propiedad del objeto(this)
+    }
+}
+
+var zeus = new TransbordadorEspacial("Jupiter");//Jupiter
+console.log(zeus.planetaDestino);
+
+var apolo = new TransbordadorEspacial("Marte");//Marte
+console.log(apolo.planetaDestino);
+
 class User {
     //metodo:
     greeting() {

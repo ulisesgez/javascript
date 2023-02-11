@@ -6,7 +6,17 @@ ya sea a una funcion, variable, etc.
 La sintaxis de los parámetros rest nos permiten representar un número
 idefinido de argumentos como un array
 */
+function miFuncion(...args) {//abreviar argumentos, no necesariamente debe ser args
+    console.log(args);
+    console.log(args.length);
 
+}
+
+miFuncion(1);//[1] --> arreglo / 1
+miFuncion([1, 2, 3], [4, 5, 6]);//[[1, 2, 3], [4, 5, 6]] / 2
+miFuncion(1, 2, 3, 4, 5, 6);//[1, 2, 3, 4, 5, 6] / 6
+
+//Otro ejemplo:
 //ES5
 
 function myList(a, b){

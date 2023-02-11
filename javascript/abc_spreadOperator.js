@@ -26,6 +26,16 @@ console.log(arr3);//[1 ,2, 3, 4, 5, 6, 7, 8, 9, 0]
 
 //otro ejemplo:
 
+const numeros = [1, 2, 3];
+
+function sumar(x, y, z) {
+    return x + y + z;
+}
+
+console.log(sumar(...numeros));//6
+
+//otro ejemplo:
+
 let person = {name: 'luis', age: 29};
 let country = 'MX';
 let data = { id: 1, ...person, country};

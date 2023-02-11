@@ -1,4 +1,7 @@
-/* Es un metodo que no necesita que la clase se defina para poder ser creado:*/
+/*
+Es un metodo que no necesita que la clase se defina para poder ser creado:
+NOs permite proteger la data, haciendo que nuestras variables sean privadas por convención.
+*/
 class Animal{
     constructor(especie, edad, color){
         this.especie = especie;

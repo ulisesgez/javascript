@@ -1,7 +1,15 @@
 /*
+Son un tipo mas compacto de funciones que podemos escribir en javascript que normalmente se
+utilizan cunado necesitamos definir funciones anonimas. Las funciones anonimas son funciones
+que no tiene un nombre especifico, ejemplo:
+
+const fecha = function() {
+    return new Date();
+}
+
 Introducidas a partir de ECMAS 6
 Es una expresion de funcion que nos va a permitir tener una
-alternativa a una funcion, que normalmente las conocemos como function
+alternativa a una funcion, que normalmente las conocemos como function.
 
 Diferencias y limitaciones:
 
@@ -30,9 +38,25 @@ const comparacionDos = num => num * num;
 
 //Otro ejemplo:
 
+const fecha = () => new Date();
+
+//Otro ejemplo, concatenar arrays:
+
+const concatenarArreglos = (arr1, arr2) => arr1.concat(arr2);
+
+//Otro ejemplo:
+
 const sumarFuncion = (a, b) => a + b;
 resultado = sumarFuncion(3, 5);
 console.log(resultado);//8
+
+//Otro ejemplo, valor por defecto:
+
+const incrementar = (num, valorDefecto = 1) => num + valorDefecto;
+
+console.log(incrementar(5));//6
+console.log(incrementar(5, 3));//8
+
 
 //Otro ejemplo:
 

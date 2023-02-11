@@ -404,3 +404,30 @@ Object.freeze(colores);
 
 delete colores.r;//no es posible eliminar
 colores.b = "azul"//ya no es posible modificarla
+
+//Otra forma de crear un objeto:
+
+const crearPersona = (nombre, edad, idioma) => ({nombre, edad, idioma});
+console.log(crearPersona("ulises", 25, "Español"));
+
+//Funciones dentro objetos:
+
+/*
+const mascota = {
+  nombre: "Max",
+  presentar: function() {
+    return `hola mi nombre es ${this.nombre}`
+  }
+}
+
+console.log(mascota.presentar());//hola mi nombre es Max
+*/
+
+const mascota = {
+  nombre: "Max",
+  presentar () {
+    return `hola mi nombre es ${this.nombre}`
+  }
+}
+
+console.log(mascota.presentar());//hola mi nombre es Max

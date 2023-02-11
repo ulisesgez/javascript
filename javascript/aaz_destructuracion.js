@@ -17,6 +17,35 @@ const [one, two, three] = numeros;
 
 console.log(one, two, three);//1 2 3
 
+
+//Otro ejemplo:
+
+var a;
+var b;
+var c;
+
+[a, b,,, c] = [1 ,2, 3, 4, 5, 6];
+//[a, b, , , c] = [1 ,2, 3, 4, 5, 6]; tambien
+
+console.log(a);//1
+console.log(b);//2
+console.log(c);//5
+
+//Otro ejemplo:
+
+const carro = {
+    marca: "Ford",
+    ano: 2020
+};
+
+/*
+Antes:
+const marca = carro.marca;
+const ano = carro.año;
+*/
+
+const {marca, ano} = carro;
+
 //En objetos:
 
 let persona = {
@@ -58,3 +87,75 @@ let user = {username: 'ulises', age: 40};
 let { username, age} = user;
 console.log(username, age);
 console.log(username, user.age);
+
+//Otro ejemplo:
+
+var coordenadas = {
+    x: 4,
+    y: 6,
+    z: 12
+};
+const {x, y, z} = coordenadas;
+
+console.log(x);
+console.log(y);
+console.log(z);
+
+//Otro ejemplo:
+
+const computer = {
+    hp: {
+        color: "green",
+        modelo: "qwsa"
+    }
+}
+
+const {hp: {color, modelo}} = computer;
+console.log(color);
+console.log(modelo);
+
+/*
+Tambien esto es posible:
+
+const {hp: {color: colorFavorito, modelo: modeloFavorito}} = computer;
+
+console.log(colorFavorito);
+console.log(modeloFavorito);
+console.log(color);//error
+*/
+
+//Otro ejemplo con rest:
+
+var j;
+var k;
+var arr;
+
+[a, b, ...arr] = [1, 2, 3, 4, 5, 6, 7];
+
+console.log(j);//1
+console.log(k);//2
+console.log(arr);//[3, 4, 5, 6, 7]
+
+//Otro ejemplo con rest:
+
+const arrInicial = [1, 2, 3, 4, 5, 6, 7, 8];
+
+function removerPrimeros(arreglo) {
+    const [ , , , ...arrNuevo] = arreglo;
+    return arrNuevo;
+}
+
+const arrFinal = removerPrimeros(arrInicial);
+console.log(arrFinal);//[4, 5, 6, 7, 8]
+
+//Otro ejemplo:
+
+const estadisticas = {
+    max: 56.78,
+    moda: 23.87,
+    min:-0.75
+};
+
+const mitad = ({max, min}) => (max + min) / 2.0;
+
+console.log(mitad(estadisticas));//28.015
