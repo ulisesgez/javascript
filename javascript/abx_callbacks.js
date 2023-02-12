@@ -3,6 +3,8 @@ Llamada de vueltas o funcion de devolucion: Es una función que se va a ejecutar
 de que la otra lo haga. Es una función que le puedes pasar a otra como argumento y
 que se ejecuta despues de que se haya completado cualquier operacion o alguna
 operacion pero no tiene por que ser asincrona.
+
+Es una funcion que se pasa a otra funcion como argumento para su ejecucion posterior.
 */
 /*
 no asincrono:
@@ -41,6 +43,32 @@ modify(names, function(array) {
 
 //he modificado el array y ahora es de 4 elementos
 
+//Otro ejemplo, aqui no es callback:
+
+function one() {
+    console.log("step 1");
+}
+
+function two() {
+    console.log("step 2");
+}
+
+one();//step 1
+two();//step 2
+
+//Ahora lo convertimos:
+
+function one(callback) {
+    console.log("step 1");
+    callback();
+}
+
+function two() {
+    console.log("step 2");
+}
+
+one(two);//step 1 / step 2
+
 //Otro ejemplo:
 
 function miFuncion(fn) {
@@ -65,6 +93,103 @@ frutas.forEach(frutas => {
 'sandia'
 'uvas'
 'fresas'
+*/
+
+//Otro ejemplo:
+
+let order = (callback) => {
+    console.log("order placed, please call production");
+    callback();
+}
+
+let production = () => console.log("order received, starting production");
+
+//order placed, please call production / order received, starting production
+
+//Otro ejemplo:
+/*
+let stocks = {
+    fruits: ["strawberry", "grapes", "banana"],
+    liquid: ["water", "ice"],
+    holder: ["conde", "cup", "stick"],
+    toppings: ["chocolate", "peanuts"]
+}
+
+console.log("start");
+
+function order(fruitName, callback) {
+    setTimeout(function() {
+        console.log(`${stocks.fruits[fruitName]} was selected`);
+    },2000);
+    callback();
+}
+
+function production(){
+    setTimeout(function() {
+        console.log("production has started");
+    },0);
+}
+
+console.log("end");
+
+order(0, production);
+
+let stocks = {
+    fruits: ["strawberry", "grapes", "banana"],
+    liquid: ["water", "ice"],
+    holder: ["conde", "cup", "stick"],
+    toppings: ["chocolate", "peanuts"]
+}
+let order = (fruitName, callback) => {
+    setTimeout(() => {
+        console.log(`${stocks.fruits[fruitName]} was selected`);
+    },2000);
+    callback();
+};
+
+let production = () => {
+    setTimeout(() => {
+        console.log("production has started");
+    },0000);
+};
+
+order(0, production);
+
+//production has started
+//strawberry was selected
+
+//En este no comenzara la produccion hasta seleccionar la fruta:
+
+let stocks = {
+    fruits: ["strawberry", "grapes", "banana"],
+    liquid: ["water", "ice"],
+    holder: ["conde", "cup", "stick"],
+    toppings: ["chocolate", "peanuts"]
+}
+
+console.log("start");
+
+function order(fruitName, callback) {
+    setTimeout(function() {
+        console.log(`${stocks.fruits[fruitName]} was selected`);
+        callback();
+    },2000);
+}
+
+function production(){
+    setTimeout(function() {
+        console.log("production has started");
+    },0);
+}
+
+console.log("end");
+
+order(0, production);
+
+//start
+//end
+//strawberry was selected
+//production has started
 */
 
 //Otro ejemplo:
