@@ -140,9 +140,6 @@ for (animal in animales){
     document.write(animales[animal] + "<br>");
 }
 
-document.write("<br>");
-
-
 // Imprime gato perro pajaro, devuelve el valor de los elementos
 
 for (animal of animales){

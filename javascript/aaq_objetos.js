@@ -55,6 +55,24 @@ console.log(auto.marca);
 
 console.log(auto.detalleAuto());
 
+//Crear un nuevo objeto y añadirle propiedades:
+
+let persona = new Object();
+persona.nombre = 'hugo',
+persona.direccion = 'san francisco',
+persona.telefono = '7711223344'
+
+console.log(persona);//{nombre: 'hugo', direccion: 'san francisco', telefono: '7711223344'}
+
+//otra forma:
+
+let personaDos = {};
+personaDos.nombre = 'hugo',
+personaDos.direccion = 'san francisco',
+personaDos.telefono = '7711223344'
+
+console.log(persona);//{nombre: 'hugo', direccion: 'san francisco', telefono: '7711223344'}
+
 /*
 Construir objetos de JavaScript
 
@@ -431,3 +449,82 @@ const mascota = {
 }
 
 console.log(mascota.presentar());//hola mi nombre es Max
+
+//Acceder con metodos get y set:
+
+let computer = {
+  marca: 'hp',
+  modelo: '101010',
+  color:'gris',
+  ram: '16gb',
+  get randomAccesMemory() {
+    return this.ram;
+  },
+  set randomAccesMemory(randomAccesMemory) {
+    this.ram = randomAccesMemory;
+  },
+  get caracteristicas() {
+    return this.marca + ', ' + this.modelo + ', ' + this.color;
+  }
+}
+
+console.log(computer.caracteristicas);
+console.log(computer.randomAccesMemory);
+console.log(computer.randomAccesMemory = '8gb');
+console.log(computer.ram);
+
+//Funcion constructor de obetos de tipo casa:
+
+function Casa(calle, numero, colonia, cp){
+  this.calle = calle;
+  this.numero = numero;
+  this.colonia = colonia;
+  this.cp = cp;
+}
+
+let casita = new Casa('kenedy', '35', 'palmas', '334455');
+console.log(casita);//{calle: 'kenedy', numero: '35', colonia: 'palmas', cp: '334455'}
+
+//Call y paso de parametros en call:
+
+let mouseOne = {
+  marca: 'razer',
+  modelo: '21212',
+  color:'black',
+  caracteristicas: function(microprocesador) {//no lleva this al pasarse como parametro:
+    return this.marca + ', ' + this.modelo + ', ' + this.color + microprocesador;
+  }
+}
+
+let mouseTwo = {
+  marca: 'logitech',
+  modelo: '01010',
+  color:'green',
+}
+
+console.log(mouseOne.caracteristicas('arm'));
+//Ahora queremos ver las caracteristicas de mouseTwo:
+console.log(mouseOne.caracteristicas.call(mouseTwo, 'arm'));
+
+//Aply, ocurre lo mismo que en call:
+
+let tvOne = {
+  marca: 'samsung',
+  modelo: '21212',
+  color:'black',
+  caracteristicas: function(pulgadas) {//no lleva this al pasarse como parametro:
+    return this.marca + ', ' + this.modelo + ', ' + this.color + pulgadas;
+  }
+}
+
+let tvTwo = {
+  marca: 'lg',
+  modelo: '01010',
+  color:'green',
+}
+
+console.log(tvOne.caracteristicas(50));
+//Ahora queremos ver las caracteristicas de tvTwo, en cuestion de parametros es diferente::
+let arreglo = [40];
+console.log(tvOne.caracteristicas.apply(tvTwo, arreglo));
+//console.log(tvOne.caracteristicas.apply(tvTwo, [40]));//tambien se ppuede pasar asi
