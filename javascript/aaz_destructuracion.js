@@ -17,6 +17,40 @@ const [one, two, three] = numeros;
 
 console.log(one, two, three);//1 2 3
 
+//Otro ejemplo:
+
+const tienda = ['verduras', 'juguetes', 'bebidas'];
+const [ , , dto3] = tienda;
+console.log(dto3);//bebidas
+
+//Otro ejemplo:
+
+const heroe = {
+    nombre: 'clark',
+    apellido: 'kent',
+    alias: 'superman',
+    getNombre() {
+        return `${this.nombre} ${apellido}`
+    }
+}
+
+console.log(heroe);
+
+/*
+sin destrcturacion:
+
+const nombre = heroe.nombre;
+const apellido = heroe.apellido;
+const alias = heroe.alias;
+
+console.log(nombre, apellido, alias);
+
+Con desestructuracion:
+
+const {nombre, apellido, alias} = heroe;
+const {nombre, apellido, alias, edad} = heroe;//edad da undefined
+const {nombre, apellido, alias, edad = 0} = heroe;//edad da 0
+*/
 
 //Otro ejemplo:
 

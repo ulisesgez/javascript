@@ -6,6 +6,30 @@ operacion pero no tiene por que ser asincrona.
 
 Es una funcion que se pasa a otra funcion como argumento para su ejecucion posterior.
 */
+
+//Ejemplo basico:
+
+ setTimeout(() => {
+    console.log('hola mundo');
+ }, 1000);
+
+//Otro ejemplo:
+
+const getUsuarioById = (id, callback) => {
+    const usuario = {
+        id,
+        nombre: 'ulises'
+    }
+    setTimeout(() => {
+        callback(usuario);
+    }, 1500);
+}
+//la funcion es el callback que recibe getUsuarioById
+getUsuarioById(10, ( usuario ) => {
+    console.log(usuario.id);
+    console.log(usuario.nombre);
+});
+
 /*
 no asincrono:
 
@@ -220,4 +244,117 @@ cuadradoCallback(0, (value, result) => {
             });
         });
     });
+});
+
+//callbackhell:
+
+/*
+const empleados = [
+    {
+        id: 1,
+        nombre: 'ulises'
+    },
+    {
+        id: 2,
+        nombre: 'ruben'
+    },
+    {
+        id: 3,
+        nombre: 'laura'
+    }
+];
+
+const salarios = [
+    {
+        id: 1,
+        salario: 1000
+    },
+    {
+        id: 2,
+        salario: 2000
+    },
+];
+
+//funcion que nos permite traer la informacion de un empleado:
+
+const getEmpleado = (id) => {
+    const empleado = empleados.find(e => e.id === id);
+    //validar que existe el empleado:
+    if (empleado) {
+        return empleado;
+    } else {
+        return `Empleado ${id} no existe`
+    }
+}
+
+console.log(getEmpleado( 1 ));//{ id: 1, nombre: 'ulises' }
+*/
+
+const empleados = [
+    {
+        id: 1,
+        nombre: 'ulises'
+    },
+    {
+        id: 2,
+        nombre: 'ruben'
+    },
+    {
+        id: 3,
+        nombre: 'laura'
+    }
+];
+
+const salarios = [
+    {
+        id: 1,
+        salario: 1000
+    },
+    {
+        id: 2,
+        salario: 2000
+    },
+];
+
+//funcion que nos permite traer la informacion de un empleado:
+
+const getEmpleado = (id, callback) => {
+    const empleado = empleados.find(e => e.id === id)?.nombre;
+    //validar que existe el empleado:
+    if (empleado) {
+        //El null es para el error
+        callback(null, empleado.nombre);
+    } else {
+        callback(`Empleado ${id} no existe`)
+    }
+}
+
+const getSalario = (id, callback) => {
+    const salario = salarios.find(s => s.id === id)?.salario;
+    //validar que existe el empleado:
+    if (salario) {
+        //El null es para el error
+        callback(null, salario);
+    } else {
+        callback(`Empleado ${id} no existe`)
+    }
+}
+
+const id = 1;//Aqui modificamos:
+
+//err para que no siga la ejecucion si es que no existe el empleado con determinado id:
+getEmpleado( id, (err, empleado) => {
+    if(err) {
+        console.log('Error!');
+        return console.log(err);
+    }
+    console.log('Empleado existe');
+    console.log(empleado.nombre);
+});
+
+getSalario( id, (err, salario) => {
+    if(err) {
+        return console.log(err);
+    }
+    console.log(salario);
 });
