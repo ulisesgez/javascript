@@ -1,7 +1,30 @@
 /*
 Es un metodo que no necesita que la clase se defina para poder ser creado:
-NOs permite proteger la data, haciendo que nuestras variables sean privadas por convención.
+Nos permite proteger la data, haciendo que nuestras variables sean privadas por convención.
+Get leer la informacion del atributo y set para modificarlo. El metodo get no se puede llamar igual
+que nuestra propiedad, asi que en muchas ocasiones se acostumbra que en las propiedades
+utilicemos un guion bajo antes del nombre de la propiedad.
 */
+class Persona{
+    constructor(nombre, apellido) {
+        this._nombre = nombre;
+        this._apellido = apellido;
+    }
+    get nombre() {
+        return this._nombre;
+    }
+    set nombre(nombre) {
+        this._nombre = nombre;
+    }
+}
+
+let personaUno = new Persona('juan', 'perez');
+console.log(personaUno.nombre);//juan, get
+personaUno.nombre = "carlos"//set
+console.log(personaUno.nombre);//carlos, get
+
+//Otro ejemplo:
+
 class Animal{
     constructor(especie, edad, color){
         this.especie = especie;
