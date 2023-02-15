@@ -1,3 +1,7 @@
+/*
+Es un formato ligero de intercambio de datos.
+*/
+
 //Objeto, pares clave y valor:
 const user = {
     "name": "ulises",

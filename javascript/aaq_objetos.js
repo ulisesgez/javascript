@@ -506,7 +506,7 @@ console.log(mouseOne.caracteristicas('arm'));
 //Ahora queremos ver las caracteristicas de mouseTwo:
 console.log(mouseOne.caracteristicas.call(mouseTwo, 'arm'));
 
-//Aply, ocurre lo mismo que en call:
+//Apply, ocurre lo mismo que en call:
 
 let tvOne = {
   marca: 'samsung',
