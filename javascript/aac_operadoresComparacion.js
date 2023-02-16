@@ -2,10 +2,10 @@
 
 /*
 Hay muchos operadores de comparación en JavaScript. Todos estos operadores devuelven un
-valor booleano trueo false.
+valor booleano true o false.
 
 El operador más básico es el operador de igualdad ==. El operador de igualdad compara
-dos valores y devuelve truesi son equivalentes o falseno. Tenga en cuenta que la igualdad
+dos valores y devuelve true si son equivalentes o false no. Tenga en cuenta que la igualdad
 es diferente de la asignación ( =), que asigna el valor a la derecha del operador a una
 variable a la izquierda.
 */
@@ -18,11 +18,11 @@ function equalityTest(myVal) {
 }
 
 /*
-Si myVales igual a 10, el operador de igualdad devuelve true, por lo que el código 
+Si myVales igual a 10, el operador de igualdad devuelve true, por lo que el código
 entre llaves se ejecutará y la función devolverá Equal. De lo contrario, la función
-devolverá Not Equal. Para que JavaScript compare dos tipos de datos diferentes 
-(por ejemplo, numbersy strings), debe convertir un tipo en otro.
-Esto se conoce como tipo de coerción. Sin embargo, una vez que lo hace, puede comparar 
+devolverá Not Equal. Para que JavaScript compare dos tipos de datos diferentes
+(por ejemplo, numbers strings), debe convertir un tipo en otro.
+Esto se conoce como tipo de coerción. Sin embargo, una vez que lo hace, puede comparar
 términos de la siguiente manera:
 
 1   ==  1  // true
@@ -35,7 +35,7 @@ términos de la siguiente manera:
 //Comparación con el Operador de Igualdad Estricta
 
 /*
-La igualdad estricta ( ===) es la contrapartida del operador de 
+La igualdad estricta ( ===) es la contrapartida del operador de
 igualdad ( ==). Sin embargo, a diferencia del operador de igualdad,
 que intenta convertir ambos valores que se comparan con un tipo común,
 el operador de igualdad estricta no realiza una conversión de tipo.
@@ -52,8 +52,8 @@ Ejemplos:
 /*
 Comparación con el Operador de Desigualdad
 El operador de desigualdad ( !=) es lo opuesto al operador de igualdad.
-Significa no igual y vuelve falsedonde volvería la igualdad truey 
-viceversa . Al igual que el operador de igualdad, el operador de 
+Significa no igual y vuelve false donde volvería la igualdad truey
+viceversa . Al igual que el operador de igualdad, el operador de
 desigualdad convertirá tipos de datos de valores al comparar.
 
 Ejemplos
@@ -68,12 +68,12 @@ Ejemplos
 /*
 Comparación con el Operador de Desigualdad Estricta
 
-El operador de desigualdad estricta ( !==) es el opuesto lógico del 
-operador de igualdad estricta. Significa "Estrictamente no igual" y 
-regresa falsedonde regresaría la igualdad estricta truey viceversa .
-El operador de desigualdad estricta no convertirá tipos de datos.
+El operador de desigualdad estricta ( !==) es el opuesto lógico del
+operador de igualdad estricta. Significa "Estrictamente no igual" y
+regresa false donde regresaría la igualdad estricta true y viceversa .
+El operador de desigualdad estricta no convertirá estos tipos de datos.
 
-Ejemplos
+Ejemplos:
 
 3 !==  3  // false
 3 !== '3' // true
@@ -85,12 +85,12 @@ Comparación con el operador mayor que
 
 El operador mayor que ( >) compara los valores de dos números.
 Si el número de la izquierda es mayor que el número de la derecha,
-devuelve true. De lo contrario, vuelve false.
+devuelve true. De lo contrario, devuelve false.
 
 Al igual que el operador de igualdad, el operador mayor que convertirá
 tipos de datos de valores al comparar.
 
-Ejemplos
+Ejemplos:
 
 5   >  3  // true
 7   > '3' // true
@@ -101,9 +101,10 @@ Ejemplos
 /*
 Comparación con el operador mayor o igual que
 
+
 El operador mayor o igual que ( >=) compara los valores de dos números.
 Si el número de la izquierda es mayor o igual que el número de la derecha,
-devuelve true. De lo contrario, vuelve false.
+devuelve true. De lo contrario, devuelve false.
 
 Al igual que el operador de igualdad, el operador mayor o igual que
 convertirá los tipos de datos durante la comparación.
@@ -121,7 +122,7 @@ Comparación con el operador menor que
 
 El operador menor que ( <) compara los valores de dos números.
 Si el número de la izquierda es menor que el número de la derecha,
-devuelve true. De lo contrario, vuelve false. Al igual que el operador
+devuelve true. De lo contrario, devuelve false. Al igual que el operador
 de igualdad, el operador menor que convierte los tipos de datos al comparar.
 
 Ejemplos
@@ -151,9 +152,9 @@ Ejemplos
 '8' <= 4 // false
 */
 
-/**
- * Operadores de compración: Comparan dos expresiones y
- * devuelven un valor Boolean que representa la relación de sus valores
+/*
+ Operadores de comparación: Comparan dos expresiones y
+ devuelven un valor Boolean que representa la relación de sus valores
  */
 let numero = 23;
 let numero2 = 15;
@@ -171,7 +172,7 @@ document.write(numero != numero2);
 
 /**
  * Igualdad a == b
- * Exactamente / estrictamente identicos === b
+ * Exactamente / estrictamente idénticos === b
  * ejemplo:
  */
 //Da true, a pesar que son diferente tipo de dato

@@ -1,5 +1,5 @@
-/**
- * Aritméticos: Toman valores númericos( ya sean literales o variables) como sus operandos y retornan un valor númerico único.
+/*
+Aritméticos: Toman valores numéricos( ya sean literales o variables) como sus operandos y retornan un valor numérico único.
  */
 numero = 20
 numero--
@@ -8,11 +8,11 @@ alert(numero)
 
 //En cambio es deferente:
 numero = 100
-//Aqui no se resta 1, por que la resta se hace despues de que se procesa.
+//Aqui no se resta 1, por que la resta se hace después de que se procesa.
 alert(numero--)
 
-/**
- * De Asignación: Asigna un valor al operando de la izquierda basado en el valor del operando de la derecha.
+/*
+ De Asignación: Asigna un valor al operando de la izquierda basado en el valor del operando de la derecha.
  */
 
 //Asignación: x = y --> x = y
@@ -39,7 +39,7 @@ document.write("Asignación de división: " + numero)
 //Asignación de Resto: x %= y --> x = x % y
 numero = 20;
 numero %=  5;
-//Ya en esta parte se complica, que hace el de resto, nos imprime el resto de la division.
+//Ya en esta parte se complica, que hace el de resto, nos imprime el resto de la división.
 document.write("Asignación de Resto: " + numero)
 
 numero = 100;
