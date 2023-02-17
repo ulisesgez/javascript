@@ -2,6 +2,105 @@
 Van a esperar a que algo se cumpla para poder seguir ejecutando el proceso.
 */
 
+let x  = 10;
+
+const p = new Promise((resolve, reject) => {
+    if(x == 11) {
+        resolve('variable igual a 10');
+    } else {
+        reject('variable no igual a 10');
+    }
+});
+
+p
+    .then(res => {
+        console.log('succes:' + res);
+    })
+    .catch(error => {
+        console.log('error: '+ error);
+    })
+
+//otro ejemplo:
+
+const datos = [
+    {
+        id: 1,
+        title: 'uno',
+        year: 2021
+    },
+    {
+        id: 2,
+        title: 'dos',
+        year: 2022
+    },
+    {
+        id: 3,
+        title: 'tres',
+        year: 2023
+    }
+];
+
+const getDatos = () => {
+    return new Promise((resolve, reject) => {
+        if(datos.length === 0) {
+            reject(new Error('No existen datos'));
+        }
+        setTimeout(() => {
+            resolve(datos);
+        }, 1500);
+    })
+}
+
+async function dataFunction() {
+    try {
+        const data = await getDatos();
+        console.log(data);
+    } catch(error) {
+        console.log(error);
+    }
+}
+
+/*
+Actualmente puede funcionar asi:
+const data = await getDatos();
+console.log(data);
+*/
+
+//otro ejemplo:
+
+/*
+Transformar en promesa:
+
+let y = 10;
+
+console.log('1. proceso iniciando.... ');
+
+setTimeout(() => {
+    y = y * 3 + 2;
+    console.log('2. proceso terminado.... ');
+}, 2000);
+
+console.log('3. el resultado es ' + y);//10
+*/
+
+let y = 10;
+
+console.log('1. proceso iniciando.... ');
+const promesa = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        y = y * 3 + 2;
+        console.log('2. proceso terminado.... ');
+        resolve(y);
+    }, 2000);
+});
+console.log('3. el resultado es ' + y);
+
+promesa.then(res => {
+    console.log('3. El resultado es: ' + res);//32
+})
+
+//otro ejemplo:
+
 const fnAsync = () => {
     return new Promise((resolve, reject) => {
         (true)

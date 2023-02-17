@@ -26,6 +26,38 @@ anotherFunction()
 
 //otro ejemplo:
 
+const datos = [
+    {
+        id: 1,
+        title: 'uno',
+        year: 2021
+    },
+    {
+        id: 2,
+        title: 'dos',
+        year: 2022
+    },
+    {
+        id: 3,
+        title: 'tres',
+        year: 2023
+    }
+];
+
+const getDatos = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(datos);
+        }, 1500);
+    })
+}
+
+getDatos()
+    .then((datos) => console.log(datos))
+    .catch(error => console.log(error));
+
+//otro ejemplo:
+
 function cuadradoPromise(value) {
     if(typeof value !== "number") {
         return Promise.reject(`Èrror, el valor ${value} no es un numero`);
