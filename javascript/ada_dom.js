@@ -17,3 +17,32 @@ con lo siguente en la consola obtenemos:
 let cajaUno = document.getElementById("micaja");//<div id= "micaja">soy una caja</div>
 let cajaDos = document.getElementById("micaja").innerHTML;//soy una caja
 cajaDos.innerHTML = "soy otra";//Modificamos el diav a: soy otra caja
+
+//conseguir elemento desde id concreto:
+
+cajaDos.style.background = "red";//fondo rojo
+cajaDos.style.padding = "20px";//padding 20 px
+cajaDos.style.color = "white";//Texto white
+cajaDos.className = "hola hola2"//cambiar el nombre de la clase
+const cajaDos = document.querySelector("#micaja");//seleccionar elemento
+
+function cambiaColor(color) {
+    cajaDos.style.background = color;
+}
+
+//conseguir elementos por su etiqueta:
+let todosLosDivs = document.getElementsByTagName('div');
+console.log(todosLosDivs);//array de elementos de los divs
+
+let contenidoEnTexto = todosLosDivs[2].textContent;
+console.log(contenidoEnTexto);//muestra el texto del div
+
+/*
+let contenidoEnTexto = todosLosDivs[2].innerHTML;
+console.log(contenidoEnTexto);//tambien muestra el texto del div
+
+let contenidoEnTexto.innerHTML = "otro texto";
+console.log(contenidoEnTexto);//cambiar el texto del div
+*/
+
+cambiaColor("green");
