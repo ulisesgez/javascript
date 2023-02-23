@@ -10,15 +10,17 @@ console.log(document.getElementById("menu"));//Devuelve el nav
 //Trae el elemento de acuerdo al selector:
 console.log(document.querySelector("#menu"));
 //Trae el primer elemento de acuerdo a los selectores:
-console.log(document.querySelector("#menu li"));
+console.log(document.querySelector("#menu li"));//Aqui si hay que poner el gato
 //solo trae el primero que encuentra
 console.log(document.querySelector("a"));
 //Trae todos:
 console.log(document.querySelectorAll("a"));
 //Dimension:
-console.log(document.querySelectorAll("a").length);
+console.log(document.querySelector("a").length);//undefined
+console.log(document.querySelectorAll("a").length);//5
 //Recorre e imprime cada uno:
 document.querySelectorAll("a").forEach(element => console.log(element));
+console.log(document.querySelectorAll(".card")[2]);//alt="People"
 /*
 Este ejemplo no abarca este html:
 En caso de ser un <div id= "micaja">soy una caja</div>

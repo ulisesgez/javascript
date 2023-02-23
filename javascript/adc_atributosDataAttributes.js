@@ -11,7 +11,7 @@ console.log(document.querySelector(".link-dom").getAttribute("href"));
 //Cambiar lang
 document.documentElement.lang = "es";
 console.log(document.documentElement.lang);//es
-//Cambiar lang
+//Cambiar lang, otra forma:
 document.documentElement.setAttribute("lang", "es-MX");
 console.log(document.documentElement.lang);//es
 //Uso de variables:
@@ -21,18 +21,19 @@ linkDom.setAttribute("target", "_blank");
 linkDom.setAttribute("rel", "noopener");//Buenas practicas
 linkDom.setAttribute("href", "https://www.google.com/");
 //Comprobar un atributo:
-console.log(linkDom.hasAttribute("rel"));//true
+console.log(linkDom.hasAttribute("rel"));//true, lo acabamos de añadir
 linkDom.removeAttribute("rel");//lo removemos
 console.log(linkDom.hasAttribute("rel"));//false
 
-//Data atributes, los cuales empiezan data-
+//Data atributes (html5), los cuales empiezan data-
 
 console.log(linkDom.getAttribute("data-description"));//Document Object Model
 console.log(linkDom.dataset);//Tipo de dato Mapa: DOMStringMap {description: 'Document Object Model'}
 /*
 Al agregar en el html data-id="1":
 <a class="link-dom" href="./adc_atributosDataAttributes.html" data-id="1" data-description = "Document Object Model">DOM</a>
-se imprime:
+se imprime con:
+console.log(linkDom.dataset);
 DOMStringMap {id: '1', description: 'Document Object Model'}
 */
 console.log(linkDom.dataset.description);//Document Object Model
