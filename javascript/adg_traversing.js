@@ -1,13 +1,13 @@
 //Recorrer elementos tomando como referencia un nodo:
 const $cards = document.querySelector(".cards");
-console.log($cards);
+console.log($cards);//Devuelve la section con la clase cards
 //referencia a sus hijos:
 console.log($cards.children);//Son cada una de las figures que tienen la clase card
 //acceder a un hijo en particular:
 console.log($cards.children[2]);//Acceder al tercer elemnto
 //Padre de cards:
 console.log($cards.parentElement);//Retorna el padre, body
-console.log($cards.parentNode);//Retorna el padre, body
+console.log($cards.parentNode);//Retorna el padre, tambien es body
 //Obtener ultimo y primer elemnto hijo:
 console.log($cards.firstChild);//#text, hace referencia a una tabulacion o salto de linea:
 /*
@@ -27,7 +27,7 @@ console.log($cards.previousSibling);//#text, espacio o identacion
 console.log($cards.previousElementSibling);//Es el enlace: a
 console.log($cards.nextSibling);//#text
 console.log($cards.nextElementSibling);//Es el script: js
-//Buscar ansestro:
+//Buscar ansestro, PADRE MAS CERCANO:
 console.log($cards.closest("div"));//null, no hay div como ansestro
 console.log($cards.closest("body"));//<body>...</body>, retorna el body
 //La section ansestro mas cercana:

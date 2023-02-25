@@ -8,7 +8,7 @@ $figcaptionText = document.createTextNode("Animals"),
 $cards = document.querySelector(".cards");
 //Incorporarlas al arbol del Dom:
 //$cards.appendChild($figure);//En Elements podemos visualizar que se ha agragado una <figure></figure>
-//Incorporarlas al arbol del Dom, forma correcta:
+//Incorporarlas al arbol del Dom, forma correcta, con esto creamos un nodo:
 $img.setAttribute("src", "https://placeimg.com/200/200/animals");
 $img.setAttribute("alt", "Animals");
 $figure.classList.add("card");//Por la parte de estilos
@@ -30,8 +30,9 @@ $ul = document.createElement("ul");
 document.write("<h3>Estaciones del año</h3>");
 document.body.appendChild($ul);
 estaciones.forEach((el) => {
-    //crear una variable li que va a ser document.createElement("li")
+    //crear una variable li que va a ser un document.createElement("li")
     const $li = document.createElement("li");
+    //Insertar texto a la li:
     $li.textContent = el;
     $ul.appendChild($li)
 });

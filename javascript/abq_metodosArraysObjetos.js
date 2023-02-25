@@ -26,28 +26,6 @@ console.log(filterProducts);
 
 //Metodos para recorrer el contenido del array:
 
-//Map: nOs ayudara a mapear ciertos articulos, de igual forma, este metodo nos va a generar un nuevo array, no va a modificar el array que ya tenemos:
-
-let computers = [
-    { brand: "apple", cost: 50000 },
-    { brand: "dell", cost: 15000 },
-    { brand: "samsung", cost: 13000 },
-    { brand: "hp", cost: 10000 },
-    { brand: "toshiba", cost: 14000 },
-    { brand: "lenovo", cost: 18000 },
-    { brand: "asus", cost: 25000 }
-];
-
-// Con esto le pedimos que nos regrese de todos los articulosel nombre de los articulos:
- 
-let brandComputers = computers.map(function(computer){
-    return computer.brand
-});
-
-console.log(brandComputers);
-
-//Metodos para recorrer el contenido del array:
-
 //Find: Nos va a ayudar a encontrar algo adentro del array, valida un true o un false, genera un nuevo array en caso de que exista lo que buscamos:
 
 let televisions = [
@@ -89,6 +67,21 @@ for(let i = 0; i < nombres.length; i++) {
 let nombres = ["Emmanuel", "Jose", "Paco", "Toño", "Ulises"];
 
 nombres.forEach(nombre => console.log(nombre));
+
+//Otro ejemplo:
+
+let names = ["anna", "isis", "hannah", "bob", "otto"];
+
+names.forEach(name => {
+    console.log(name + " is the best");
+});
+/*
+ana is the best
+VM60:4 dave is the best
+VM60:4 hannah is the best
+VM60:4 bob is the best
+VM60:4 otto is the best
+*/
 
 //Otro ejemplo:
 let lenguajes = new Array("php", "js", "java", "c#", "c", "pascal", "go");

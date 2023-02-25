@@ -1,5 +1,5 @@
 /*
-Son objetos que nossirven para almacenar conjunto de valores asociados a manera de objeto.
+Son objetos que nos sirven para almacenar conjunto de valores asociados a manera de objeto.
 */
 
 let mapa = new Map();
@@ -8,9 +8,9 @@ mapa.set("nombre", "ulises");
 mapa.set("apellido", "gutierrez");
 mapa.set("edad", 35);
 
-console.log(mapa);
+console.log(mapa);//Map(3) {'nombre' => 'ulises', 'apellido' => 'gutierrez', 'edad' => 35}
 
-//saber cuantos elemento tiene nuestor map:
+//Saber cuantos elemento tiene nuestor map:
 console.log(mapa.size);//3
 
 //Evaluar si existe la llave o no?
@@ -55,3 +55,23 @@ const valores = [...mapaDos.values()];
 
 console.log(llaves);
 console.log(valores);
+
+//Map: Nos ayudara a mapear ciertos articulos, de igual forma, este metodo nos va a generar un nuevo array, no va a modificar el array que ya tenemos:
+
+let computers = [
+    { brand: "apple", cost: 50000 },
+    { brand: "dell", cost: 15000 },
+    { brand: "samsung", cost: 13000 },
+    { brand: "hp", cost: 10000 },
+    { brand: "toshiba", cost: 14000 },
+    { brand: "lenovo", cost: 18000 },
+    { brand: "asus", cost: 25000 }
+];
+
+// Con esto le pedimos que nos regrese de todos los articulos el nombre de los articulos:
+ 
+let brandComputers = computers.map(function(computer){
+    return computer.brand
+});
+
+console.log(brandComputers);

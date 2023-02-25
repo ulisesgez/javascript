@@ -122,6 +122,31 @@ ourPets[0].names[1]sería la cadena Fluffy, y ourPets[1].names[0]sería la caden
 const anArray = Array.of("x", "y", "z", 1, 2, 3);
 console.log(anArray);//["x", "y", "z", 1, 2, 3]
 
+//Fill, array. fill es una funcion, un metodo dentro de los arrays de javascript que nos permite
+//lenar un array con cualquier cosa que necesite:
+
+const unos = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];//Array con muchos unos
+unos.fill(0);//Llenarlos de 0
+console.log(unos);//(15) [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
 //Crear un array con 100 elementos
 const falseArray = Array(100).fill(false);
 console.log(falseArray);//[false, false, false, false, .....]
+
+//Ademas fill permite añadir otros dos parametros
+//El segundo es el valor de start:
+unos.fill(0, 2);//Llenarlos de 0, a partir del segundo parametro
+console.log(unos);//(15) [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+//El tercer parametro es valor de limite:
+unos.fill(0, 2, 5);//Aqui termina antes del indice 5, no en el indice 5
+console.log(unos);//(15)  [1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+//Ahora queremos llenar con hola un array, pero esto puede salir mal, con fill lo solucionamos:
+/*
+const vacios = new Array(20).forEach(() => console.log('hola'));
+console.log(vacios);//undefined
+Mejor:
+*/
+const vacios = new Array(20).fill(undefined).forEach(() => console.log('hola'));
+console.log(vacios);//20 hola
