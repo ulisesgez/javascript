@@ -26,6 +26,25 @@ anotherFunction()
 
 //otro ejemplo:
 
+function requestHandler(req, res) {
+    User.findByYd(req.userId)
+    .then(function (user) {
+        return Task.findByYd(user.tasksId)
+    })
+    .then(function(tasks) {
+        tasks.completed = true;
+        tesks.save();
+    })
+    .then(function () {
+        res.send('task completed')
+    })
+    .catch(function(err) {
+        res.send(errors);
+    })
+}
+
+//otro ejemplo:
+
 const datos = [
     {
         id: 1,

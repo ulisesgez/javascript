@@ -22,6 +22,21 @@ p
 
 //otro ejemplo:
 
+async function requestHandler(req, res) {
+
+    try {
+        const user = await User.findByYd(req.userId)
+        const tasks = await Task.findByYd(user.tasksId); 
+        tasks.completed = true;
+        await tasks.save();
+        res.send('task completed')
+    } catch(e) {
+        res.send(e);
+    }
+}
+
+//otro ejemplo:
+
 const datos = [
     {
         id: 1,

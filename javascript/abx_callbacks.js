@@ -25,6 +25,31 @@ function calc(num1, num2, callback) {
 
 console.log(calc(2, 2, sum));//4
 
+//Otro ejemplo, con un callbackhell:
+
+function requestHandler(req, res) {
+    User.findById(req,userId, function(err, user) {
+        if(err) {
+            res.send(err);
+        } else {
+            Task.findById(user.tasksId, function(err, task) {
+                if(err) {
+                    return res.send(err);
+                } else {
+                    task.completed = true;
+                    task.save(function(err) {
+                        if (err) {
+                            return res.send(err);
+                        } else {
+                            res.send('task completed');
+                        }
+                    })
+                }
+            })
+        }
+    })
+}
+
 //Otro ejemplo:
 
 function saludo(nombre) {
