@@ -1,6 +1,6 @@
 //Template(modelo a seguir, como una clase o molde) es una etiqueta que no se visualiza.
 const $cards = document.querySelector(".cards"),
-$template = document.getElementById("template-card").content,
+$template = document.getElementById("template-card").content,//acceder a su contenido
 $fragment = document.createDocumentFragment(),
 //Simulacion de AJAX o Fetch:
 cardContent = [
@@ -29,7 +29,7 @@ cardContent.forEach(el => {
     $template.querySelector("img").setAttribute("src", el.img)
     $template.querySelector("img").setAttribute("alt", el.title)
     $template.querySelector("figcaption").textContent = el.title;
-    let $clone = document.importNode($template, true);
+    let $clone = document.importNode($template, true);//true para copiar la estructura interna, figure, img, etc
     $fragment.appendChild($clone);
 });
 $cards.appendChild($fragment);
