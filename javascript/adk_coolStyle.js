@@ -1,14 +1,14 @@
+/*
+Forma 1:
+
 const $cards = document.querySelector(".cards"),
 $newCard = document.createElement("figure");
-/*
+
 $newCard.innerHTML = `<img src="https://placeimg.com/200/200/any" alt="Any">
 <figcaption>Any</figcaption>`;
-*/
-
-let $contentCard = `<img src="https://placeimg.com/200/200/any" alt="Any">
-<figcaption></figcaption>`;
 
 $newCard.classList.add("card");
+
 //Insertar tarjeta antes del nodo de referencia, antes de los hijos:
 //$cards.insertAdjacentElement("beforebegin", $newCard);
 
@@ -20,6 +20,17 @@ $newCard.classList.add("card");
 
 //Se agrega como hermano posterior:
 //$cards.insertAdjacentElement("afterend", $newCard);
+
+Forma 2:
+*/
+
+const $cards = document.querySelector(".cards"),
+$newCard = document.createElement("figure");
+
+let $contentCard = `<img src="https://placeimg.com/200/200/any" alt="Any">
+<figcaption></figcaption>`;
+
+$newCard.classList.add("card");
 
 $newCard.insertAdjacentHTML("beforeend", $contentCard);
 $newCard.querySelector("figcaption").insertAdjacentText("afterbegin", "Any");
