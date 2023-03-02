@@ -46,6 +46,6 @@ $newCard.querySelector("figcaption").insertAdjacentText("afterbegin", "Any");
 
 //Insertar la tarjeta como ultimo nodo, ultimo hijo:
 //$cards.append($newCard);
-//
+
 //Se agrega como hermano posterior:
 $cards.after($newCard);
