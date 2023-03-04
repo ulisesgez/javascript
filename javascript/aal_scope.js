@@ -1,10 +1,47 @@
-/**
- * Scope: Alcanmce de las variables dependiendo su ubicacion
- */
+/*
+Scope: Alcanmce de las variables dependiendo su ubicacion.
+Alcance de las variables, es mala práctica usar var, es mejor let, tiene menos alcance.
+*/
 
 //Scope global:
 
 var miNombre = "Ulises";
+
+//Otro ejemplo:
+
+var fruit = 'apple';//No esta dentro de un bloque
+
+function bestFruit() {
+  console.log(fruit);
+}
+
+bestFruit();//apple
+
+//Otro ejemplo:
+//Debemos tener cuidado con este formato, seencuentra en un bloque:
+function countries() {
+  country = 'colombia';//global
+  console.log(country);
+}
+
+countries();//colombia
+console.log(country);//colombia
+
+//Function scope:
+
+function greeting() {
+  let userName = 'Ana';
+  console.log(userName);
+  if(userName === 'Ana') {
+    console.log(`hello ${userName}`);
+  }
+}
+
+greeting();// Ana y hello Ana
+
+//Otro ejemplo:
+
+console.log(userName);//userName is not defined
 
 //Scope local:
 function nombre(){
@@ -14,6 +51,42 @@ function nombre(){
 nombre();//Imprime Ulises Gutierrez
 miNombre//Esto en consola imprime Ulises
 miApellido//Esto en consola no imprime Gutierrez
+
+
+//Block Scope:
+
+function animals() {
+  if(true) {
+    var animal1 = 'dog';//Function scope
+    let animal2 = 'cat';//Block Scope
+    const animal3 = 'bird';//Block Scope
+  }
+  console.log(animal1);
+  console.log(animal2);
+  console.log(animal3);
+}
+
+animals();
+
+//Otro ejemplo:
+
+function nombres() {
+  if(true) {
+    var nombres1 = 'ana';//Function scope
+    let nombres2 = 'otto';//Block Scope
+    const nombres3 = 'bob';//Block Scope
+    console.log(nombres2);
+    console.log(nombres3);
+  }
+  console.log(nombres1);
+}
+
+nombres();
+/*
+otto
+bob
+ana
+*/
 
 //Alcance global y funciones
 

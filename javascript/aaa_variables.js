@@ -17,9 +17,6 @@ numerodos = 30
 let numero = 40
 //Dandole otro valor:
 numero = 50
-/*
-Scope: Alcance de las variables, es mala práctica usar var, es mejor let, tiene menos alcance.
-*/
 
 //Declarada e inicializada (varias)
 
@@ -30,6 +27,10 @@ numero2 = 6;
 numero3 = 9;
 
 let numero4 = 3, numero5 = 6, numero6 = 9;
+
+//Declarada y asignada:
+
+let fruta = 'banana';
 
 /* Declarar una variable de solo lectura con la palabra clave const
 La palabra clave let no es la única forma nueva de declarar variables.
