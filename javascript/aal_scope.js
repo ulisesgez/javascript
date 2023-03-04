@@ -157,3 +157,84 @@ const fruits  = () => {
 }
 
 fruits();//Error
+
+//closure: Cuando una funcion cualquiera accede a una variable fuera de su contexto.
+
+const myGlobal = 0;
+
+function myFunction() {
+  const myNumber =  1;
+  console.log(myGlobal);
+  function parent() {//funcion interna, closure
+    const inner = 2;
+    console.log(myNumber, myGlobal);
+    function child() {
+      console.log(inner, myNumber, myGlobal);
+    }
+    return child();
+  }
+  return parent();
+}
+
+myFunction();
+/*
+0
+1 0
+2 1 0
+*/
+
+//Otro ejemplo:
+
+function saludar() {
+  let userName = 'Oscar'
+  
+  function displayUserName() {
+    return `hello ${userName}`;
+  }
+  return displayUserName;
+}
+
+const g = saludar();
+console.log(g);
+console.log(g());
+
+/*
+ƒ displayUserName() {
+    return `hello ${userName}`;
+  }
+VM54:12 hello Oscar
+*/
+
+//Otro ejemplo:
+
+/*
+No funciona la alcancia:
+function moneybox(coins) {
+  let saveCoins = 0;
+  saveCoins += coins;
+  console.log(`money box: $ ${saveCoins}`);
+}
+
+moneybox(5);
+moneybox(10);
+*/
+
+function moneybox(coins) {
+  let saveCoins = 0;
+  
+  function countCoins(coins) {
+    saveCoins += coins;
+    console.log(`money box: $ ${saveCoins}`);
+  }
+  return countCoins;
+}
+
+const myMoneybox = moneybox();
+myMoneybox(5);
+myMoneybox(10);
+myMoneybox(20);
+
+const moneyboxAna = moneybox();
+moneyboxAna(300);
+moneyboxAna(10);
+moneyboxAna(25);
