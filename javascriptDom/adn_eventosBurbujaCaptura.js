@@ -26,6 +26,4 @@ $divEventos.forEach(div => {
     //onnce: true
     //});
     div.addEventListener("click", flujoEventos, true);
-
-
 })
