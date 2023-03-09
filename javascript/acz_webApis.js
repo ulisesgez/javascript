@@ -1,5 +1,5 @@
 /*
-WEB APIs
+WEB APIs:
 Interfaz de programacion de aplicacion.
 
 DOM: Document Object Model
