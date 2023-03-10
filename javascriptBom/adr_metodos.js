@@ -10,7 +10,7 @@ $imprimirVentana = document.getElementById("imprimirVentana");
 let ventana;//undefined
 
 $abrirVentana.addEventListener("click", (e) => {
-    //DE igual forma no es necesario añadir el window, ejem open("https://www.youtube.com/");
+    //De igual forma no es necesario añadir el window, ejem open("https://www.youtube.com/");
     ventana = window.open("https://www.youtube.com/");
 });
 $cerrarVentana.addEventListener("click", (e) => {
