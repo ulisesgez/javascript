@@ -14,7 +14,7 @@
         $axios.appendChild($fragment);
     })
     .catch((err) => {
-        console.log(err.response);
+        //console.log(err.response);
         let message = err.response.statusText || "error";
         $axios.innerHTML = `error ${err.response.status}: ${message}`;
     })
