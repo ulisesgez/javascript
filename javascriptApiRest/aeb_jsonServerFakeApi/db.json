@@ -1,0 +1,56 @@
+{
+    "personajes": [
+        {
+            "id":1,
+            "nombre":"uno",
+            "color":"rojo"
+        },
+        {
+            "id":2,
+            "nombre":"dos",
+            "color":"verde"
+        },
+        {
+            "id":3,
+            "nombre":"tres",
+            "color":"azul"
+        },
+        {
+            "id":4,
+            "nombre":"cuatro",
+            "color":"amarillo"
+        },
+        {
+            "id":5,
+            "nombre":"cinco",
+            "color":"rosa"
+        }
+    ],
+    "actores": [
+        {
+            "id":1,
+            "nombre":"one",
+            "color":"blanco"
+        },
+        {
+            "id":2,
+            "nombre":"two",
+            "color":"purpura"
+        },
+        {
+            "id":3,
+            "nombre":"three",
+            "color":"gris"
+        },
+        {
+            "id":4,
+            "nombre":"four",
+            "color":"naranja"
+        },
+        {
+            "id":5,
+            "nombre":"five",
+            "color":"negro"
+        }
+    ]
+}
