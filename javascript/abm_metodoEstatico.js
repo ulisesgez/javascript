@@ -1,4 +1,8 @@
-/* Es un metodo que no necesita que la clase se defina para poder ser creado:*/
+/* 
+Se va a asociar con nuestra clase y no con los objetos que se creen de esta clase,
+sin embargo a un metodo estatico si le podemos pasar como argumentos un objeto.
+Es un metodo que no necesita que la clase se defina para poder ser creado:
+*/
 class Animal{
     constructor(especie, edad, color){
         this.especie = especie;
