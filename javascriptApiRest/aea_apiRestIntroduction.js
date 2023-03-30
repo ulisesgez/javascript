@@ -75,4 +75,20 @@ autenticando nuestra aplicación, estamos autenticando a nuestro frontend para q
 pueda hacer solicitudes al backend, pero hay aplicaciones donde no solamente necesitamos 
 una Application-based authentication, también hay apps que necesitamos usar esta con 
 una User-based authentication.
+
+HTTP
+Un protocolo especifica reglas en la comunicación entre dos entes, en este caso entre dos computadoras.
+
+HTTP (Hyper Text Transfer Protocol) fue creado específicamente para la web.
+
+Verbos
+Una de las cosas que especifica el protocolo HTTP son los verbos:
+
+GET: solicitar datos o algún recurso.
+HEAD: traer headers (como una peticion GET pero sin contenidos). Es util cuando vamos a utilizar APIs, para comprobar si lo que vamos a enviar esta correcto y puede ser procesado.
+POST: enviar datos a un recurso para la creación.
+PUT: reemplazar por completo un recurso.
+PATCH: reemplazar parcialmente un recurso.
+DELETE: eliminar un recurso.
+La infografia del compañero Juan sebastian explica todo super bien!
 */
