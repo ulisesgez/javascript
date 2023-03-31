@@ -142,6 +142,11 @@ console.log(unos);//(15) [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 unos.fill(0, 2, 5);//Aqui termina antes del indice 5, no en el indice 5
 console.log(unos);//(15)  [1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 
+//Recorrer arrays con for each:
+const letras = ['a', 'b', 'c'];
+
+letras.forEach(item => console.log(item));
+
 //Ahora queremos llenar con hola un array, pero esto puede salir mal, con fill lo solucionamos:
 /*
 const vacios = new Array(20).forEach(() => console.log('hola'));
