@@ -12,7 +12,19 @@ let products = [
 
 //Metodos para recorrer el contenido del array:
 
-//Filter: Nos ayuda a filtar ciertas cosas, el filter va a validar si algo es verdad o falso y lo va a meter en un nuevo array, este metodo no modificara el array original que es products.
+/*
+Filter: Nos ayuda a filtar ciertas cosas, el filter va a validar si algo es
+verdad o falso y lo va a meter en un nuevo array, este metodo no modificara
+el array original que es products.
+
+filter() lo que hace es filtrar el array original en base a una condición, los
+que la cumplan estaran en el nuevo array creado.
+Por lo tanto filter() es inmutable y el nuevo array creado solamente puede contener:
+- cero coincidencias
+- todas coincidencias
+- algunas coincidencias
+Pero nunca más coincidencias que el tamaño del array original.
+*/
 
 let filterProducts = products.filter(function(product){
     return product.cost <= 500
@@ -23,6 +35,56 @@ let filterProducts = products.filter(function(product){
 //book y keyboard
 
 console.log(filterProducts);
+
+//Otro ejemplo:
+
+const words = ['hello', 'world', 'javascript'];
+
+const newWords = words.filter(item => item.length >= 8)
+console.log(words);//['hello', 'world', 'javascript']
+console.log(newWords);//['javascript']
+
+//otro ejemplo:
+
+const orders = [
+    {
+      customerName: "Nicolas",
+      total: 60,
+      delivered: true,
+    },
+    {
+      customerName: "Zulema",
+      total: 120,
+      delivered: false,
+    },
+    {
+      customerName: "Santiago",
+      total: 180,
+      delivered: true,
+    },
+    {
+      customerName: "Valentina",
+      total: 240,
+      delivered: false,
+    },
+];
+
+/*
+const deliver = orders.filter(item => item.delivered)
+console.log(orders);
+//true:
+console.log(deliver);
+0: {customerName: 'Nicolas', total: 60, delivered: true}
+1: {customerName: 'Santiago', total: 180, delivered: true}
+*/
+
+const deliver = orders.filter(item => item.delivered && item.total >= 100)
+console.log(orders);
+//true:
+console.log(deliver);
+/*
+0: {customerName: 'Santiago', total: 180, delivered: true}
+*/
 
 //Metodos para recorrer el contenido del array:
 
