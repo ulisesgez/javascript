@@ -65,6 +65,50 @@ const letrasMap = letras.map(item => item + '++');
 console.log('antes: ', letras);// ['a', 'b', 'c']
 console.log('despues', letrasMap);//['a++', 'b++', 'c++']
 
+//Otro ejemplo:
+
+const orders = [
+    {
+      customerName: "Nicolas",
+      total: 60,
+      delivered: true,
+    },
+    {
+      customerName: "Zulema",
+      total: 120,
+      delivered: false,
+    },
+    {
+      customerName: "Santiago",
+      total: 180,
+      delivered: true,
+    },
+    {
+      customerName: "Valentina",
+      total: 240,
+      delivered: true,
+    },
+  ];
+  
+  console.log('antes: ', orders);
+  const total = orders.map(item => item.total)
+  console.log('despues', total);//[60, 120, 180, 240]
+
+  const nuevoCampo = orders.map((item) => {
+    return {
+        ...item,
+        tax: .19
+    }
+  })
+  console.log(nuevoCampo);
+/*
+0: {customerName: 'Nicolas', total: 60, delivered: true, tax: 0.19}
+1: {customerName: 'Zulema', total: 120, delivered: false, tax: 0.19}
+2: {customerName: 'Santiago', total: 180, delivered: true, tax: 0.19}
+3: {customerName: 'Valentina', total: 240, delivered: true, tax: 0.19}
+*/
+  console.log(orders);
+
 /*
 Método flatMap
 El método flatMap es una combinación de los métodos map y flat. Primero realiza la
