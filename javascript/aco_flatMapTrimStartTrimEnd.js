@@ -48,6 +48,23 @@ result3// [1, 2, 3, 4, 5, 6]
 const array4 = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]]
 const result4 = array4.flat(Infinity) 
 result4// [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+/*
+¿Qué hace el .map()? TRANSFORMAR.
+
+.map() es INMUTABLE por lo tanto no modifica el array original, sino que crea
+uno nuevo con la “transformación” aplicada.
+.
+Además, mantienes el mismo length que el array original, te devuelve en el nuevo
+array la misma cantidad que el array que le aplicaste el método.
+*/
+
+const letras = ['a', 'b', 'c'];
+
+const letrasMap = letras.map(item => item + '++');
+console.log('antes: ', letras);// ['a', 'b', 'c']
+console.log('despues', letrasMap);//['a++', 'b++', 'c++']
+
 /*
 Método flatMap
 El método flatMap es una combinación de los métodos map y flat. Primero realiza la
