@@ -2,7 +2,7 @@
 string = "cadena de texto"
 numero = 19
 booleano = true
-
+//
 //Existe en el programa, pero no tiene valor:
 let undefined
 alert(undefined)
