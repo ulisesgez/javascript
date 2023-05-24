@@ -1,12 +1,3 @@
-//Tipos de datos:
-string = "cadena de texto"
-numero = 19
-booleano = true
-//
-//Existe en el programa, pero no tiene valor:
-let undefined
-alert(undefined)
-
 //declaración de variables: var, let, const:
 let numerodos;
 
