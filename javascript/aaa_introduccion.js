@@ -44,4 +44,68 @@ constantemente al día, y si estás usando uno más antiguo, puede que este no s
 mejoras. Los diseñadores de lenguajes tienen cuidado de no realizar cualquier cambio que pueda
 romper los programas ya existentes, de manera que los nuevos navegadores puedan todavía
 ejecutar programas viejos.
+
+JavaScript es un lenguaje de secuencias de comandos multiplataforma orientado a objetos que
+se utiliza para hacer que las páginas web sean interactivas (por ejemplo, con animaciones
+complejas, botones en los que se puede hacer clic, menús emergentes, etc.). También hay
+versiones más avanzadas de JavaScript del lado del servidor, como Node.js, que le permiten
+agregar más funciones a un sitio web que la descarga de archivos (como la colaboración en
+tiempo real entre varias computadoras). Dentro de un entorno de host (por ejemplo, un
+navegador web), JavaScript se puede conectar a los objetos de su entorno para proporcionar
+control programático sobre ellos.
+
+JavaScript contiene una biblioteca estándar de objetos, como Array, Datey Math, y un conjunto
+básico de elementos de lenguaje como operadores, estructuras de control y sentencias.
+Core JavaScript se puede extender para una variedad de propósitos al complementarlo con
+objetos adicionales; Por ejemplo:
+
+El JavaScript del lado del cliente amplía el lenguaje principal al proporcionar objetos para
+controlar un navegador y su Modelo de objetos de documento (DOM). Por ejemplo, las extensiones
+del lado del cliente permiten que una aplicación coloque elementos en un formulario HTML y
+responda a eventos del usuario, como clics del mouse, entrada de formulario y navegación de
+página.
+JavaScript del lado del servidor amplía el lenguaje central al proporcionar objetos relevantes
+para ejecutar JavaScript en un servidor. Por ejemplo, las extensiones del lado del servidor
+permiten que una aplicación se comunique con una base de datos, proporcionen continuidad de
+información de una invocación a otra de la aplicación o realicen manipulaciones de archivos
+en un servidor.
+Esto significa que en el navegador, JavaScript puede cambiar la apariencia de la página web
+(DOM). Y, del mismo modo, el JavaScript de Node.js en el servidor puede responder a
+solicitudes personalizadas enviadas por código ejecutado en el navegador.
+
+JavaScript y Java
+JavaScript y Java son similares en algunos aspectos, pero fundamentalmente diferentes en
+otros. El lenguaje JavaScript se parece a Java, pero no tiene el tipado estático ni la
+verificación de tipos fuerte de Java. JavaScript sigue la mayoría de las sintaxis de
+expresiones de Java, las convenciones de nomenclatura y las construcciones básicas de flujo
+de control, razón por la cual se cambió el nombre de LiveScript a JavaScript.
+
+A diferencia del sistema de clases en tiempo de compilación de Java construido por
+declaraciones, JavaScript admite un sistema de tiempo de ejecución basado en una pequeña
+cantidad de tipos de datos que representan valores numéricos, booleanos y de cadena.
+JavaScript tiene un modelo de objetos basado en prototipos en lugar del modelo de objetos
+basado en clases más común. El modelo basado en prototipos proporciona una herencia dinámica;
+es decir, lo que se hereda puede variar para objetos individuales. JavaScript también admite
+funciones sin ningún requisito declarativo especial. Las funciones pueden ser propiedades de
+objetos, ejecutándose como métodos vagamente tipificados.
+
+JavaScript es un lenguaje de forma muy libre en comparación con Java. No tiene que declarar
+todas las variables, clases y métodos. No tiene que preocuparse por si los métodos son
+públicos, privados o protegidos, y no tiene que implementar interfaces. Las variables,
+los parámetros y los tipos de devolución de funciones no se escriben explícitamente.
+
+Java es un lenguaje de programación basado en clases diseñado para una ejecución rápida y
+seguridad de tipos. La seguridad de tipo significa, por ejemplo, que no puede convertir un
+entero de Java en una referencia de objeto o acceder a la memoria privada corrompiendo el
+código de bytes de Java. El modelo basado en clases de Java significa que los programas
+consisten exclusivamente en clases y sus métodos. La herencia de clases de Java y la
+tipificación fuerte generalmente requieren jerarquías de objetos estrechamente acoplados.
+Estos requisitos hacen que la programación Java sea más compleja que la programación
+JavaScript.
+
+Por el contrario, JavaScript desciende en espíritu de una línea de lenguajes más pequeños y
+de escritura dinámica, como HyperTalk y dBASE. Estos lenguajes de secuencias de comandos
+ofrecen herramientas de programación a un público mucho más amplio debido a su sintaxis más
+sencilla, funcionalidad incorporada especializada y requisitos mínimos para la creación de
+objetos.
 */
