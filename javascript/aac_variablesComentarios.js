@@ -27,12 +27,13 @@ Declara una variable local con ámbito de bloque y, opcionalmente, la inicializa
 const
 Declara una constante con nombre de solo lectura y ámbito de bloque.
 
-Variables
+Variables:
 Utiliza variables como nombres simbólicos para valores en su aplicación. Los nombres de las variables, llamados identificadores , se ajustan a ciertas reglas.
 
-Un identificador de JavaScript generalmente comienza con una letra, un guión bajo ( _) o un signo de dólar ( $). Los caracteres subsiguientes también pueden ser dígitos ( 0- 9). Debido a que JavaScript distingue entre mayúsculas y minúsculas, las letras incluyen los caracteres Ahasta Z(mayúsculas) y ahasta z(minúsculas).
+Un identificador de JavaScript generalmente comienza con una letra, un guión bajo ( _) o un signo de dólar ( $). Los caracteres subsiguientes también pueden ser dígitos ( 0- 9).
+Dado a que JavaScript distingue entre mayúsculas y minúsculas, las letras incluyen los caracteres Ahasta Z(mayúsculas) y ahasta z(minúsculas).
 
-Puede utilizar la mayoría de las letras ISO 8859-1 o Unicode, como åy üen los identificadores. (Para obtener más detalles, consulte esta publicación de blog o la referencia de gramática léxica ). También puede usar las secuencias de escape Unicode como caracteres en los identificadores.
+Puedes utilizar la mayoría de las letras ISO 8859-1 o Unicode, como åy üen los identificadores. (Para obtener más detalles, consulte esta publicación de blog o la referencia de gramática léxica ). También puede usar las secuencias de escape Unicode como caracteres en los identificadores.
 
 Algunos ejemplos de nombres legales son Number_hits, temp99, $credity _name.
 
