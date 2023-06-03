@@ -110,11 +110,18 @@ sencilla, funcionalidad incorporada especializada y requisitos mínimos para la 
 objetos.
 
 Documentación de JavaScript frente a la especificación ECMAScript
-La especificación ECMAScript es un conjunto de requisitos para implementar ECMAScript. Es útil si desea implementar funciones de lenguaje compatibles con los estándares en su implementación o motor de ECMAScript (como SpiderMonkey en Firefox o V8 en Chrome).
+La especificación ECMAScript es un conjunto de requisitos para implementar ECMAScript.
+Es útil si desea implementar funciones de lenguaje compatibles con los estándares en su
+implementación o motor de ECMAScript (como SpiderMonkey en Firefox o V8 en Chrome).
 
-El documento ECMAScript no pretende ayudar a los programadores de scripts. Utilice la documentación de JavaScript para obtener información al escribir scripts.
+El documento ECMAScript no pretende ayudar a los programadores de scripts. Utilice la
+documentación de JavaScript para obtener información al escribir scripts.
 
-La especificación ECMAScript utiliza terminología y sintaxis que pueden resultar desconocidas para un programador de JavaScript. Aunque la descripción del idioma puede diferir en ECMAScript, el idioma en sí sigue siendo el mismo. JavaScript es compatible con todas las funciones descritas en la especificación ECMAScript.
+La especificación ECMAScript utiliza terminología y sintaxis que pueden resultar desconocidas
+para un programador de JavaScript. Aunque la descripción del idioma puede diferir en ECMAScript,
+el idioma en sí sigue siendo el mismo. JavaScript es compatible con todas las funciones
+descritas en la especificación ECMAScript.
 
-La documentación de JavaScript describe aspectos del lenguaje que son apropiados para un programador de JavaScript.
+La documentación de JavaScript describe aspectos del lenguaje que son apropiados para un
+programador de JavaScript.
 */
