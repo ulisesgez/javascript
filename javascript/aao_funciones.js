@@ -1,10 +1,14 @@
+//metodos del objeto window
+alert('uno')
+prompt('dos')//value o null
+confirm('tres')//true o false
 /*
 Funciones: Conjunto de sentencias que nosotros podemos utilizar para generar ciertas
 acciones con los valores que ya guardamos antes en la variables.
 
 En JavaScript, podemos dividir nuestro código en partes reutilizables llamadas funciones .
 
-La sfunciones son consideradas objetos.
+Las funciones son consideradas objetos.
 
 He aquí un ejemplo de una función:
  */
