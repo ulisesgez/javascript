@@ -170,7 +170,8 @@ numerodos = 30
 
 //Declarada e inicializada (const debe ser declarada e inicializada, si no tira error):
 let numero = 40
-//Dandole otro valor:
+
+//Dandole otro valor (yas si escribimos let numero = 50, tira error)
 numero = 50
 
 //Declarada e inicializada (varias)
