@@ -194,3 +194,13 @@ console.log(arregloCosas[0]);//true
 
 //Ahora si queremos acceder a un elemento de un array dentro de otro array:
 console.log(arregloCosas[7][4][1]);//Woodman
+
+//Largo de un array:
+let juegos = ['Zelda', 'Mario', 'Metroid', 'Chrono'];
+console.log('Largo:', juegos.length);//Largo: 4
+
+//Obtener posicion de un elemento del array:
+let primeroArray = juegos[0];
+let ultimoArray = juegos[3];
+//Otra forma:
+//let ultimoArray = juegos[juegos.length - 1];
