@@ -1,5 +1,5 @@
 /**
- * Array: Estructura de datos - lista de datos. Conjunto de datos, alos que despues podemos llamar, estos estan asociados a un indice, el primer elemento se encuentra en la posicion 0
+ Array: Estructura de datos - lista de datos. Conjunto de datos, alos que despues podemos llamar, estos estan asociados a un indice, el primer elemento se encuentra en la posicion 0
  */
 //Ejemplo:
 let numeros = ["uno", 2, "tres", 4];
@@ -43,12 +43,31 @@ let pc = {
 //Para este caso si queremos mandar a imprimir o tomar un elemento lo hacemos de la siguiente forma:
 document.write(pc["nombre"]);
 
+//Otra forma de hacerlo es:
+document.write(pc.nombre);
+
 frase = `Nombre de pc: ${nombre}, <br>
         procesador: ${procesador}, <br>
         memoria ram: ${ram}, <br>
         almacenamiento: ${espacio}`
 
 document.write(frase);
+
+//Otro ejemplo con arrays usando const:
+const arreglo = new Array(100);//Array de 100 elementos
+console.log(arreglo);//(100) [empty × 100]
+
+//Otro ejemplo de como podemos definir un array:
+const array = Array.of("x", "y", "z", 1, 2, 3);
+
+//O :
+const array2 = Array(10).fill("x");
+
+//O :
+const array3 = Array(10).fill(5);
+
+//O (arreglo vacio):
+const array4 = [];
 
 //Acceda a arreglos multidimensionales con índices
 
@@ -155,3 +174,23 @@ Mejor:
 */
 const vacios = new Array(20).fill(undefined).forEach(() => console.log('hola'));
 console.log(vacios);//20 hola
+
+//Acceder a un elemento de un array:
+let arregloCosas =[
+  true,
+  123,
+  'Alejandro',
+  1+2,
+  function(){},
+  ()=>{},
+  {nombre: 'Fernando'},
+  ['X','Megaman','Zero','Dr. Light',[
+    'Dr. Willy',
+    'Woodman'
+  ]]
+]
+//Para acceder a un elemento de un array, se hace con el indice:
+console.log(arregloCosas[0]);//true
+
+//Ahora si queremos acceder a un elemento de un array dentro de otro array:
+console.log(arregloCosas[7][4][1]);//Woodman
