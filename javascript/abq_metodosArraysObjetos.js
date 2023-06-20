@@ -148,9 +148,17 @@ VM60:4 otto is the best
 //Otro ejemplo:
 let lenguajes = new Array("php", "js", "java", "c#", "c", "pascal", "go");
 
-lenguajes.forEach((elemento, index , data) => {
+lenguajes.forEach((element, index , data) => {
     console.log(data);
-    console.log(`${index}: ${elemento}`);
+    console.log(`${index}: ${element}`);
+});
+
+//Otro ejemplo:
+//forEach() es un método que nos permite ejecutar una función por cada elemento de un array.
+//Esto nos imprimira el array completo en cada iteracion:
+let juegos = ["Mario", "Zelda", "Metroid", "Chrono"];
+juegos.forEach((elemento, indice, arreglo) => {
+  console.log(arreglo);
 });
 
 //Metodos para recorrer el contenido del array:
