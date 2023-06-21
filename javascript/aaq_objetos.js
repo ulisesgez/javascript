@@ -16,6 +16,7 @@ console.log(accesoObjeto["dos"]);//2
 console.log(accesoObjeto.tres);//3
 console.log(accesoObjeto["soy cuatro"]);//4
 console.log(accesoObjeto.cinco);//5
+console.log(accesoObjeto.tres[accesoObjeto.tres.length - 1]);//3
 
 //Otro ejemplo:
 

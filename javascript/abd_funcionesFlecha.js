@@ -37,6 +37,17 @@ const comparacionUno = (num) => {
 const comparacionDos = num => num * num;
 
 //Otro ejemplo:
+const helloArrow = () => {
+    console.log('Hello Arrow Function');
+}
+
+//De lo anterior podemos reducirlo a:
+const helloArrowDos = () => console.log('Hello Arrow Function');
+
+//Ahora con un argumento:
+const helloArrowTres = nombre => console.log(`Hello ${nombre}`);
+
+//Otro ejemplo:
 
 const fecha = () => new Date();
 
