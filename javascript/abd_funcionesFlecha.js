@@ -48,6 +48,9 @@ const helloArrowDos = () => console.log('Hello Arrow Function');
 const helloArrowTres = nombre => console.log(`Hello ${nombre}`);
 
 //Otro ejemplo:
+const numeroAleatorio = () => Math.random();
+
+//Otro ejemplo:
 
 const fecha = () => new Date();
 
