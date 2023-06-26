@@ -1,10 +1,9 @@
-//Utilice la lógica condicional con declaraciones If
+/* Estructuras de control:
 
-/*
-ifLas declaraciones se utilizan para tomar decisiones en el código.
-La palabra clave ifle dice a JavaScript que ejecute el código entre llaves
+Las declaraciones se utilizan para tomar decisiones en el código.
+La palabra clave if le dice a JavaScript que ejecute el código entre llaves
 bajo ciertas condiciones, definidas entre paréntesis. Estas condiciones se
-conocen como Booleancondiciones y solo pueden ser trueo false.
+conocen como Boolean condiciones y solo pueden ser true o false.
 
 Cuando la condición se evalúa como true, el programa ejecuta la declaración
 dentro de las llaves. Cuando la condición booleana se evalúa como false,
@@ -14,6 +13,32 @@ if ( la condición es verdadera ) { la
   declaración se ejecuta
 }
 */
+let a = 5;
+
+if(a > 10) {
+    console.log("a es mayor que 10");
+} else {
+    console.log("a es menor o igual a 10");
+}
+
+//Otro ejemplo:
+
+const hoy = new Date();//{}
+let dia = hoy.getDay();//0: Domingo, 1: Lunes, 2: Martes, etc
+console.log({dia});
+
+if (dia === 0){
+    console.log("Domingo");
+} else if (dia === 1){
+    console.log("Lunes");
+} else if (dia === 2){
+    console.log("Martes");
+} else {
+    console.log("No es Lunes, Martes o Domingo");
+}
+
+
+//Otro ejemplo:
 
 function test (myCondition) {
     if (myCondition) {
