@@ -1,7 +1,7 @@
 /*
-Spread Operator: NOs va a permitir que cuando una expresión la tengamos que expandir  en situaciones
+Spread Operator: Nos va a permitir que cuando una expresión la tengamos que expandir  en situaciones
 donde tengamos multiples o tengamos que guardar almacenar multiples argumentos o elementos
-lo podamos hacer (teenr en cuenta que es diferente a los parametros Rest).
+lo podamos hacer (tener en cuenta que es diferente a los parametros Rest).
 
 Operador de propagación, nos vaa permitir a nosotros trabajar seg´´ún sea el caso
 con una lógica que podamos propagar la información hacia otros elementos sin tener que volverla
