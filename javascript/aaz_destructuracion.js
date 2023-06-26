@@ -25,6 +25,17 @@ console.log(dto3);//bebidas
 
 //Otro ejemplo:
 
+const tony = {
+    name: 'tony stark',
+    nickname: 'ironman',
+    present: false,
+    armor: ['mark I', 'mark V', 'hulkbuster']
+};
+
+const {name, nickname, present, armor} = tony;
+
+//Otro ejemplo:
+
 const heroe = {
     nombre: 'clark',
     apellido: 'kent',
