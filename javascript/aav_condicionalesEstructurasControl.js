@@ -101,7 +101,41 @@ else {
     alert("no se quien eres");
 }
 
-//operador terneario:
+/*
+Operador terneario:
+Para este ejemplo tomaremos un sitio web, y consultaremos si esta abierto o cerrado.
+*/
+const day = 0;
+const time = 10;
+
+let open;
+let message;
+
+/*
+Codigo antes del operador terneario:
+
+if(day === 0 || day === 6){
+    console.log("Weekend");
+    open = 9;
+} else {
+    console.log("Weekday");
+    open = 11;
+}
+console.log(open);
+
+if(time >= open){
+    message = "We are open";
+} else {
+    message = "We are close";
+}
+console.log(message);
+
+Ahora con el operador terneario:
+*/
+open = ([0, 6].includes(day)) ? 9 : 11;
+message = (time >= open) ? "We are open" : "We are close";
+
+//Otro ejemplo:
 
 condition ? true : false;
 
