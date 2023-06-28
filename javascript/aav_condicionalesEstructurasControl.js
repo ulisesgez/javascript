@@ -132,6 +132,7 @@ console.log(message);
 
 Ahora con el operador terneario:
 */
+
 open = ([0, 6].includes(day)) ? 9 : 11;
 message = (time >= open) ? "We are open" : "We are close";
 
@@ -212,6 +213,43 @@ function findGreaterOrEqual(a, b) {
     return (a === b) ? "a and b are equal" : (a > b) ? "a is greater" : "b is greater";
 }
 
+//Otro ejemplo:
+
+const elMayor = (a, b) => (a > b) ? a : b;
+
+console.log(elMayor(20, 15));//20
+
+//Otro ejemplo:
+
+const tieneMembresia = (miembro) => (miembro) ? '2 dolares' : '10 dolares';
+console.log(tieneMembresia(true));//2 dolares
+
+//Otro ejemplo:
+
+const amigo = false;
+const amigosArr = [
+    'Peter',
+    'Tony',
+    'Dr. Strange',
+    amigo ? 'Thor' : 'Loki',
+];
+
+console.log(amigosArr);//[ 'Peter', 'Tony', 'Dr. Strange', 'Loki' ]
+
+//Otro ejemplo:
+
+const nota = 65;
+const grado = nota >= 95 ? 'A+' :
+    nota >= 90 ? 'A' :
+    nota >= 85 ? 'B+' :
+    nota >= 80 ? 'B' :
+    nota >= 75 ? 'C+' :
+    nota >= 70 ? 'C' :
+    nota >= 65 ? 'D+' :
+    nota >= 60 ? 'D' : 'F';
+
+console.log({nota, grado});//{ nota: 65, grado: 'D+' }
+
 //switch:
 
 let numeros = 1;
@@ -287,3 +325,5 @@ console.log(contarCartas(3));//2 Apostar
 console.log(contarCartas(7));//2 Apostar
 console.log(contarCartas("K"));//1 Apostar
 console.log(contarCartas("A"));//0 Esperar
+
+//Otro ejemplo:
