@@ -1,3 +1,36 @@
+//While:
+const carros = [ "Ford", "Mazda", "Honda", "Toyota"];
+
+let i = 0;
+
+while(i < carros.length){
+    console.log(carros[i]);//Ford Mazda Honda Toyota
+    i++;
+}
+
+//Do while:
+
+let j = 0;
+
+do {
+    console.log(carros[j]);//Ford Mazda Honda Toyota
+    i++;
+} while(i < carros.length);
+
+//For:
+
+for(let i = 0; i < carros.length; i++){
+    console.log(carros[i]);//Ford Mazda Honda Toyota
+}
+
+//Otro ejemplo:
+
+const heroes = ["Batman", "Superman", "Mujer Maravilla", "Aquaman"];
+
+for (let i = 0; i < heroes.length; i++){
+    console.log(heroes[i]);//Batman Superman Mujer Maravilla Aquaman
+}
+
 //Ejemplo con for:
 
 let estudiantes = ["Maria", "Sergio", "Rosa", "Daniel"];
@@ -145,6 +178,13 @@ for (animal in animales){
 for (animal of animales){
     document.write(animal + "<br>");
 }
+
+//Otro ejemplo:
+console.log("For in");
+for (let i in heroes) {
+    console.log(heroes[i]);
+}
+
 //Otro ejemplo:
 let lenguajes = new Array("php", "js", "java", "c#", "c", "pascal", "go");
 
@@ -180,3 +220,9 @@ const arr = [
   Tenga en cuenta que para el bucle interno, estamos comprobando .lengthof arr[i], 
   ya que arr[i]es en sí mismo una matriz.
   */
+
+//Otro ejemplo:
+console.log("For of");
+for (let heroe of heroes) {
+    console.log(heroe);
+}
