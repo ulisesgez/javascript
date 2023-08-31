@@ -75,16 +75,14 @@ excepción ReferenceError:
 */
 var a;
 console.log('El valor de a es ' + a); // El valor de a es undefined
-
 console.log('El valor de b es ' + b); // El valor de b es undefined
 var b;
-// Esto puede desconcertarte hasta que leas 'Elevación de variable' a continuación
 
+// Esto puede desconcertarte hasta que leas 'Elevación de variable' a continuación
 console.log('El valor de c es ' + c); // Error de referencia no detectado: c no está definida
 
 let x;
 console.log('El valor de x es ' + x); // El valor de x es undefined
-
 console.log('El valor de y es ' + y); // Error de referencia no detectada: y no está definida
 let y;
 
@@ -98,6 +96,7 @@ if (input === undefined) {
 } else {
   doThat();
 }
+
 /*
 El valor undefined se comporta como false cuando se usa en un contexto booleano.
 Por ejemplo, el siguiente código ejecuta la función myFunction porque el elemento myArray
@@ -105,6 +104,7 @@ es undefined:
 */
 var myArray = [];
 if (!myArray[0]) myFunction();
+
 /*
 El valor undefined se convierte en NaN cuando se usa en contexto numérico.
 */
@@ -143,8 +143,9 @@ Este comportamiento cambia cuando se usa la declaración let (introducida en ECM
 */
 if (true) {
     let b = 5;
-  }
-  console.log(b); // ReferenceError: y no está definida
+}
+console.log(b); // ReferenceError: y no está definida
+
 /*
 Declaración e inicialización
 En una declaración como let x = 42, la let xparte se llama declaración y la = 42parte se
@@ -159,7 +160,6 @@ Copiar al portapapeles
 En esencia, let x = 42es equivalente a let x; x = 42.
 
 constlas declaraciones siempre necesitan un inicializador, porque prohíben cualquier tipo de asignación después de la declaración, y es probable que inicializarlas implícitamente undefinedsea un error del programador.
-
 */
 
 //declaración de variables: var, let, const:
@@ -175,7 +175,6 @@ let numero = 40
 numero = 50
 
 //Declarada e inicializada (varias)
-
 let numero1, numero2, numero3;
 
 numero1 = 3;
@@ -185,7 +184,6 @@ numero3 = 9;
 let numero4 = 3, numero5 = 6, numero6 = 9;
 
 //Declarada y asignada:
-
 let fruta = 'banana';
 
 /* Declarar una variable de solo lectura con la palabra clave const
@@ -209,11 +207,10 @@ en mayúsculas para valores inmutables y minúsculas o camelCase para valores
 mutables (objetos y matrices). Aprenderá más sobre objetos, matrices y valores
 inmutables y mutables en desafíos posteriores. También en desafíos posteriores,
 verá ejemplos de identificadores de variables en mayúsculas, minúsculas o
-camelCase. */
+camelCase.
 
-//Template literals:
+Template literals:
 
-/*
 Nos va a permitir concatenar strings de una forma mas amigable,
 jugar con variables, elementos:
 */
@@ -225,5 +222,4 @@ let epicPhrase = hello + ' ' + world + '!';
 console.log(epicPhrase);
 
 //Ahora con template literals:
-
 let phraseTemplateLiterals = `${hello} ${world}!`;
