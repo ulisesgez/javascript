@@ -230,6 +230,16 @@ Aquí badStrarrojará un error.
 En goodStr anterior, puede usar ambas comillas de forma segura usando la
 barra invertida \como carácter de escape.
 
-Nota: la barra invertida \no debe confundirse con la barra inclinada /.
+Nota: la barra invertida \ no debe confundirse con la barra inclinada /.
 No hacen lo mismo.
+
+Secuencias de escape en cadenas:
+\'    single quote - comilla simple
+\"    double quote - comilla doble
+\\    backslash - barra invertida
+\n    newline - nueva línea
+\r    carriage return - retorno de carro
+\t    tab - tabulación
+\b    backspace - retroceso
+\f    form feed - alimentación de formulario
 */
