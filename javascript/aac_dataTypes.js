@@ -24,7 +24,13 @@ punto y coma.
 string = "cadena de texto"
 numero = 19
 booleano = true
-//
+flotante = 3.1416
+//Valores especiales:
+//null
+//undefined
+//NaN
+//Infinity
+
 //Existe en el programa, pero no tiene valor:
 let undefined
 alert(undefined)
