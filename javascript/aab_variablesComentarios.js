@@ -223,3 +223,9 @@ console.log(epicPhrase);
 
 //Ahora con template literals:
 let phraseTemplateLiterals = `${hello} ${world}!`;
+
+let helloWorld = 'Jello World!';
+console.log(helloWorld);
+helloWorld[0] = 'H';//Esto no va a funcionar, porque las strings son inmutables.
+helloWorld = 'Hello World!';//Esto si va a funcionar, porque estamos reasignando la variable.
+console.log(helloWorld);//Hello World!
