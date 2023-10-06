@@ -250,7 +250,33 @@ const grado = nota >= 95 ? 'A+' :
 
 console.log({nota, grado});//{ nota: 65, grado: 'D+' }
 
-//switch:
+/*
+Switch:
+El switchinstrucción evalúa una expresión, coincidiendo con el valor de la expresión
+a una cláusula case, y ejecuta declaraciones asociadas con esa cláusula case,
+así como las declaraciones en las cláusulas case que siguen.
+
+Sintaxis:
+switch (expression) {
+    case value1:
+      //Statements executed when the
+      //result of expression matches value1
+      [break;]
+    case value2:
+      //Statements executed when the
+      //result of expression matches value2
+      [break;]
+    ...
+    case valueN:
+      //Statements executed when the
+      //result of expression matches valueN
+      [break;]
+    default:
+      //Statements executed when none of
+      //the values match the value of the expression
+      [break;]
+  }
+*/
 
 let numeros = 1;
 switch (numeros){
