@@ -1,3 +1,20 @@
+/*
+La elección de qué ciclo usar depende de la situación y de lo que se quiera lograr.
+Aquí hay algunas consideraciones generales:
+
+- `while` se utiliza cuando no se sabe cuántas veces se debe repetir el ciclo,
+pero se sabe cuál es la condición de salida. El ciclo se ejecutará mientras la
+condición sea verdadera.
+
+- `do while` es similar a `while`, pero se asegura de que el ciclo se ejecute
+al menos una vez antes de verificar la condición de salida. Se utiliza cuando
+se necesita que el ciclo se ejecute al menos una vez.
+
+- `for` se utiliza cuando se sabe cuántas veces se debe repetir el ciclo.
+Es útil cuando se necesita iterar sobre una estructura de datos, como un arreglo.
+
+En el código que has compartido, se utilizan los tres tipos de ciclos para iterar sobre un arreglo de carros. El ciclo `while` se utiliza para imprimir los elementos del arreglo, el ciclo `do while` se utiliza para hacer lo mismo, y el ciclo `for` se deja sin terminar.
+*/
 //While:
 const carros = [ "Ford", "Mazda", "Honda", "Toyota"];
 
