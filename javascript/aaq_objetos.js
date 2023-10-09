@@ -403,8 +403,8 @@ const ourStorage = {
   }
 };
 
-ourStorage.cabinet["top drawer"].folder2;
-ourStorage.desk.drawer;
+console.log(ourStorage.cabinet["top drawer"].folder2);//secrets
+console.log(ourStorage.desk.drawer);//stapler
 
 /*
 ourStorage.cabinet["top drawer"].folder2sería la cadena secrets,
