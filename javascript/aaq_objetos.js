@@ -390,6 +390,35 @@ de punto o corchete.
 Aquí hay un objeto anidado:
 */
 
+let myPets = {
+  type: "animals",
+  list: {
+    dog: "golden retriever",
+    cat: "persian cat",
+    bird: "parakeet"
+  }
+}
+
+/*
+myDog = myPets.list.dog;
+console.log(myDog);//golden retriever
+myCat = myPets.list.cat;
+console.log(myCat);//persian cat
+myBird = myPets.list.bird;
+console.log(myBird);//parakeet
+
+Otra forma de acceder:
+*/
+
+myDog = myPets["list"]["dog"];
+console.log(myDog);//golden retriever
+myCat = myPets[1].dog;
+console.log(myCat);//persian cat
+myBird = myPets["list"].bird;
+console.log(myBird);//parakeet
+
+//Aquí hay otro ejemplo:
+
 const ourStorage = {
   "desk": {
     "drawer": "stapler"
@@ -409,9 +438,9 @@ console.log(ourStorage.desk.drawer);//stapler
 /*
 ourStorage.cabinet["top drawer"].folder2sería la cadena secrets,
 y ourStorage.desk.drawersería la cadena stapler.
-*/
 
-//Objetos Inmutable:
+Objetos Inmutable:
+*/
 
 let colores = {
   "r": "red",
