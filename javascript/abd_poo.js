@@ -54,5 +54,4 @@ ignorando sus características menos importantes.
 - Encapsulamiento: Es la capacidad de un objeto de ocultar cierta información de otros objetos.
 - Herencia: Es la capacidad de compartir atributos y métodos entre clases.
 - Polimorfismo: Es la capacidad de utilizar de distintas formas los mismos métodos.
-
 */
