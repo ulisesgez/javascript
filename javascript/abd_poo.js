@@ -47,4 +47,12 @@ almacenados y de tareas realizables durante el tiempo de ejecución. Un objeto p
 ser creado instanciando una clase, es decir, creando una instancia de una clase.
 - Propiedades: Son las características que tiene un objeto y que lo diferencian de otros objetos.
 - Metodos: Son las acciones que puede realizar un objeto.
+
+Pilares de la programación orientada a objetos:
+- Abstracción: Es la capacidad de representar características esenciales de un objeto,
+ignorando sus características menos importantes.
+- Encapsulamiento: Es la capacidad de un objeto de ocultar cierta información de otros objetos.
+- Herencia: Es la capacidad de compartir atributos y métodos entre clases.
+- Polimorfismo: Es la capacidad de utilizar de distintas formas los mismos métodos.
+
 */
