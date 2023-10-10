@@ -1,7 +1,4 @@
 /*
-Programación Orientada a Objetos:
-La programación orientada a objetos
-
 Maquina abstracta:
 Computadora digital que ejecuta algoritmos los cuales estan formalizados 
 para que la maquina entienda.Puede realizar operaciones para:
@@ -27,8 +24,27 @@ y que suministra la base y modelo para resolver problemas y avanzar en el conoci
 Principales paradigmas de programación:
 - Imperativo: Secuencia de instrucciones que cambian el estado del programa.
 - Funcional: Evaluación de funciones matematicas.
+- Estrucuturado: Programa como un conjunto de sentencias de control.
 - Logico: Programa como un conjunto de sentencias logicas.
 - Orientado a objetos: Programa como un conjunto de objetos que interactuan entre si.
 - Declaraivo: Programa como un conjunto de declaraciones que establecen relaciones entre objetos.
 - Dirigido por eventos: Programa como un conjunto de objetos que reaccionan a eventos.
+
+Programación orientada a objetos:
+La programación orientada a objetos es un paradigma de programación que usa objetos 
+y sus interacciones para diseñar aplicaciones y programas de computadora.
+Está basado en varias técnicas, incluyendo herencia, cohesión, abstracción,
+polimorfismo, acoplamiento y encapsulamiento.
+
+- Clase: Es una plantilla para la creación de objetos de datos según un modelo
+predefinido. Las clases se utilizan para representar entidades o conceptos.
+Cada clase es un modelo que define un conjunto de variables - el estado, y métodos
+apropiados para operar con dichos datos - el comportamiento. Cada objeto creado a
+partir de la clase se denomina instancia de la clase.
+- Objeto: Es una unidad dentro de un programa de computadoras que consta de un
+estado y de un comportamiento, que a su vez constan respectivamente de datos
+almacenados y de tareas realizables durante el tiempo de ejecución. Un objeto puede
+ser creado instanciando una clase, es decir, creando una instancia de una clase.
+- Propiedades: Son las características que tiene un objeto y que lo diferencian de otros objetos.
+- Metodos: Son las acciones que puede realizar un objeto.
 */
