@@ -100,9 +100,16 @@ else if (nombre == "jhon") {
 else {
     alert("no se quien eres");
 }
+//Operador terneario:
+function retornarMinimo(x, y) {
+    console.log(x < y ? x : y);
+}
+
+retornarMinimo(3, 4);//3
+retornarMinimo(9, 4);//4
+retornarMinimo(3, 3);//3
 
 /*
-Operador terneario:
 Para este ejemplo tomaremos un sitio web, y consultaremos si esta abierto o cerrado.
 */
 const day = 0;

@@ -144,6 +144,16 @@ do {
 }
 while (numerocuatro <= 6);
 
+//Otro ejemplo:
+
+let numeroCinco = 0;
+
+do {
+    console.log(numeroCinco);
+    numeroCinco++;
+}
+while (numeroCinco <= 6);
+
 /**
  * For: lo utilizamos cuando sabemos cuantas iteraciones van a ser necesarias.
  * - Declaramos
@@ -242,4 +252,30 @@ const arr = [
 console.log("For of");
 for (let heroe of heroes) {
     console.log(heroe);
+}
+
+//Otro ejemplo:
+let arraysTresNumeros = [[1,2,3],[4,5,6],[7,8,9]];
+
+/*
+for (let i = 0; i < arraysTresNumeros.length; i++) {
+    console.log(arraysTresNumeros[i]);//[1,2,3] [4,5,6] [7,8,9]
+}
+
+for (let i = 0; i < arraysTresNumeros.length; i++) {
+    for (let j = 0; j < arraysTresNumeros[i].length; j++) {
+        console.log(arraysTresNumeros[i][j]);//1 2 3 4 5 6 7 8 9
+    }
+}
+*/
+
+for (let i = 0; i < arraysTresNumeros.length; i++) {
+    console.log("Nueva iteración");
+    let arrAnidado = arraysTresNumeros[i];//[1,2,3] [4,5,6] [7,8,9]
+    console.log("Arreglo anidado: " + arrAnidado);
+    for (let j = 0; j < arrAnidado.length; j++) {
+        console.log("Ciclo anidado: " + j);
+        console.log("Elemento:" + arrAnidado[j]);
+        //console.log(arrAnidado[j]);//1 2 3 4 5 6 7 8 9
+    }
 }
