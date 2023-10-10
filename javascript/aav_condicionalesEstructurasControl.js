@@ -100,7 +100,13 @@ else if (nombre == "jhon") {
 else {
     alert("no se quien eres");
 }
-//Operador terneario:
+
+/*
+Operador terneario:
+El operador condicional (ternario) es el único operador JavaScript que toma tres
+operandos.
+*/
+
 function retornarMinimo(x, y) {
     console.log(x < y ? x : y);
 }
@@ -108,6 +114,18 @@ function retornarMinimo(x, y) {
 retornarMinimo(3, 4);//3
 retornarMinimo(9, 4);//4
 retornarMinimo(3, 3);//3
+
+//Otro ejemplo:
+
+function compararNumeros(a, b) {
+    return a ==b ? "son iguales" 
+    : a > b ? "a es mayor" 
+    : "b es mayor";
+}
+
+console.log(compararNumeros(1, 1));//son iguales
+console.log(compararNumeros(1, 2));//b es mayor
+console.log(compararNumeros(2, 1));//a es mayor
 
 /*
 Para este ejemplo tomaremos un sitio web, y consultaremos si esta abierto o cerrado.
