@@ -24,5 +24,11 @@ Paradigmas de programación:
 Teoria o conjunto de teorias cuyo nucleo central se acepta sin cuestionar
 y que suministra la base y modelo para resolver problemas y avanzar en el conocimiento.
 
-
+Principales paradigmas de programación:
+- Imperativo: Secuencia de instrucciones que cambian el estado del programa.
+- Funcional: Evaluación de funciones matematicas.
+- Logico: Programa como un conjunto de sentencias logicas.
+- Orientado a objetos: Programa como un conjunto de objetos que interactuan entre si.
+- Declaraivo: Programa como un conjunto de declaraciones que establecen relaciones entre objetos.
+- Dirigido por eventos: Programa como un conjunto de objetos que reaccionan a eventos.
 */
