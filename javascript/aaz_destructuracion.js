@@ -204,3 +204,15 @@ const estadisticas = {
 const mitad = ({max, min}) => (max + min) / 2.0;
 
 console.log(mitad(estadisticas));//28.015
+
+/*
+Cambiar el valor de una variable:
+*/
+
+let varA = 3;
+let varB = 6;
+
+[varA, varB] = [varB, varA];
+
+console.log(varA);//6
+console.log(varB);//3
