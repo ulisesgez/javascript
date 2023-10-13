@@ -1,5 +1,7 @@
-/**
- * Hoisting: Cuando las variables y las funciones se declaran antes que se procese cualquier tipo de codigo.
+/*
+Hoisting:
+Cuando las variables y las funciones se declaran antes que se procese cualquier
+tipo de codigo.
  */
 
 console.log(miNombre);
@@ -8,8 +10,10 @@ console.log(miNombre);
 
 let miNombre = "Ulises";//Imprime undefinied, ya que la mandamos a llamar antes de declararla e inicializarla
 
-//En funciones:
-//En este caso imprime hola mi nombre es undefinied:
+/*
+En funciones:
+En este caso imprime hola mi nombre es undefinied:
+*/
 
 hey();
 

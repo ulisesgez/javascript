@@ -5,14 +5,15 @@ Una variable puede pertenecer a uno de los siguientes ámbitos :
 Ámbito global: el ámbito predeterminado para todo el código que se ejecuta en modo script.
 Ámbito del módulo: el ámbito del código que se ejecuta en modo módulo.
 Ámbito de función: el ámbito creado con una función .
-Además, las variables declaradas con leto constpueden pertenecer a un ámbito adicional:
+Además, las variables declaradas con let o const pueden pertenecer a un ámbito adicional:
 
 Ámbito de bloque: el ámbito creado con un par de llaves (un bloque ).
 Cuando declara una variable fuera de cualquier función, se denomina variable global , porque está disponible para cualquier otro código en el documento actual. Cuando declara una variable dentro de una función, se denomina variable local , porque solo está disponible dentro de esa función.
 
 let y const las declaraciones también se pueden limitar a la declaración de bloque en la que se declaran.
 
-Scope: Alcanmce de las variables dependiendo su ubicacion.
+Scope:
+Alcanmce de las variables dependiendo su ubicacion.
 Alcance de las variables, es mala práctica usar var, es mejor let, tiene menos alcance.
 */
 if (Math.random() > 0.5) {
@@ -21,9 +22,12 @@ if (Math.random() > 0.5) {
 console.log(y); // ReferenceError: y is not defined
 
 /*
-Sin embargo, las variables creadas con varno tienen un alcance de bloque, sino solo locales para la función (o alcance global) en el que reside el bloque.
+Sin embargo, las variables creadas con var no tienen un alcance de bloque, si no solo
+locales para la función (o alcance global) en el que reside el bloque.
 
-Por ejemplo, el siguiente código registrará 5porque el alcance de xes el contexto global (o el contexto de la función si el código es parte de una función). El alcance de xno se limita al ifbloque de declaración inmediata.
+Por ejemplo, el siguiente código registrará 5 porque el alcance de x es el contexto
+global (o el contexto de la función si el código es parte de una función).
+El alcance de x no se limita al if bloque de declaración inmediata.
 */
 if (true) {
   var x = 5;
@@ -31,12 +35,15 @@ if (true) {
 console.log(x); // x is 5
 /*
 Elevación variable
-var-Las variables declaradas se elevan , lo que significa que puede hacer referencia a la variable en cualquier lugar de su alcance, incluso si aún no se ha alcanzado su declaración. Puede ver varlas declaraciones como "elevadas" a la parte superior de su función o alcance global. Sin embargo, si accede a una variable antes de que se declare, el valor siempre es undefined, porque solo se iza su declaración , pero no su inicialización .
+var-Las variables declaradas se elevan , lo que significa que puede hacer referencia
+a la variable en cualquier lugar de su alcance, incluso si aún no se ha alcanzado su
+declaración. Puede ver varlas declaraciones como "elevadas" a la parte superior de
+su función o alcance global. Sin embargo, si accede a una variable antes de que se
+declare, el valor siempre es undefined, porque solo se iza su declaración , pero no
+su inicialización .
 
-
+Scope global:
 */
-
-//Scope global:
 
 var miNombre = "Ulises";
 
@@ -50,8 +57,11 @@ function bestFruit() {
 
 bestFruit();//apple
 
-//Otro ejemplo:
-//Debemos tener cuidado con este formato, seencuentra en un bloque:
+/*
+Otro ejemplo:
+Debemos tener cuidado con este formato, se encuentra en un bloque:
+*/
+
 function countries() {
   country = 'colombia';//global
   console.log(country);
@@ -121,9 +131,9 @@ bob
 ana
 */
 
-//Alcance global y funciones
-
 /*
+Alcance global y funciones:
+
 En JavaScript, el alcance se refiere a la visibilidad de las variables.
 Las variables que se definen fuera de un bloque de funciones tienen alcance global .
 Esto significa que se pueden ver en todas partes en su código JavaScript.
@@ -191,7 +201,7 @@ const fruits  = () => {
 
 fruits();//Error
 
-//closure: Cuando una funcion cualquiera accede a una variable fuera de su contexto.
+//Closure: Cuando una funcion cualquiera accede a una variable fuera de su contexto.
 
 const myGlobal = 0;
 
@@ -238,9 +248,8 @@ console.log(g());
 VM54:12 hello Oscar
 */
 
-//Otro ejemplo:
-
 /*
+Otro ejemplo:
 No funciona la alcancia:
 function moneybox(coins) {
   let saveCoins = 0;
