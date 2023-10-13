@@ -202,18 +202,20 @@ fruits();//Error
 /*
 Closure:
 Cuando una funcion cualquiera accede a una variable fuera de su contexto.
+Permiten acceder al ambito de una funcion exterior desde una funcion interior.
+En javascript, las clausuras se crean cada vez que una funcion es creada.
 */
 
 const myGlobal = 0;
 
 function myFunction() {
   const myNumber =  1;
-  console.log(myGlobal);
+  console.log(myGlobal);//0
   function parent() {//funcion interna, closure
     const inner = 2;
-    console.log(myNumber, myGlobal);
+    console.log(myNumber, myGlobal);//1 0
     function child() {
-      console.log(inner, myNumber, myGlobal);
+      console.log(inner, myNumber, myGlobal);//2 1 0
     }
     return child();
   }
