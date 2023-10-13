@@ -66,6 +66,28 @@ const pajaro = new Animal("pajaro", 7, "verde");
 Perro.setRaza = "Pedro";//Pedro, buen setter
 document.write(perro.getRaza);//pedro
 
+//Otro ejemplo, el guion bajo solo es un identificador que el valor no sera modificado:
+
+class Libro {
+    constructor(autor) {
+        this._autor = autor
+    }
+    get autor() {
+        console.log("se llama el getter");
+        return this._autor;
+    }
+    set autor(nuevoAutor) {
+        console.log("se llama el setter");
+        this._autor = nuevoAutor;
+    }
+}
+
+const libro = new Libro("anonimo");
+console.log(libro.autor);//anonimo
+
+libro.autor = "gino smith";
+console.log(libro.autor);//gino smith
+
 //Otro ejemplo:
 
 /*
