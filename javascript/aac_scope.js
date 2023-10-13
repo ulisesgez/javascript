@@ -3,6 +3,8 @@ Scope:
 El alcance determina la accesibilidad (visibilidad) de las variables.
 El scope determina la accesibilidad de variables, objetos y funciones
 desde diferentes partes del código.
+Alcance de las variables dependiendo su ubicacion.
+Alcance de las variables, es mala práctica usar var, es mejor let, tiene menos alcance.
 
 Alcance variable
 Una variable puede pertenecer a uno de los siguientes ámbitos :
@@ -16,11 +18,27 @@ Además, las variables declaradas con let o const pueden pertenecer a un ámbito
 Cuando declara una variable fuera de cualquier función, se denomina variable global , porque está disponible para cualquier otro código en el documento actual. Cuando declara una variable dentro de una función, se denomina variable local , porque solo está disponible dentro de esa función.
 
 let y const las declaraciones también se pueden limitar a la declaración de bloque en la que se declaran.
-
-Scope:
-Alcanmce de las variables dependiendo su ubicacion.
-Alcance de las variables, es mala práctica usar var, es mejor let, tiene menos alcance.
 */
+console.log("Var:");
+var musicaUno = "Rock";
+console.log("Antes del bloque", musicaUno);//Rock
+{
+  var musicaUno = "Pop";
+  console.log("Dentro del bloque", musicaUno);//Pop
+}
+console.log("Despues del bloque", musicaUno);//Pop
+
+console.log("Let:");
+let musicaDos = "Rock";
+console.log("Antes del bloque", musicaDos);//Rock
+{
+  let musicaDos = "Pop";
+  console.log("Dentro del bloque", musicaDos);//Pop
+}
+console.log("Despues del bloque", musicaDos);//Rock
+
+//Otro ejemplo:
+
 if (Math.random() > 0.5) {
   const y = 5;
 }
