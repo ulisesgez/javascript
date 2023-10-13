@@ -9,7 +9,7 @@ de variable.
 
 */
 const Früh = "foobar";
-console.log(Früh);
+console.log(Früh);//foobar
 /*
 Pero, la variable frühno es la misma Frühporque JavaScript distingue entre mayúsculas y
 minúsculas.
@@ -19,6 +19,28 @@ En JavaScript, las instrucciones se llaman sentencias y están separadas por pun
 No es necesario un punto y coma después de una declaración si se escribe en su propia línea.
 Pero si se desea más de una declaración en una línea, entonces deben estar separadas por
 punto y coma.
+
+Tipos de datos:
+
+Primitivos:
+Se accede directamente al valor.
+- number
+- string
+- boolean
+- null
+- undefined
+- symbol
+
+Compuestos:
+Se accede a la referencia del valor.
+- object
+- array
+- function
+- class
+- map
+- set
+- weakmap
+- weakset
 */
 //Tipos de datos:
 string = "cadena de texto"
