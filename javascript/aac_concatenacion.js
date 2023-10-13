@@ -1,11 +1,11 @@
-/**
- * Concatenacion: Unir strings
- */
+/*
+Concatenacion: Unir strings
+*/
 saludo = "hola Jhon!";
 pregunta = " ¿Como estas?";
 
 frase = saludo + pregunta;
-document.write(frase);
+document.write(frase);//hola Jhon! ¿Como estas?
 
 //Con numeros lo anterior no seria posible ya que se sumaria
 
@@ -13,7 +13,7 @@ numero1 = 10;
 numero2 = 20;
 
 resultado = numero1 + numero2;
-document.write(resultado);
+document.write(resultado);//30
 
 //Una forma de solucionarlo es usando cadena de texto al iniciar. Por que cuando el string detecta texto convierte automaticamente todo en una cadena de texto (tipado dinamico):
 
@@ -21,7 +21,7 @@ numero1 = 15;
 numero2 = 25;
 
 resultado = "" + numero1 + numero2;
-document.write(resultado);
+document.write(resultado);//1525
 
 //Otra forma es usar concat, pero para ello primero debe detectar que hay un string:
 
@@ -29,26 +29,26 @@ numero1 = "56";
 numero2 = 89;
 
 resultado = numero1.concat(numero2);
-document.write(resultado);
+document.write(resultado);//5689
 
 //Otra forma es usando backtiks y la variable entre ${}
 frase1 = "ulises";
 frasecompleta = "soy " + frase1 + " y estoy caminando";
 
-document.write(frasecompleta);
+document.write(frasecompleta);//soy ulises y estoy caminando
 
 //Mejor y con esto evitamos muchos errores:
 frase1 = "bruno";
 frasecompleta = `soy ${frase1} y estoy caminando`;//Interpolación de variables
 
-document.write(frasecompleta);
+document.write(frasecompleta);//soy bruno y estoy caminando
 
 //Podemos hacer:
 frase1 = "karina";
 frasecompleta = `soy ${frase1} y
  estoy caminando`;
 
-document.write(frasecompleta);
+document.write(frasecompleta);//soy karina y estoy caminando
 
 //Ejemplo con html:
 frase = `<div>
@@ -56,17 +56,15 @@ frase = `<div>
 <h2>world</h2>
 </div>`;
 
-document.write(frase);
+document.write(frase);//hello world
 
 //Escape de comillas simples:
 frase = "mi nombre es 'Ulises'y soy el mejor";
 
-/**
- * Es posible imprimirse con comillas simples ahora con comillas dobles:
- * 
- * frase = "mi nombre es "Ulises"y soy el mejor";
- * 
- * Como vemos marca error asi que:
+/*
+Es posible imprimirse con comillas simples ahora con comillas dobles:
+frase = "mi nombre es "Ulises"y soy el mejor";
+Como vemos marca error asi que:
  */
 
 //Escape de comillas dobles:
@@ -190,11 +188,9 @@ sino que debería aparecer dentro de la cadena. Entonces, si tuviera que imprimi
 esto en la consola, obtendría:
 
 Alan said, "Peter is learning JavaScript".
-*/
 
-//Citar Cadenas:
+Citar Cadenas:
 
-/*
 Los valores de cadena en JavaScript se pueden escribir con comillas simples o
 dobles, siempre que comience y termine con el mismo tipo de comillas.
 A diferencia de otros lenguajes de programación, las comillas simples y dobles
@@ -221,10 +217,10 @@ al principio y al final. Pero si tiene la misma cita en algún lugar en el medio
 la cadena se detendrá antes de tiempo y generará un error.
 */
 
-const goodStr = 'Jake asks Finn, "Hey, let\'s go on an adventure?"'; 
-// const badStr = 'Finn responds, "Let's go!"';
-
+const goodStr = 'Jake asks Finn, "Hey, let\'s go on an adventure?"';
 /*
+const badStr = 'Finn responds, "Let's go!"';
+
 Aquí badStrarrojará un error.
 
 En goodStr anterior, puede usar ambas comillas de forma segura usando la
