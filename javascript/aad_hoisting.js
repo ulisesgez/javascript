@@ -4,21 +4,20 @@ Cuando las variables y las funciones se declaran antes que se procese cualquier
 tipo de codigo.
  */
 
-console.log(miNombre);
+console.log(miNombre);//Imprime undefinied
+var miNombre = "Ulises";
+console.log(miNombre);//Imprime Ulises
 
-//Declarada e inicializada:
-
-let miNombre = "Ulises";//Imprime undefinied, ya que la mandamos a llamar antes de declararla e inicializarla
 
 /*
 En funciones:
 En este caso imprime hola mi nombre es undefinied:
 */
 
-hey();
+hey();//Imprime hola mi nombre es undefinied
 
 function hey(){
-    console.log("hola mi nombre es " + nickname);
+    console.log("hola mi nombre es " + nickname);//Imprime hola mi nombre es undefinied
 }
 
-let nickname = "tech";
+let nickname = "uli";
