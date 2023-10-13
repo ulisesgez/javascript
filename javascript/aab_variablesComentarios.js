@@ -160,9 +160,10 @@ Copiar al portapapeles
 En esencia, let x = 42es equivalente a let x; x = 42.
 
 constlas declaraciones siempre necesitan un inicializador, porque prohíben cualquier tipo de asignación después de la declaración, y es probable que inicializarlas implícitamente undefinedsea un error del programador.
+
+Declaración de variables: var, let, const:
 */
 
-//declaración de variables: var, let, const:
 let numerodos;
 
 //Inicializarla dándole valor:
@@ -171,10 +172,10 @@ numerodos = 30
 //Declarada e inicializada (const debe ser declarada e inicializada, si no tira error):
 let numero = 40
 
-//Dandole otro valor (yas si escribimos let numero = 50, tira error)
+//Dandole otro valor (yas si escribimos let numero = 50, tira error):
 numero = 50
 
-//Declarada e inicializada (varias)
+//Declarada e inicializada (varias):
 let numero1, numero2, numero3;
 
 numero1 = 3;

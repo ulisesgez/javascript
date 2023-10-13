@@ -56,3 +56,18 @@ flotante = 3.1416
 //Existe en el programa, pero no tiene valor:
 let undefined
 alert(undefined)
+
+// Otro ejemplo:
+
+4 + "7"; // 47
+4 * "7"; // 28
+2 + true // 3
+false - 3 // -3
+
+//Covertir un string a un number:
+
+let falseNumber = "33";
+
+console.log(Number(falseNumber) + 7);//40
+//console.log(parseInt(falseNumber) + 7); numero entero, tambien lo convierte
+//console.log(parseFloat(falseNumber) + 7); l0o convierte a decimal
