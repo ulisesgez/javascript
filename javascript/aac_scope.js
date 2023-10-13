@@ -1,4 +1,9 @@
 /*
+Scope:
+El alcance determina la accesibilidad (visibilidad) de las variables.
+El scope determina la accesibilidad de variables, objetos y funciones
+desde diferentes partes del código.
+
 Alcance variable
 Una variable puede pertenecer a uno de los siguientes ámbitos :
 
@@ -42,7 +47,7 @@ su función o alcance global. Sin embargo, si accede a una variable antes de que
 declare, el valor siempre es undefined, porque solo se iza su declaración , pero no
 su inicialización .
 
-Scope global:
+Global Scope:
 */
 
 var miNombre = "Ulises";
@@ -63,30 +68,28 @@ Debemos tener cuidado con este formato, se encuentra en un bloque:
 */
 
 function countries() {
-  country = 'colombia';//global
+  //let country = 'colombia';//local
+  country = 'colombia';//global cuando no iicializamos y declaramos con let
   console.log(country);
 }
 
 countries();//colombia
 console.log(country);//colombia
 
-//Function scope:
+//Function Scope(Local Scope):
 
 function greeting() {
   let userName = 'Ana';
   console.log(userName);
   if(userName === 'Ana') {
-    console.log(`hello ${userName}`);
+    console.log(`hello ${userName}`);//hello Ana
   }
 }
 
-greeting();// Ana y hello Ana
+greeting();//Ana | hello Ana
+console.log(userName);//userName is not defined , ya que esta en el scope local
 
-//Otro ejemplo:
-
-console.log(userName);//userName is not defined
-
-//Scope local:
+//Scope Local:
 function nombre(){
     var miApellido = "Gutierrez";
     console.log(miNombre + " " + miApellido);
@@ -103,13 +106,15 @@ function animals() {
     var animal1 = 'dog';//Function scope
     let animal2 = 'cat';//Block Scope
     const animal3 = 'bird';//Block Scope
+    console.log(animal2);//cat
+    console.log(animal3);//bird
   }
-  console.log(animal1);
-  console.log(animal2);
-  console.log(animal3);
+  console.log(animal1);//dog
+  console.log(animal2);//ReferenceError: animal2 is not defined
+  console.log(animal3);//ReferenceError: animal3 is not defined
 }
 
-animals();
+animals();//dog | cat | bird
 
 //Otro ejemplo:
 
@@ -124,12 +129,7 @@ function nombres() {
   console.log(nombres1);
 }
 
-nombres();
-/*
-otto
-bob
-ana
-*/
+nombres();//ana | otto | bob
 
 /*
 Alcance global y funciones:
@@ -156,17 +156,15 @@ function myTest() {
 }
 
 myTest();
-console.log(loc);
+console.log(loc);//ReferenceError: loc is not defined
 
 /*
 La myTest()llamada a la función mostrará la cadena fooen la consola.
 La console.log(loc)línea (fuera de la myTestfunción) arrojará un error,
 ya locque no está definidafuera de la función.
-*/
 
-//Comprender el valor indefinido devuelto por una función
+Comprender el valor indefinido devuelto por una función:
 
-/*
 Una función puede incluir la returndeclaración pero no tiene que hacerlo.
 En el caso de que la función no tenga una returndeclaración, cuando la llama,
 la función procesa el código interno pero el valor devuelto es undefined.
@@ -182,7 +180,7 @@ function addSum(num) {
 addSum(3);
 
 /*
-addSumes una función sin returnsentencia.
+addSumes una función sin return sentencia.
 La función cambiará la sumvariable global pero el valor devuelto de la función es undefined.
 */
 
@@ -201,7 +199,10 @@ const fruits  = () => {
 
 fruits();//Error
 
-//Closure: Cuando una funcion cualquiera accede a una variable fuera de su contexto.
+/*
+Closure:
+Cuando una funcion cualquiera accede a una variable fuera de su contexto.
+*/
 
 const myGlobal = 0;
 
