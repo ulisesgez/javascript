@@ -3,13 +3,11 @@ alert('uno')
 prompt('dos')//value o null
 confirm('tres')//true o false
 /*
-Funciones: Conjunto de sentencias que nosotros podemos utilizar para generar ciertas
+Funciones:
+Conjunto de sentencias que nosotros podemos utilizar para generar ciertas
 acciones con los valores que ya guardamos antes en la variables.
-
-En JavaScript, podemos dividir nuestro código en partes reutilizables llamadas funciones .
-
-Las funciones son consideradas objetos.
-
+En JavaScript, podemos dividir nuestro código en partes reutilizables llamadas
+funciones. Las funciones son consideradas objetos.
 He aquí un ejemplo de una función:
  */
 
@@ -21,9 +19,7 @@ function functionName() {
 Puede llamar o invocar esta función usando su nombre seguido de paréntesis, así: functionName();
 Cada vez que se llame a la función, se imprimirá el mensaje Hello Worlden la consola de desarrollo.
 Todo el código entre llaves se ejecutará cada vez que se llame a la función.
-*/
 
-/*
 Funcion declarativa / funcion declarada:
 A diefrencia de una funcion expresada esta puede ser llamada en cualquier parte y funcionara:
 */
@@ -35,8 +31,7 @@ function funcionDeclarada() {
 
 funcionDeclarada();
 
-//Funcion declarativa / funcion declarada, ademas de
-//que devuelve un valor por el return:
+//Funcion declarativa / declarada, ademas de que devuelve un valor por el return:
 
 function miFuncion(){
     return 3;
@@ -86,9 +81,7 @@ saludar();
 saludar();
 saludar();
 
-//Función de expresión / funcion expresada / funcion ma:
-
-//funcionExpresada(); Marca error
+//Función expresada / funcion anonima:
 
 const funcionExpresada = function() {
     console.log("No puedo invocarme en cualquier parte del codigo como una funcion declarada");
@@ -228,10 +221,10 @@ function myFun() {
 Lo anterior mostrará la cadena Helloen la consola y devolverá la cadena World.
 La cadena byebyenunca se mostrará en la consola, porque la función
 finaliza en la returndeclaración.
-*/
 
-//Return en funciones, sin la linea return "exit", marca undefined:
-//saludo es igual a lo que retorna.
+Return en funciones, sin la linea return "exit", marca undefined:
+saludo es igual a lo que retorna.
+*/
 
 function saludardos(){
     alert("hola");
@@ -297,11 +290,9 @@ const answer = plusThree(5);
 /*
 answertiene el valor 8.
 plusThreetoma un argumento a favor numy devuelve un valor igual a num + 3.
-*/
 
-//Comprender el valor indefinido devuelto por una función
+Comprender el valor indefinido devuelto por una función
 
-/*
 Una función puede incluir la returndeclaración pero no tiene que hacerlo.
 En el caso de que la función no tenga una returndeclaración, cuando la llama,
 la función procesa el código interno pero el valor devuelto es undefined.
