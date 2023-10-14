@@ -73,14 +73,18 @@ console.log(Number(falseNumber) + 7);//40
 console.log(parseInt(falseNumber) + 7); numero entero, tambien lo convierte.
 console.log(parseFloat(falseNumber) + 7); l0o convierte a decimal.
 
-Undefined:
+Undefined, Nan y null:
+
 Tanto null como undefined van a representar un valor ausente, es decir una
 variable que no tiene valor, pero la gran diferencia es que mientras undefined es una
-variable que no ha sido inicializada:
-*/
-let indefinida;//undefined
+variable que no ha sido inicializada.
 
-console.log(indefinida);
+Undefined:
+Indica que no se ha inicializado una variable y que el valor esta ausente.
+*/
+let indefinida;
+
+console.log(indefinida);//undefined
 
 /*
 Nos dice que la variable esta vacia, pero es intencional,
@@ -90,7 +94,17 @@ a tener un valor (nulo o vacio):
 
 let numero = null;
 
-//Nan o no es un numero:
+/*
+Null:
+Es un valor especial que indica la ausecia de un valor numerico valido.
+*/
+let nullo = null;
+console.log(nullo);//null
+
+/*
+Nan o no es un numero:
+Es un valor especial que indica que una operacion matematica no es valida.
+*/
 
 let numero2 = 5;
 let numero3 = "pedro";
