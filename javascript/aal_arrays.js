@@ -1,7 +1,7 @@
-/**
- Array: Estructura de datos - lista de datos. Conjunto de datos, alos que despues podemos llamar, estos estan asociados a un indice, el primer elemento se encuentra en la posicion 0
- */
-//Ejemplo:
+/*
+Array: Estructura de datos - lista de datos. Conjunto de datos, alos que despues podemos llamar, estos estan asociados a un indice, el primer elemento se encuentra en la posicion 0
+Ejemplo:
+*/
 let numeros = ["uno", 2, "tres", 4];
 
 //Mostrar por posisiciones, en este caso se imprimira "uno":
@@ -97,9 +97,7 @@ Nota: No debe haber espacios entre el nombre de la matriz y los corchetes,
 como array [0][0]e incluso esto array [0] [0]no está permitido.
 Aunque JavaScript puede procesar esto correctamente, esto puede confundir a 
 otros programadores al leer su código.
-*/
 
-/*
 Acceso a matrices anidadas
 
 Como hemos visto en ejemplos anteriores, los objetos pueden contener 
@@ -166,8 +164,9 @@ const letras = ['a', 'b', 'c'];
 
 letras.forEach(item => console.log(item));
 
-//Ahora queremos llenar con hola un array, pero esto puede salir mal, con fill lo solucionamos:
 /*
+Ahora queremos llenar con hola un array, pero esto puede salir mal, con fill lo solucionamos:
+
 const vacios = new Array(20).forEach(() => console.log('hola'));
 console.log(vacios);//undefined
 Mejor:
