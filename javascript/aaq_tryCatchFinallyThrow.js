@@ -1,4 +1,12 @@
 /*
+Manejo de errores:
+Para manejar errores en javascript tenemos dos herramientas:
+try catch y throw.
+try catch finally: nos permite ejecutar codigo que podria fallar y en caso de fallar
+nos permite manejar el error.
+throw: nos permite crear nuestros propios errores.
+
+Try catch finally:
 Estructura que nos va a permitir evaluar cietos fragmentos de codigo y cuando halla
 algun mensaje de error, se va a capturar en la parte del catch, es una manera de ir
 gestionando los errores
@@ -35,3 +43,26 @@ try {
 } catch (error){
     console.log(`se produjo el siguiente error : ${error}`);
 }
+
+//Otros ejemplo:
+try {
+    hello();//probar algo, funcion , logica, etc ... no existe hello
+} catch (error) {//entrega error
+    console.log(error);//En caso de error
+}
+
+try {
+    anotherFunction();
+    //No pasamos error, lo ideal es manejar el error, nos da mas datos.
+} catch {
+    console.log('Esto es un error');
+}
+
+//fromentries:
+/*Object punto entries ahora ademas de convertir un objeto en un array de arrays,
+vamos a poder hacer tambien un cambio inverso, pasar de un array de arrays a un objeto.
+*/
+
+const entries = new Map([['name', 'ulises'], ['age', '24']]);
+console.log(entries);//Map(2) {'name' => 'ulises', 'age' => '24'}
+console.log(Object.fromEntries(entries));//{name: 'ulises', age: '24'}
