@@ -39,9 +39,9 @@ try {
     if(isNaN(numero)) {
         throw new Error("El caracter introducido no es un numero")
     }
-    console.log(numero * numero);
+    console.log(numero * numero);//100
 } catch (error){
-    console.log(`se produjo el siguiente error : ${error}`);
+    console.log(`se produjo el siguiente error : ${error}`);//se produjo el siguiente error : Error: El caracter introducido no es un numero
 }
 
 //Otros ejemplo:
@@ -55,7 +55,7 @@ try {
     anotherFunction();
     //No pasamos error, lo ideal es manejar el error, nos da mas datos.
 } catch {
-    console.log('Esto es un error');
+    console.log('Esto es un error');//Esto es un error
 }
 
 //fromentries:
