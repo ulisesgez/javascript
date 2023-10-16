@@ -38,14 +38,14 @@ const comparacionDos = num => num * num;
 
 //Otro ejemplo:
 const helloArrow = () => {
-    console.log('Hello Arrow Function');
+    console.log('Hello Arrow Function');//Hello Arrow Function
 }
 
 //De lo anterior podemos reducirlo a:
-const helloArrowDos = () => console.log('Hello Arrow Function');
+const helloArrowDos = () => console.log('Hello Arrow Function');//Hello Arrow Function
 
 //Ahora con un argumento:
-const helloArrowTres = nombre => console.log(`Hello ${nombre}`);
+const helloArrowTres = nombre => console.log(`Hello ${nombre}`);//Hello Ulises
 
 //Otro ejemplo:
 const numeroAleatorio = () => Math.random();
@@ -88,7 +88,7 @@ Funcion anonima:
 */
 
 const bienvenido = function() {
-    console.log(`Hola, bienvenido`);
+    console.log(`Hola, bienvenido`);//Hola, bienvenido
 }
 
 bienvenido();
@@ -96,7 +96,7 @@ bienvenido();
 //Arrow Function:
 
 const adios = () => {
-    console.log(`Adios, nos vemos`);
+    console.log(`Adios, nos vemos`);//Adios, nos vemos
 }
 
 adios();
@@ -113,7 +113,7 @@ Recibir parametros en funciones flecha, aqui podemos quitar los parentesis: () =
 esto solo ocurre si tenemos un parametro:
 */
 
-const miNombre = otroNombre => console.log(`Hola me llamo Ulises y tu nombre es ${otroNombre}`);
+const miNombre = otroNombre => console.log(`Hola me llamo Ulises y tu nombre es ${otroNombre}`);//Hola me llamo Ulises y tu nombre es Irma
 miNombre('Irma');
 
 
@@ -123,9 +123,9 @@ const multiplicar = (a, b) => a + b;
 console.log(multiplicar(9, 9));//81
 
 const funcionVariasLineas = () => {
-    console.log('a');
-    console.log('b');
-    console.log('c');
+    console.log('a');//a
+    console.log('b');//b
+    console.log('c');//c
 }
 
 funcionVariasLineas();// a b c
@@ -133,7 +133,7 @@ funcionVariasLineas();// a b c
 //Iteracion:
 
 const numeros = [1, 2, 3, 4, 5];
-numeros.forEach((element, index) => console.log(`${element} esta en la posición ${index}`));
+numeros.forEach((element, index) => console.log(`${element} esta en la posición ${index}`));//1 esta en la posición 0
 //1 esta en la posición 0
 //2 esta en la posición 1
 //3 esta en la posición 2
