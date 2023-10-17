@@ -26,7 +26,7 @@ A diefrencia de una funcion expresada esta puede ser llamada en cualquier parte 
 funcionDeclarada();
 
 function funcionDeclarada() {
-    console.log("Puedo invocarme en cualquier parte del codigo, incluso antes");
+    console.log("Puedo invocarme en cualquier parte del codigo, incluso antes");//Puedo invocarme en cualquier parte del codigo, incluso antes
 };
 
 funcionDeclarada();
@@ -63,7 +63,7 @@ function imprimirLogReturn() {
 }
 
 let imprimir = imprimirLogReturn();
-console.log(imprimir);//Solo imprimira a y d
+console.log(imprimir);//Solo imprimira a
 
 // Otro ejemplo de función:
 function saludar(){
@@ -84,7 +84,7 @@ saludar();
 //Función expresada / funcion anonima:
 
 const funcionExpresada = function() {
-    console.log("No puedo invocarme en cualquier parte del codigo como una funcion declarada");
+    console.log("No puedo invocarme en cualquier parte del codigo como una funcion declarada");//No puedo invocarme en cualquier parte del codigo como una funcion declarada
 };
 
 funcionExpresada();
