@@ -3,9 +3,10 @@ Las clases de javascript, introducidas en ECMAScript 2015, son una mejora sintá
 sobre la herencia basada en prototipos de JavaScript. La sintaxis de las clases no introduce
 un nuevo modelo de herencia orientada a objetos en JavaScript. Las clases de JavaScript
 proveen una sintaxis mucho más clara y simple para crear objetos y lidiar con la herencia.
-*/
-//El constructor es un método especial que se ejecuta en el momento de instanciar la clase.
 
+Constructor:
+El constructor es un método especial que se ejecuta en el momento de instanciar la clase.
+*/
 class TransbordadorEspacial {
     constructor(planetaDestino) {
         this.planetaDestino = planetaDestino;//Asignamos el valor del parametro
