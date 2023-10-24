@@ -92,3 +92,70 @@ console.log(perro);
 document.write(perro.info);
 document.write(gato.info);
 document.write(pajaro.info);
+
+//Otro ejemplo:
+
+class LearningPath {
+    constructor({
+        id,
+        name,
+        courses = [],
+    }) {
+        this.id = id;
+        this.name = name;
+        this.courses = courses;
+    }
+    addCourse(course) {
+        this.courses.push(course);
+    }
+    replaceCourse(oldCourse, newCourse) {
+        const oldCourseIndex = this.courses.findIndex(course => course.id === oldCourse.id);
+        
+        if (oldCourseIndex !== -1) {
+            this.courses[oldCourseIndex] = newCourse;
+        }
+        return this.courses;
+    }
+    deleteCourse(oldCourse) {
+        const courseIndex = this.courses.findIndex(course => course.id === oldCourse.id);
+        this.courses.splice(courseIndex, 1);
+        
+        return this.courses;
+    }
+}
+
+const escuelaWeb = new LearningPath()
+const escuelaData = new LearningPath()
+const escuelaVgs = new LearningPath()
+
+class Student {
+    constructor({
+        name,
+        email,
+        username,
+        twitter = undefined,
+        instagram = undefined,
+        facebook = undefined,
+        aprovedCourses = [],
+        learningPaths = [],
+    }) {
+        this.name = name;
+        this.email = email;
+        this.username = username;
+        this.socialMedia = {
+            twitter,
+            instagram,
+            facebook,
+        };
+        this.aprovedCourses = aprovedCourses;
+        this.learningPaths = learningPaths;
+    }
+}
+
+const carlos = new Student ({
+    name: "carlos",
+    username: "carlitos",
+    learningPaths: [
+        escuelaWeb
+    ]
+})
