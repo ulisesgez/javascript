@@ -29,7 +29,7 @@ class User {
 };
 
 const jesus = new User();
-console.log(jesus.greeting);
+console.log(jesus.greeting);//hello
 
 class UserTwo {
     constructor(name) {
@@ -60,12 +60,11 @@ class Carro {
     }
 }
 
-
 const tesla = new Carro("Model S", 2022);
 const nissan = new Carro("tsuru", 2017);
 
-console.log(tesla);
-console.log(nissan);
+console.log(tesla);//Carro { modelo: 'Model S', anio: 2022 }
+console.log(nissan);//Carro { modelo: 'tsuru', anio: 2017 }
 
 tesla.acelerar();
 
