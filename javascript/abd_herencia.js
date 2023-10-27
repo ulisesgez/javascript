@@ -4,6 +4,93 @@ este artículo muestra cómo crear clases "hijo" (constructores) que heredan car
 de sus clases "padre". Además, presentamos algunos consejos sobre cuándo y dónde puedes
 usar OOJS y cómo se crean las clases con la sintaxis moderna de ECMAScript.
 */
+
+class Student {
+    constructor({
+      name,
+      email,
+      username,
+      twitter = undefined,
+      instagram = undefined,
+      facebook = undefined,
+      approvedCourses = [],
+      learningPaths = [],
+    }) {
+      this.name = name;
+      this.email = email;
+      this.username = username;
+      this.socialMedia = {
+        twitter,
+        instagram,
+        facebook,
+      };
+      this.approvedCourses = approvedCourses;
+      this.learningPaths = learningPaths;
+    }
+  }
+  
+  class FreeStudent extends Student {
+    constructor(props) {
+      super(props);
+    }
+  
+    approveCourse(newCourse) {
+      if (newCourse.isFree) {
+        this.approvedCourses.push(newCourse);
+      } else {
+        console.warn("Lo sentimos, " + this.name + ", solo puedes tomar cursos abiertos");
+      }
+    }
+  }
+  
+  class BasicStudent extends Student {
+    constructor(props) {
+      super(props);
+    }
+  
+    approveCourse(newCourse) {
+      if (newCourse.lang !== "english") {
+        this.approvedCourses.push(newCourse);
+      } else {
+        console.warn("Lo sentimos, " + this.name + ", no puedes tomar cursos en inglés");
+      }
+    }
+  }
+  
+  class ExpertStudent extends Student {
+    constructor(props) {
+      super(props);
+    }
+  
+    approveCourse(newCourse) {
+      this.approvedCourses.push(newCourse);
+    }
+  }
+  
+  
+  
+  const juan = new FreeStudent({
+    name: "JuanDC",
+    username: "juandc",
+    email: "juanito@juanito.com",
+    twitter: "fjuandc",
+    learningPaths: [
+      escuelaWeb,
+      escuelaVgs,
+    ],
+  });
+  
+  const miguelito = new BasicStudent({
+    name: "Miguelito",
+    username: "migelitofeliz",
+    email: "miguelito@juanito.com",
+    instagram: "migelito_feliz",
+    learningPaths: [
+      escuelaWeb,
+      escuelaData,
+    ],
+  });
+
 //El constructor es un método especial que se ejecuta en el momento de instanciar la clase.
 //Relacion con seccion de clases:
 
