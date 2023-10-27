@@ -125,8 +125,12 @@ class Electrico extends Carro {
     motorUnico() {
         console.log("No hay combustion interna");
     }
-    //Ejemplo de metodo estatico:
-    static queSoy() {
+  /*
+  Metodo estatico: no se necesita instanciar la clase para poder usarlo, se puede usar
+  directamente desde la clase.
+  Ejemplo de metodo estatico:
+  */
+  static queSoy() {
         console.log("Los autos eléctricos son aquellos cuyo motor es capaz de convertir la energía de una batería en energía mecánica");
     }
     get getVelocidad() {
