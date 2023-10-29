@@ -2,7 +2,6 @@
 Polimorfismo: Es la capacidad de un objeto de tomar diferentes formas.
 En JavaScript no existe el polimorfismo como tal, pero se puede simular.
 */
-
 class animal{
     constructor(especie, edad, color){
         this.especie = especie;

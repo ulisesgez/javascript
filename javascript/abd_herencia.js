@@ -4,7 +4,6 @@ este artículo muestra cómo crear clases "hijo" (constructores) que heredan car
 de sus clases "padre". Además, presentamos algunos consejos sobre cuándo y dónde puedes
 usar OOJS y cómo se crean las clases con la sintaxis moderna de ECMAScript.
 */
-
 class Course {
   constructor({
     name,
