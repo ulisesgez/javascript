@@ -1,3 +1,4 @@
+//Antes de usar prototipos:
 const josue = {
     name: "Josue",
     age: 20,
@@ -9,6 +10,8 @@ const josue = {
       this.cursosAprobados.push(nuevoCursito);
     },
   };
+
+  //Implementando prototipos:
   
   function Student(name, age, cursosAprobados) {
     this.name = name;
