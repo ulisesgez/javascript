@@ -1,5 +1,8 @@
 /*
-Concatenacion: Unir strings
+Concatenacion:
+La concatenación es la unión de dos o más cadenas.
+En JavaScript, cuando los valores primitivos se unen con cadenas, el resultado
+es una nueva cadena.
 */
 saludo = "hola Jhon!";
 pregunta = " ¿Como estas?";
@@ -72,14 +75,13 @@ frase = 'mi nombre es "Ulises"y soy el mejor';
 //o
 frase = "mi nombre es 'Ulises'y soy el mejor";
 
-//Concatenación de cadenas con el operador más igual a
-
 /*
+Concatenación de cadenas con el operador más igual a:
 También podemos usar el +=operador para concatenar una cadena al final de una
 variable de cadena existente. Esto puede ser muy útil para dividir una cadena
 larga en varias líneas.
 
-Nota: Cuidado con los espacios. La concatenación no agrega espacios entre cadenas
+Debemos tener cuidado con los espacios. La concatenación no agrega espacios entre cadenas
 concatenadas, por lo que deberá agregarlos usted mismo.
 */
 
@@ -88,9 +90,8 @@ ourStr += "I come second.";
 
 // ourStrahora tiene un valor de la cadena I come first. I come second..
 
-//Construcción de cadenas con variables:
-
 /*
+Construcción de cadenas con variables:
 A veces necesitará construir una cadena.
 Al usar el operador de concatenación ( +),
 puede insertar una o más variables en una cadena que está creando.
@@ -99,9 +100,8 @@ puede insertar una o más variables en una cadena que está creando.
 const ourName = "freeCodeCamp";
 const helloStr = "Hello, our name is " + ourName + ", how are you?";
 
-//Agregar variables a cadenas
-
 /*
+Agregar variables a cadenas:
 Así como podemos construir una cadena en varias líneas a partir de literales 
 de cadena , también podemos agregar variables a una cadena usando 
 el +=operador más igual ( ).
@@ -113,9 +113,8 @@ ourStr += anAdjective;
 
 //ourStrtendría el valor freeCodeCamp is awesome!.
 
-//Use la notación de corchetes para encontrar el primer carácter en una cadena
-
 /*
+Use la notación de corchetes para encontrar el primer carácter en una cadena.
 La notación de corchetes es una forma de obtener un carácter en un índice
 específico dentro de una cadena.
 
@@ -133,9 +132,8 @@ const firstLetter = firstName[0];
 
 //firstLettertendría un valor de la cadena C.
 
-//Comprender la inmutabilidad de cadenas
-
 /*
+Comprender la inmutabilidad de cadenas.
 En JavaScript, Stringlos valores son inmutables , lo que significa que no se
 pueden modificar una vez creados.
 
@@ -154,9 +152,8 @@ La única forma de cambiar myStrsería asignarle un nuevo valor, así:
 let myStr = "Bob";
 myStr = "Job";
 
-//Use la notación de corchetes para encontrar el último carácter en una cadena
-
 /*
+Use la notación de corchetes para encontrar el último carácter en una cadena.
 Para obtener la última letra de una cadena, puede restar una de la longitud de
 la cadena.
 
@@ -190,7 +187,6 @@ esto en la consola, obtendría:
 Alan said, "Peter is learning JavaScript".
 
 Citar Cadenas:
-
 Los valores de cadena en JavaScript se pueden escribir con comillas simples o
 dobles, siempre que comience y termine con el mismo tipo de comillas.
 A diferencia de otros lenguajes de programación, las comillas simples y dobles
