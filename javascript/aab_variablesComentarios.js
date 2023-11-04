@@ -1,33 +1,36 @@
 /*
 Comentarios
-Los comentarios se comportan como espacios en blanco y se descartan durante la ejecución del
-script. La sintaxis de los comentarios es la misma que en C++ y en muchos otros lenguajes:
+Los comentarios se comportan como espacios en blanco y se descartan durante la
+ejecución del script. La sintaxis de los comentarios es la misma que en C++
+y en muchos otros lenguajes:
 */
 
 // a one line comment
 
-/* this is a longer,
- * multi-line comment
- */
+/*
+this is a longer,
+multi-line comment
+*/
 
 /*
-No puede anidar comentarios de bloque. Esto sucede a menudo cuando accidentalmente incluye un
-asterisco - diagonal secuencia en su comentario, lo que terminará el comentario.
-En este caso, debe romper el asterisco - diagonal patrón. Por ejemplo, al insertar una barra
-invertida:
+No puede anidar comentarios de bloque. Esto sucede a menudo cuando accidentalmente
+incluye un asterisco - diagonal secuencia en su comentario, lo que terminará el
+comentario.
+En este caso, debe romper el asterisco - diagonal patrón.
+Por ejemplo, al insertar una barra invertida:
 */
 
 /* You can /* nest comments *\/ by escaping slashes */
 
 /*
-Declaraciones
+Declaraciones:
 JavaScript tiene tres tipos de declaraciones de variables.
 
 var:
 Declara una variable, opcionalmente inicializándola a un valor.
 
 let:
-Declara una variable local con ámbito de bloque y, opcionalmente, la inicializa en un valor.
+Declara una variable local con ámbito de bloque y opcionalmente, la inicializa en un valor.
 
 const:
 Declara una constante con nombre de solo lectura y ámbito de bloque.
