@@ -26,32 +26,32 @@ Por ejemplo, al insertar una barra invertida:
 Declaraciones:
 JavaScript tiene tres tipos de declaraciones de variables.
 
-var:
+Var:
 Declara una variable, opcionalmente inicializándola a un valor.
 
-let:
+Let:
 Declara una variable local con ámbito de bloque y opcionalmente, la inicializa en un valor.
 
-const:
+Const:
 Declara una constante con nombre de solo lectura y ámbito de bloque.
 
 Variables:
-Utiliza variables como nombres simbólicos para valores en su aplicación. Los nombres de las
-variables, llamados identificadores , se ajustan a ciertas reglas.
+Utiliza variables como nombres simbólicos para valores en su aplicación.
+Los nombres de las variables, llamados identificadores , se ajustan a ciertas reglas.
 
-Un identificador de JavaScript generalmente comienza con una letra, un guión bajo ( _) o un
-signo de dólar ( $). Los caracteres subsiguientes también pueden ser dígitos ( 0- 9).
+Un identificador de JavaScript generalmente comienza con una letra,
+un guión bajo ( _) o un signo de dólar ( $). Los caracteres subsiguientes también pueden
+ser dígitos ( 0- 9).
 Dado a que JavaScript distingue entre mayúsculas y minúsculas, las letras incluyen los
-caracteres Ahasta Z(mayúsculas) y ahasta z(minúsculas). Puedes utilizar la mayoría de las
-letras ISO 8859-1 o Unicode, como åy üen los identificadores. (Para obtener más detalles,
-consulte esta publicación de blog o la referencia de gramática léxica ).
+caracteres Ahasta Z(mayúsculas) y ahasta z(minúsculas). Puedes utilizar la mayoría de
+las letras ISO 8859-1 o Unicode, como åy üen los identificadores. (Para obtener más
+detalles, consulte esta publicación de blog o la referencia de gramática léxica ).
 También puede usar las secuencias de escape Unicode como caracteres en los identificadores.
 
 Algunos ejemplos de nombres legales son Number_hits, temp99, $credity _name.
 
 Declaración de variables:
 Puede declarar una variable de dos maneras:
-
 > Con la palabra clave var. Por ejemplo, var x = 42. Esta sintaxis se puede utilizar para
 declarar variables locales y globales , según el contexto de ejecución.
 
@@ -150,7 +150,7 @@ if (true) {
 console.log(b); // ReferenceError: y no está definida
 
 /*
-Declaración e inicialización
+Declaración e inicialización:
 En una declaración como let x = 42, la let xparte se llama declaración y la = 42parte se
 llama inicializador . La declaración permite acceder a la variable más tarde en el código
 sin lanzar un ReferenceError, mientras que el inicializador asigna un valor a la variable.
@@ -214,7 +214,6 @@ verá ejemplos de identificadores de variables en mayúsculas, minúsculas o
 camelCase.
 
 Template literals:
-
 Nos va a permitir concatenar strings de una forma mas amigable,
 jugar con variables, elementos:
 */
