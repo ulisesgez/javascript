@@ -32,17 +32,13 @@ let v = Boolean(true);
 let f = Boolean(false);
 
 //OR:
-
 console.log(-7 || "valor de la derecha");//-7
 console.log(true || "valor de la derecha");//-true
-
 console.log(undefined || "valor de la derecha");//valor de la derecha
 console.log(0 || "valor de la derecha");//valor de la derecha
 
 //AND:
-
 console.log(-7 && "valor de la derecha");//valor de la derecha
 console.log(true && "valor de la derecha");//valor de la derecha
-
 console.log(undefined && "valor de la derecha");//undefined
 console.log(0 && "valor de la derecha");//0
