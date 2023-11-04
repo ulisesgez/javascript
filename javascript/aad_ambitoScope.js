@@ -1,24 +1,21 @@
 /*
 Ambito de las variables:
-
 Las variables pueden ser globales o locales, esto depende de donde se declaren.
 Las variables globales son aquellas que se declaran fuera de una función y estan
 disponibles dentro y fuera de las funciones.
 */
-
 var texto = "Hola mundo soy una variable global"
 var numero = 12;
-console.log(texto);
-console.log(numero);
+console.log(texto);//Imprime Hola mundo soy una variable global
+console.log(numero);//Imprime 12
 
 function holaMundo(texto) {
-    console.log(texto);
-    console.log(numero);
+    console.log(texto);//Imprime Hola mundo soy una variable global
+    console.log(numero);//Imprime 12
     var hola_mundo = "Texto dentro de funcion"
-    console.log(hola_mundo);
+    console.log(hola_mundo);//Imprime Texto dentro de funcion
 }
 holaMundo(texto);
-
 /*
 ¡Que pasaria si quisieramos acceder a numero dentro de la función?
 function holaMundo(texto) {
@@ -37,18 +34,17 @@ var numero = 12;
 var texto = "Hola mundo soy una variable global" 
 holaMundo(texto);
 
-//Ahora:
-
+Ahora:
 */
 function holaMundo(texto) {
     var hola_mundo = "Texto dentro de funcion"
-    console.log(texto);
-    console.log(numero);
-    console.log(hola_mundo);
+    console.log(texto);//Imprime Hola mundo soy una variable global
+    console.log(numero);//Imprime 12
+    console.log(hola_mundo);//Imprime Texto dentro de funcion
 }
 var numero = 12;
 var texto = "Hola mundo soy una variable global" 
-holaMundo(texto);
+holaMundo(texto);//Imprime Hola mundo soy una variable global | 12 | Texto dentro de funcion
 
 console.log(hola_mundo);//Error, no esta definido en el ambito global, si en la función
 
@@ -69,9 +65,13 @@ Una variable puede pertenecer a uno de los siguientes ámbitos :
 Además, las variables declaradas con let o const pueden pertenecer a un ámbito adicional:
 
 Ámbito de bloque: el ámbito creado con un par de llaves (un bloque ).
-Cuando declara una variable fuera de cualquier función, se denomina variable global , porque está disponible para cualquier otro código en el documento actual. Cuando declara una variable dentro de una función, se denomina variable local , porque solo está disponible dentro de esa función.
+Cuando declara una variable fuera de cualquier función, se denomina variable global,
+porque está disponible para cualquier otro código en el documento actual. Cuando declara
+una variable dentro de una función, se denomina variable local , porque solo está
+disponible dentro de esa función.
 
-let y const las declaraciones también se pueden limitar a la declaración de bloque en la que se declaran.
+let y const las declaraciones también se pueden limitar a la declaración de bloque
+en la que se declaran.
 */
 console.log("Var:");
 var musicaUno = "Rock";
@@ -172,7 +172,6 @@ miApellido//Esto en consola no imprime Gutierrez
 
 
 //Block Scope:
-
 function animals() {
   if(true) {
     var animal1 = 'dog';//Function scope
@@ -185,7 +184,6 @@ function animals() {
   console.log(animal2);//ReferenceError: animal2 is not defined
   console.log(animal3);//ReferenceError: animal3 is not defined
 }
-
 animals();//dog | cat | bird
 
 //Otro ejemplo:
@@ -264,9 +262,9 @@ const fruits  = () => {
       let fruit2 = 'kiwi';//block scope, solo pueden ser accedidas dentro del bloque donde son declaradas
       const fruit3 = 'banana';//block scope, solo pueden ser accedidas dentro del bloque donde son declaradas
   }
-  console.log(fruit1);
-  console.log(fruit2);
-  console.log(fruit3);
+  console.log(fruit1);//apple
+  console.log(fruit2);//ReferenceError: fruit2 is not defined
+  console.log(fruit3);//ReferenceError: fruit3 is not defined
 }
 
 fruits();//Error
@@ -289,9 +287,9 @@ function myFunction() {
     function child() {
       console.log(inner, myNumber, myGlobal);//2 1 0
     }
-    return child();
+    return child();//llamamos a la funcion interna
   }
-  return parent();
+  return parent();//llamamos a la funcion interna
 }
 
 myFunction();
@@ -321,9 +319,7 @@ console.log(g());
     return `hello ${userName}`;
   }
 VM54:12 hello Oscar
-*/
 
-/*
 Otro ejemplo:
 No funciona la alcancia:
 function moneybox(coins) {
@@ -341,17 +337,17 @@ function moneybox(coins) {
   
   function countCoins(coins) {
     saveCoins += coins;
-    console.log(`money box: $ ${saveCoins}`);
+    console.log(`money box: $ ${saveCoins}`);//money box: $ 5 | money box: $ 15
   }
-  return countCoins;
+  return countCoins;//retornamos la funcion interna
 }
 
 const myMoneybox = moneybox();
-myMoneybox(5);
-myMoneybox(10);
-myMoneybox(20);
+myMoneybox(5);//money box: $ 5
+myMoneybox(10);//money box: $ 15
+myMoneybox(20);//money box: $ 35
 
 const moneyboxAna = moneybox();
-moneyboxAna(300);
-moneyboxAna(10);
-moneyboxAna(25);
+moneyboxAna(300);//money box: $ 300
+moneyboxAna(10);//money box: $ 10
+moneyboxAna(25);//money box: $ 25
