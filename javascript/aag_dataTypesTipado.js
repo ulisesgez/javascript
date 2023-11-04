@@ -1,21 +1,18 @@
 /*
-Grammar and types
+Tipado:
 JavaScript toma prestada la mayor parte de su sintaxis de Java, C y C++, pero también ha sido
 influenciado por Awk, Perl y Python.
 
 JavaScript distingue entre mayúsculas y minúsculas y utiliza el juego de caracteres Unicode.
 Por ejemplo, la palabra Früh (que significa "temprano" en alemán) podría usarse como nombre
 de variable.
-
 */
 const Früh = "foobar";
 console.log(Früh);//foobar
 /*
 Pero, la variable frühno es la misma Frühporque JavaScript distingue entre mayúsculas y
 minúsculas.
-
 En JavaScript, las instrucciones se llaman sentencias y están separadas por punto y coma (;).
-
 No es necesario un punto y coma después de una declaración si se escribe en su propia línea.
 Pero si se desea más de una declaración en una línea, entonces deben estar separadas por
 punto y coma.
@@ -58,14 +55,12 @@ let undefined
 alert(undefined)
 
 // Otro ejemplo:
-
 4 + "7"; // 47
 4 * "7"; // 28
 2 + true // 3
 false - 3 // -3
 
 //Covertir un string a un number:
-
 let falseNumber = "33";
 
 console.log(Number(falseNumber) + 7);//40
