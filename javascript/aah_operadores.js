@@ -1,5 +1,7 @@
-//Aritméticos: Toman valores numéricos( ya sean literales o variables) como sus operandos y retornan un valor numérico único.
-
+/*
+Aritméticos: Toman valores numéricos( ya sean literales o variables)
+como sus operandos y retornan un valor numérico único.
+*/
 numero = 20
 numero--
 //Resta 1
@@ -10,8 +12,10 @@ numero = 100
 //Aqui no se resta 1, por que la resta se hace después de que se procesa.
 alert(numero--)//100
 
-//De Asignación: Asigna un valor al operando de la izquierda basado en el valor del operando de la derecha.
-
+/*
+De Asignación: Asigna un valor al operando de la izquierda
+basado en el valor del operando de la derecha.
+*/
 
 //Asignación: x = y --> x = y
 nombre = "ulises"
@@ -248,60 +252,59 @@ if (num > 5) {
     if (num < 10) {
       return "Yes";
     }
-  }
-  return "No";
+}
+return "No";
   
-  //Solo regresará Yessi numes mayor que 5 y menor que 10. La misma lógica se puede escribir como:
+//Solo regresará Yessi numes mayor que 5 y menor que 10. La misma lógica se puede escribir como:
   
-  if (num > 5 && num < 10) {
-    return "Yes";
-  }
-  return "No";
-  
-  //Comparaciones con el operador lógico o
-  
-  /*
-  El operador lógico o|| ( ) devuelve true si alguno de los operandos es true.
-  De lo contrario, devuelve false.
-  
-  El operador lógico o se compone de dos símbolos de tubería: ( ||).
-  Por lo general, esto se puede encontrar entre las teclas Retroceso e Intro.
-  
-  El siguiente patrón debería resultarle familiar por los puntos de ruta anteriores:
-  */
-  
-  if (num > 10) {
-  return "No";
-  }
-  if (num < 5) {
-  return "No";
-  }
+if (num > 5 && num < 10) {
   return "Yes";
+}
+return "No";
   
-  //regresará Yes solo si num está entre 5 y 10(5 y 10 incluidos).
-  //La misma lógica se puede escribir como:
-  
-  if (num > 10 || num < 5) {
+/*
+Comparaciones con el operador lógico o:
+El operador lógico o|| ( ) devuelve true si alguno de los operandos es true.
+De lo contrario, devuelve false.
+
+El operador lógico o se compone de dos símbolos de tubería: ( ||).
+Por lo general, esto se puede encontrar entre las teclas Retroceso e Intro.
+
+El siguiente patrón debería resultarle familiar por los puntos de ruta anteriores:
+*/
+
+if (num > 10) {
   return "No";
-  }
-  return "Yes";
-  
-  /*
-  Nos devuelven un resultado a partir de que se cumpla (o no)
-  una condición, su resultado es booleano y
-  sus operandos son valores lógicos o asimilables a ellos
-  */
-  
-  let valor = true;
-  let valor2 = true;
-  //true, ya que si las dos condiciones se cumplen devuelve true
-  let resultado = valor && valor2;
-  //true, ya que si con que una sea verdadera devuelve verdadero
-  let resultado2 = valor || valor2;
-  //false, negación de true
-  let resultado3 = !valor;
-  
-  document.write(resultado);//true
+}
+if (num < 5) {
+  return "No";
+}
+return "Yes";
+
+//Regresará Yes solo si num está entre 5 y 10(5 y 10 incluidos).
+//La misma lógica se puede escribir como:
+
+if (num > 10 || num < 5) {
+return "No";
+}
+return "Yes";
+
+/*
+Nos devuelven un resultado a partir de que se cumpla (o no)
+una condición, su resultado es booleano y
+sus operandos son valores lógicos o asimilables a ellos
+*/
+
+let valor = true;
+let valor2 = true;
+//true, ya que si las dos condiciones se cumplen devuelve true
+let resultado = valor && valor2;
+//true, ya que si con que una sea verdadera devuelve verdadero
+let resultado2 = valor || valor2;
+//false, negación de true
+let resultado3 = !valor;
+
+document.write(resultado);//true
 
 /*
 Operadores de Corto Circuito: Cuando JavaScript intenta evaluar ciertos
@@ -337,15 +340,12 @@ function saludoDos(nombre) {
 
 saludoDos();//Buenas tardes desconido
 saludoDos("ulises");//Buenas tardes ulises
-
 console.log(-7 || "valor de la derecha");//-7
 console.log(true || "valor de la derecha");//-true
-
 console.log(undefined || "valor de la derecha");//valor de la derecha
 console.log(0 || "valor de la derecha");//valor de la derecha
 
 //AND:
-
 console.log(-7 && "valor de la derecha");//valor de la derecha
 console.log(true && "valor de la derecha");//valor de la derecha
 
