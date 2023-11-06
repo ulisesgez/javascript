@@ -13,3 +13,23 @@ class duck {
 }
 console.log(duck.sound); // quack
 duck.quack(); // quack
+
+//Métodos estáticos del prototipo Object:
+const juan = {
+    name: "Juan",
+    age: 20,
+    approvedCourses: ["Course 1"],
+    addCourse(newCourse) {
+        this.approvedCourses.push(newCourse);
+    }
+};
+/*
+Asi era como accediamos a la imformacion de un objeto:
+juan.addCourse("Course 2");
+Ahora vereos como acceder a la informacion de un objeto con metodos estaticos:
+*/
+Object.keys(juan); // ["name", "age", "approvedCourses", "addCourse"]
+Object.getOwnPropertyNames(juan); // ["name", "age", "approvedCourses", "addCourse"]
+Object.entries(juan); // [["name", "Juan"], ["age", 20], ["approvedCourses", Array(2)], ["addCourse", ƒ]]
+//para verlo:
+console.log(Object.entries(juan));//[["name", "Juan"], ["age", 20], ["approvedCourses", Array(2)], ["addCourse", ƒ]]
