@@ -807,3 +807,40 @@ person2
     }
   }
 } */
+
+/*
+Como podemos observar, los métodos anteriores no son muy útiles para
+copiar objetos. Por suerte, existen métodos que nos permite hacer una
+copia profunda de un objeto,los metodos son JSON.parse() y JSON.stringify().
+
+JSON.parse y JSON.stringify:
+JSON.parse() toma una cadena JSON y la convierte en un objeto JavaScript.
+JSON.stringify() toma un objeto JavaScript y lo convierte en una cadena JSON.
+*/
+const userOne = {
+  name: 'Eduardo',
+  email: 'edu@gmail',
+  social: {
+    facebook: 'Eduardo Garcia',
+    twiiter: 'EduGar'
+  }
+};
+
+//const userTwo = {};
+//String a partir de un objeto:
+const inString = JSON.stringify(userOne);
+//Objeto a partir de un string:
+const userTwo = JSON.parse(inString);
+
+userTwo.social.facebook = 'Eduardo Miguel Garcia';
+console.log(userOne);//{ name: 'Eduardo', email: 'edu@gmail', social: { facebook: 'Eduardo Garcia', twiiter: 'EduGar' } }
+console.log(userTwo);//{ name: 'Eduardo', email: 'edu@gmail', social: { facebook: 'Eduardo Miguel Garcia', twiiter: 'EduGar' } }
+
+/*
+Ahora tenemos problemas al implementar metodos, para ello es necesario usar recursividad:
+
+Recursividad:
+La recursividad es un concepto que nos permite ejecutar una función
+dentro de otra función. Esto nos permite ejecutar una función
+varias veces hasta que se cumpla una condición.
+*/
