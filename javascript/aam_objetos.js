@@ -661,3 +661,149 @@ function newUser(user, age, country) {
 }
 
 console.log(newUser("yo", 20, "MX"));// { user: 'yo', age: 20, country: 'MX' }
+
+/*
+Shallow copy (copia superficial):
+Shallow copy significa que solo se copia el primer nivel de un objeto,
+no los objetos anidados dentro de él.
+Para copiar un objeto, se puede usar el operador de propagación ( ...).
+Shallow Copy se refiere a la forma de crear un nuevo objeto a partir de las
+propiedades de otro. Esta copia solo se hace a un nivel alto,
+no se hace con objetos dentro de objetos (nested objects),
+lo que provoca que la modificación de una de sus propiedades,
+modifique el objeto principal.
+*/
+
+const person = {
+	name: 'Eduardo',
+	email: 'edudardo@mail.com',
+  social: {
+    facebook: 'Eduardo Garcia',
+    twiiter: 'EduGar'
+  }
+}
+
+const person2 = {}
+
+for (prop in person) {
+  person2[prop] = person[prop]
+}
+
+person2.name = 'Eduardo Miguel'
+person
+/* {
+  name: 'Eduardo',
+  email: 'edudardo@mail.com',
+  social: { facebook: 'Eduardo Garcia', twiiter: 'EduGar' }
+} */
+
+person2
+/* {
+  name: 'Eduardo Miguel',
+  email: 'edudardo@mail.com',
+  social: { facebook: 'Eduardo Garcia', twiiter: 'EduGar' }
+} */
+
+person2.social.facebook = 'Eduardo Miguel Garcia'
+person
+/* {
+  name: 'Eduardo',
+  email: 'edudardo@mail.com',
+  social: { facebook: 'Eduardo Miguel Garcia', twiiter: 'EduGar' }
+} */
+
+person2
+/* {
+  name: 'Eduardo Miguel',
+  email: 'edudardo@mail.com',
+  social: { facebook: 'Eduardo Miguel Garcia', twiiter: 'EduGar' }
+} */
+
+/*
+Existe un método del objeto Object que nos permite hacer esta copia directa
+con el método Object.assign(). Sin embargo, este método sigue conservando el
+problema de los objetos internos.
+*/
+
+const person2 = Object.assign({}, person)
+
+person2.name = 'Eduardo Miguel'
+person
+/* {
+  name: 'Eduardo',
+  email: 'edudardo@mail.com',
+  social: { facebook: 'Eduardo Garcia', twiiter: 'EduGar' }
+} */
+
+person2
+/* {
+  name: 'Eduardo Miguel',
+  email: 'edudardo@mail.com',
+  social: { facebook: 'Eduardo Garcia', twiiter: 'EduGar' }
+} */
+
+person2.social.facebook = 'Eduardo Miguel Garcia'
+person
+/* {
+  name: 'Eduardo',
+  email: 'edudardo@mail.com',
+  social: { facebook: 'Eduardo Miguel Garcia', twiiter: 'EduGar' }
+} */
+
+person2
+/* {
+  name: 'Eduardo Miguel',
+  email: 'edudardo@mail.com',
+  social: { facebook: 'Eduardo Miguel Garcia', twiiter: 'EduGar' }
+} */
+
+/*
+De la misma manera existe otro método que nos permite hacer esta copia,
+el método Object.create(). A diferencia de los métodos anteriores,
+este método copia un objeto como el prototipo del nuevo objeto.
+Sin embargo, sigue conservando el mismo problema de los objetos internos.
+*/
+
+const person2 = Object.create(person)
+
+person2.name = 'Eduardo Miguel'
+person
+/* {
+  name: 'Eduardo',
+  email: 'edudardo@mail.com',
+  social: { facebook: 'Eduardo Garcia', twiiter: 'EduGar' }
+} */
+
+person2
+/* {
+  name: 'Eduardo Miguel',
+  __proto__: {
+    name: 'Eduardo Miguel',
+    email: 'edudardo@mail.com',
+    social: {
+      facebook: 'Eduardo Garcia',
+      twiiter: 'EduGar'
+    }
+  }
+} */
+
+person2.social.facebook = 'Eduardo Miguel Garcia'
+person
+/* {
+  name: 'Eduardo',
+  email: 'edudardo@mail.com',
+  social: { facebook: 'Eduardo Miguel Garcia', twiiter: 'EduGar' }
+} */
+
+person2
+/* {
+  name: 'Eduardo Miguel',
+  __proto__: {
+    name: 'Eduardo Miguel',
+    email: 'edudardo@mail.com',
+    social: {
+      facebook: 'Eduardo Miguel Garcia',
+      twiiter: 'EduGar'
+    }
+  }
+} */
