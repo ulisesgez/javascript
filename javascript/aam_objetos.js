@@ -880,3 +880,45 @@ const userThree = {
     this.name = "Maria Jose";
   }
 };
+
+function isObject(subject) {
+  return typeof subject == "object";
+}
+
+function isArray(subject) {
+  return Array.isArray(subject);
+}
+
+function deepCopy(subject) {
+  let copySubject;
+  const subjectIsObject = isObject(subject);
+  const subjectIsArray = isArray(subject);
+  if(subjectIsArray) {
+    copySubject = [];
+  } else if(subjectIsObject) {
+    copySubject = {};
+  } else {
+    return subject;
+  }
+  for(ket in subject) {
+    const keyIsObject = isObject(subject[key]);
+    if(keyIsObject) {
+      copySubject[key] = deepCopy(subject[key]);//Recursividad
+    } else {
+      if(subjectIsArray) {
+        copySubject.push(subject[key]);
+      } else {
+        copySubject[key] = subject[key];
+      }
+    }
+  }
+
+  return copySubject;
+}
+
+const userFour = deepCopy(userThree);
+console.log(userFour);//{ name: 'Maria', email: 'maria@gmail', social: { facebook: 'Maria Garcia', twiiter: 'MariaGar' }, editName: [Function: editName] }
+userThree.name = "Maria Dolores";
+userThree.social.facebook = "Maria Dolores Flores";
+console.log(userThree);//{ name: 'Maria Dolores', email: 'maria@gmail', social: { facebook: 'Maria Dolores Flores', twiiter: 'MariaGar' }, editName: [Function: editName] }
+console.log(userFour);//{ name: 'Maria', email: 'maria@gmail', social: { facebook: 'Maria Garcia', twiiter: 'MariaGar' }, editName: [Function: editName] }
