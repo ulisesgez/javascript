@@ -863,3 +863,20 @@ function recursiva(numbersArray) {
 };
 
 console.log(recursiva(numbers));//1 2 3 4 5 6 7 8 9 0
+/*
+Deep copy con recursividad:
+Deep copy significa que se copia el primer nivel de un objeto,
+y los objetos anidados dentro de él. Con ello resolveremos el problema
+de los objetos internos.
+*/
+const userThree = {
+  name: 'Maria',
+  email: 'maria@gmail',
+  social: {
+    facebook: 'Maria Garcia',
+    twiiter: 'MariaGar'
+  },
+  editName() {
+    this.name = "Maria Jose";
+  }
+};
