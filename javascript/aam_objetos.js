@@ -843,4 +843,21 @@ Recursividad:
 La recursividad es un concepto que nos permite ejecutar una función
 dentro de otra función. Esto nos permite ejecutar una función
 varias veces hasta que se cumpla una condición.
+
+Para este ejemplo nos basaremos en el siguiente codigo:
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+let start = 0;
+for(let index = 0; index < numbers.length; index++) {
+  start = numbers[index];
+  console.log({index, start});//{ index: 0, start: 1 } { index: 1, start: 2 } { index: 2, start: 3 } { index: 3, start: 4 } { index: 4, start: 5 } { index: 5, start: 6 } { index: 6, start: 7 } { index: 7, start: 8 } { index: 8, start: 9 } { index: 9, start: 0 }
+}
 */
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+function recursiva(numbersArray) {
+  if(numbersArray.length != 0){
+    const firstNum = numbersArray[0];
+    console.log(firstNum);
+    numbersArray.shift();
+    recursiva(numbersArray);
+  }
+};
