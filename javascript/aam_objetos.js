@@ -922,3 +922,70 @@ userThree.name = "Maria Dolores";
 userThree.social.facebook = "Maria Dolores Flores";
 console.log(userThree);//{ name: 'Maria Dolores', email: 'maria@gmail', social: { facebook: 'Maria Dolores Flores', twiiter: 'MariaGar' }, editName: [Function: editName] }
 console.log(userFour);//{ name: 'Maria', email: 'maria@gmail', social: { facebook: 'Maria Garcia', twiiter: 'MariaGar' }, editName: [Function: editName] }
+
+//Abstracción con objetos literales y deep copyClase:
+
+const studentBase = {
+  name: undefined,
+  email: undefined,
+  age: undefined,
+  approvedCourses: undefined,
+  learningPaths: undefined,
+  socialMedia: {
+    twitter: undefined,
+    instagram: undefined,
+    facebook: undefined,
+  },
+  approvedCourses: [],
+  learningPaths: [],
+};
+
+const juan = deepCopy(studentBase);
+/*
+Object.defineProperty(juan, "name", {
+  value: "Juanito",
+  configurable: false,//no se puede eliminar
+});
+console.log(juan);//{ name: 'Juanito', email: undefined, age: undefined, approvedCourses: [], learningPaths: [], socialMedia: { twitter: undefined, instagram: undefined, facebook: undefined } }
+
+En lugar de usar Object.defineProperty() podemos usar Object.seal()
+*/
+Object.seal(juan);//no se puede eliminar ni agregar propiedades
+
+/*
+Factory pattern y RORO:
+Factory pattern es un patrón de diseño que nos permite crear objetos
+de forma sencilla. Este patrón nos permite crear objetos a partir de
+una función que se encarga de crearlos. Esta función se conoce como
+factoría o factory function.
+
+RORO significa Receive an Object and Return an Object.
+Para este ejemplo nos basaremos en el siguiente codigo:
+*/
+
+function crearEstudiante({
+  name = "",
+  age = 0,
+  email = "",
+  twitter = "",
+  instagram = "",
+  facebook = "",
+}) {
+  return {
+    name,
+    age,
+    email,
+    socialMedia: {
+      twitter,
+      instagram,
+      facebook,
+    },
+  };
+}
+
+const mario = crearEstudiante({
+  name: "mario",
+  age: 21
+});
+
+console.log(mario);//{ name: 'mario', age: 21, email: '', socialMedia: { twitter: '', instagram: '', facebook: '' } }
