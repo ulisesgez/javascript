@@ -154,12 +154,12 @@ do {
 }
 while (numeroCinco <= 6);
 
-/**
- * For: lo utilizamos cuando sabemos cuantas iteraciones van a ser necesarias.
- * - Declaramos
- * - Inicializamos
- * - Iteramos
- */
+/*
+For: lo utilizamos cuando sabemos cuantas iteraciones van a ser necesarias.
+ - Declaramos
+ - Inicializamos
+ - Iteramos
+*/
 
 for (let i = 0; i < 6; i++){
     document.write(i);
@@ -182,9 +182,7 @@ for (let i = 0; i < 20; i++){
     }
     document.write(i);
 };
-/**
- * For in y for of
- */
+//For in y for of
 
 let animales = ["gato", "perro", "pajaro"];
 

@@ -37,7 +37,6 @@ if (dia === 0){
     console.log("No es Lunes, Martes o Domingo");
 }
 
-
 //Otro ejemplo:
 
 function test (myCondition) {
@@ -46,7 +45,6 @@ function test (myCondition) {
     }
     return "It was false";
 }
-  
 test(true);
 test(false);
 
@@ -67,7 +65,6 @@ y podamos nopsotros generar ciertas acciones con ello.
 if (true){
     console.log("hola");//hola
 }
-
 
 if (false){
     console.log("hola");
