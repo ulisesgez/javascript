@@ -1,10 +1,9 @@
-/*
-Destructuración: Nueva forma de asignar valores a arreglos y objetos
-*/
+//Destructuración: Nueva forma de asignar valores a arreglos y objetos
+
 let numeros = [1, ,2, 3];
-/*
-Sin destructuracion:
-*/
+
+//Sin destructuracion:
+
 let uno = numeros[0],
     dos = numeros[1],
     tres = numeros[2];
@@ -205,9 +204,7 @@ const mitad = ({max, min}) => (max + min) / 2.0;
 
 console.log(mitad(estadisticas));//28.015
 
-/*
-Cambiar el valor de una variable:
-*/
+//Cambiar el valor de una variable:
 
 let varA = 3;
 let varB = 6;
