@@ -111,6 +111,10 @@ let tony = cambiarNombre(peter);
 
 //Spread operator con arreglos:
 
+
+
+
+
 const autos = ["bmw", "nissan", "toyota"];
 const otrosAutos = [...autos];
 
