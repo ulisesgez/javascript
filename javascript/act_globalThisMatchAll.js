@@ -2,6 +2,10 @@
 console.log(window);//En node is not defined, esto es para navegador
 console.log(global);//esto es para node
 console.log(self);//webworker
+/*
+globalThis es una variable global que funciona en cualquier contexto.
+Es una variable global en toda nuestra aplicacion.
+*/
 console.log(globalThis);//Contexto global, estandar
 
 //matchall
