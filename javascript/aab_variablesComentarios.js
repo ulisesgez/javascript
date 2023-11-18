@@ -23,6 +23,10 @@ Por ejemplo, al insertar una barra invertida:
 /* You can /* nest comments *\/ by escaping slashes */
 
 /*
+Variables:
+Una variable es un contenedor para un valor, como un número, una cadena o un objeto.
+En JavaScript, las variables se declaran con la palabra clave var.
+
 Declaraciones:
 JavaScript tiene tres tipos de declaraciones de variables.
 
