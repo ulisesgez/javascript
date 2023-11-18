@@ -1013,7 +1013,7 @@ let miNombre = "name"
 let miApellido = "last name"
 let miEdad = 20
 
-console.log(miNombre , miApellido, miEdad);
+console.log(miNombre , miApellido, miEdad);//name last name 20
 
 //Usando comodines:
 
