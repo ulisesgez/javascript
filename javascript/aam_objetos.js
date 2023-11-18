@@ -1004,10 +1004,10 @@ console.log(console);//Console Object
 console.log(document);//Window Object
 console.log(document);//DOM
 
-console.log("Soy un mensaje");
-console.error("Esto es un error");
-console.warn("Esto es un aviso");
-console.info("Mensaje informativo");
+console.log("Soy un mensaje");//Soy un mensaje
+console.error("Esto es un error");//Esto es un error
+console.warn("Esto es un aviso");//Esto es un aviso
+console.info("Mensaje informativo");//Mensaje informativo
 
 let miNombre = "name"
 let miApellido = "last name"
