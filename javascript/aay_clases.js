@@ -197,7 +197,7 @@ tesla.acelerar();
 //Otro ejemplo:
 //Relacion con seccion de metodos
 
-class animal{
+class Animal{
     constructor(especie, edad, color){
         this.especie = especie;
         this.edad = edad;
@@ -206,9 +206,9 @@ class animal{
     }
 }
 
-let perro = new animal("perro", 5, "marron");
-let gato = new animal("gato", 6, "negro");
-let pajaro = new animal("pajaro", 7, "verde");
+let perro = new Animal("perro", 5, "marron");
+let gato = new Animal("gato", 6, "negro");
+let pajaro = new Animal("pajaro", 7, "verde");
 
 document.write(perro);
 document.write(perro.color);
