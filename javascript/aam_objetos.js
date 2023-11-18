@@ -1001,8 +1001,12 @@ Console
 Math
 */
 console.log(console);//Console Object
+console.log(window);//Window Object
+console.dir(window);//DOM
+console.log(global);
+console.log(globalThis);
 console.log(document);//Window Object
-console.log(document);//DOM
+console.dir(document);
 
 console.log("Soy un mensaje");//Soy un mensaje
 console.error("Esto es un error");//Esto es un error
