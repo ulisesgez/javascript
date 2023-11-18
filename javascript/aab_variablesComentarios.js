@@ -85,7 +85,7 @@ console.log('El valor de a es ' + a); // El valor de a es undefined
 console.log('El valor de b es ' + b); // El valor de b es undefined
 var b;
 
-// Esto puede desconcertarte hasta que leas 'Elevación de variable' a continuación
+//Esto puede desconcertarte hasta que leas 'Elevación de variable' a continuación
 console.log('El valor de c es ' + c); // Error de referencia no detectado: c no está definida
 
 let x;
@@ -112,9 +112,7 @@ es undefined:
 var myArray = [];
 if (!myArray[0]) myFunction();
 
-/*
-El valor undefined se convierte en NaN cuando se usa en contexto numérico.
-*/
+//El valor undefined se convierte en NaN cuando se usa en contexto numérico.
 var a;
 a + 2;  // Evalúa a NaN
 
@@ -145,9 +143,8 @@ if (true) {
   }
   console.log(a);  // a es 5
 
-/*
-Este comportamiento cambia cuando se usa la declaración let (introducida en ECMAScript 2015).
-*/
+//Este comportamiento cambia cuando se usa la declaración let (introducida en ECMAScript 2015).
+
 if (true) {
     let b = 5;
 }
@@ -205,7 +202,6 @@ se asigna una variable const, no se puede reasignar:
 const FAV_PET = "Cats";
 FAV_PET = "Dogs";
 La consola mostrará un error debido a la reasignación del valor de FAV_PET.
-
 
 Siempre debe nombrar las variables que no desea reasignar usando la const palabra clave.
 Esto ayuda cuando accidentalmente intenta reasignar una variable que debe permanecer constante.
