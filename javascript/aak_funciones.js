@@ -40,9 +40,7 @@ function miFuncion(){
 let result = miFuncion();
 console.log(result);
 
-/*
-Es muy diferente a esto:
-*/
+//Es muy diferente a esto:
 
 function imprimeLogs() {
     console.log("a");
@@ -51,9 +49,7 @@ function imprimeLogs() {
     return "d";//Solo imprimira a, b, c
 }
 
-/*
-Tambien es muy diferente a esto:
-*/
+//Tambien es muy diferente a esto:
 
 function imprimirLogReturn() {
     console.log("a");
@@ -65,7 +61,7 @@ function imprimirLogReturn() {
 let imprimir = imprimirLogReturn();
 console.log(imprimir);//Solo imprimira a
 
-// Otro ejemplo de función:
+//Otro ejemplo de función:
 function saludar(){
     respuesta = prompt("hello, how is your day today?");
     if (respuesta == "bien"){
@@ -89,8 +85,10 @@ const funcionExpresada = function() {
 
 funcionExpresada();
 
-//Función de expresión / funcion expresada / funcion anonima, no tiene nombre:
-//ojo, se hace uso de parametros
+/*
+Función de expresión / funcion expresada / funcion anonima, no tiene nombre:
+Nota, se hace uso de parametros
+*/
 const miFuncionDos = function(a, b){
     return a + b;
 }
@@ -98,17 +96,14 @@ const miFuncionDos = function(a, b){
 miFuncionDos();
 
 //Funcion anonima usando el constructor funcion:
-
 const miFuncionTres = new Function ("a", "b", "return a*b");
 const resultadoTres = miFuncionTres(5, 7);
 alert(resultadoTres);
 
 //Funcion anonima autoinvocada:
-
 (function () {alert("helloWorld");}());
 
 //Otro ejemplo:
-
 (function() {
     console.log("Mi primer IIFE");
 })();
@@ -118,7 +113,6 @@ alert(resultadoTres);
 })();
 
 //Con paso de parametros:
-
 (function(d, w, c) {
     console.log("Mi tercera IIFE");
     console.log(d);//Imprime document
@@ -128,7 +122,6 @@ alert(resultadoTres);
 })(document, window, console);//Estamos pasando esto a los parametros
 
 //Formas de escribir las funciones anonimas autoejecutables:
-
 //Clasica:
 (function(){
     console.log("versión clásica");
@@ -149,7 +142,6 @@ alert(resultadoTres);
     console.log("versión Facebook");
 }();
 
-
 /*
 Funcion anonima, otro ejemplo:
 Funcion que no tiene nombre, es decir que ese conjunto de instrucciones no va a
@@ -164,7 +156,6 @@ let pelicula = function(nombre) {
 Introduccion a callback:
 Es una funcion que se ejecuta dentro de otra, es una funcion dentro de otra funcion.
 */
-
 function sumame (numeroUno, numeroDos, sumaYmuestra, sumaPorDos){
     let sumar = numeroUno + numeroDos;
 
@@ -184,7 +175,6 @@ function (dato) {
 /*
 Asignar valor a los parametros || parametros opcionales:
 */
-
 function saludo (nombre = "jesus", edad = 24) {
     console.log(`hola mi nombre es ${nombre} y tengo ${edad} años`);
 }
@@ -201,9 +191,9 @@ saludar = function(){
     }
 }
 
-//Devolver patrón temprano para funciones:
-
 /*
+Devolver patrón temprano para funciones:
+
 Cuando return se llega a una declaración, la ejecución de la función actual se detiene
 y el control vuelve a la ubicación de llamada.
 
@@ -263,9 +253,9 @@ Entonces podemos llamar testFunasí: testFun("Hello", "World");.
 Hemos pasado dos argumentos de cadena, Helloy World. Dentro de la función, param1será igual 
 a la cadena Helloy param2será igual a la cadena World. Tenga en cuenta que podría testFunvolver
  a llamar con diferentes argumentos y los parámetros tomarían el valor de los nuevos argumentos.
-*/
 
-//Usando return:
+Usando return:
+ */
 
 function resta(num3, num4){
     let res = num3 - num4;
@@ -274,9 +264,9 @@ function resta(num3, num4){
 let resultado = resta(10, 5);
 document.write(resultado);
 
-//Devolver un valor de una función con retorno
-
 /*
+Devolver un valor de una función con retorno.
+
 Podemos pasar valores a una función con argumentos .
 Puede usar una returndeclaración para enviar un valor de vuelta fuera de una función.
 */
@@ -309,9 +299,9 @@ addSum(3);
 /*
 addSumes una función sin returnsentencia.
 La función cambiará la sumvariable global pero el valor devuelto de la función es undefined.
-*/
 
-//Parámetros por exceso:
+Parámetros por exceso:
+*/
 
 function pasarValores() {
     alert("El numero de valores es "+arguments.length);
@@ -322,9 +312,7 @@ function pasarValores() {
 
 pasarValores(4, 5, 6, 7, 8, 9, 0);
 
-
 //Parámetros por defecto, antes de ECMAS6:
-
 function newUser(name, age, country) {
     let name = name || 'oscar';
     let age = age || 30;
@@ -336,7 +324,6 @@ newUser();//Oscar 30 MX
 newUser('David', 15, 'CO');//David 15 CO
 
 //Parámetros por defecto con ECMAS6
-
 function newAdmin(name = 'Oscar', age = 31, country = 'CL') {
     console.log(name, age, country);
 }
@@ -345,7 +332,6 @@ newAdmin();//Oscar 31 CL
 newAdmin('Ana', 20, 'PE');//Ana 20 PE
 
 //Funciones Self Invoking, se ejecuta asi misma una vez:
-
 (function (a, b){
     console.log("La suma es: " + (a + b));//La suma es: 7
 }(3, 4));

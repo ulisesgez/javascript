@@ -11,28 +11,28 @@ document.write(numeros[0]);
 document.write(numeros[4]);
 
 //Push, con esto agremgamos elementos a nuestro array:
-
 let frutas = ["Manzana", "Platano", "Cerezas", "Fresas"];
 let masFrutas = frutas.push("Uvas");
 
-//Esto imprime : Manzana, Platano, Cerezas, Fresas, Uvas
-
-//Unshift, con esto agrego mas elementos all inicio de nuestro array:
+/*
+Esto imprime : Manzana, Platano, Cerezas, Fresas, Uvas
+Unshift, con esto agrego mas elementos all inicio de nuestro array:
+*/
 
 let automovil = ["uno", "dos", "tres"];
 let otroAutomovil = automovil.unshift("cuatro");
 
-//Esto imprime: uno, dos, tres, cuatro
-
-//Pop, con esto eliminamos un elemento al final, para hacerlo al inicio seria con shift:
-
+/*
+Esto imprime: uno, dos, tres, cuatro
+Pop, con esto eliminamos un elemento al final, para hacerlo al inicio seria con shift:
+*/
 let ultimo = frutas.pop("Uvas");
 document.write(frutas)
 
-/**
- * Arrays Asociativos: Parecidos al formato json
- */
-//Ejemplo:
+/*
+Arrays Asociativos: Parecidos al formato json
+Ejemplo:
+*/
 let pc = {
     nombre: "mypc",
     procesador: "Intel",
@@ -78,7 +78,6 @@ de corchetes se refiere a las entradas en la matriz más externa (el primer nive
 y cada par adicional de corchetes se refiere al siguiente nivel de entradas 
 en el interior.
 */
-
 const arr = [
     [1, 2, 3],
     [4, 5, 6],
@@ -132,10 +131,8 @@ ourPets[1].names[0];
 
 /*
 ourPets[0].names[1]sería la cadena Fluffy, y ourPets[1].names[0]sería la cadena Spot.
+ECMA6:
 */
-
-//ECMA6:
-
 const anArray = Array.of("x", "y", "z", 1, 2, 3);
 console.log(anArray);//["x", "y", "z", 1, 2, 3]
 

@@ -134,10 +134,7 @@ function bestFruit() {
 
 bestFruit();//apple
 
-/*
-Otro ejemplo:
-Debemos tener cuidado con este formato, se encuentra en un bloque:
-*/
+//Otro ejemplo (Debemos tener cuidado con este formato, se encuentra en un bloque):
 
 function countries() {
   //let country = 'colombia';//local
@@ -211,9 +208,7 @@ Esto significa que se pueden ver en todas partes en su código JavaScript.
 Las variables que se declaran sin las palabras clave leto constse crean automáticamente
 en el globalalcance. Esto puede crear consecuencias no deseadas en otras partes de su código
 o al ejecutar una función nuevamente. Siempre debe declarar sus variables con leto const.
-*/
 
-/*
 Las variables que se declaran dentro de una función, así como los parámetros de la función,
 tienen alcance local . Eso significa que solo son visibles dentro de esa función.
 
@@ -252,9 +247,9 @@ addSum(3);
 /*
 addSumes una función sin return sentencia.
 La función cambiará la sumvariable global pero el valor devuelto de la función es undefined.
-*/
 
-//Ejemplo con arrow function:
+Ejemplo con arrow function:
+*/
 
 const fruits  = () => {
   if(true) {

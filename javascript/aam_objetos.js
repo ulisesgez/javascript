@@ -95,15 +95,12 @@ let auto = {
 console.log(auto);
 
 //Queremos algo especifico?
-
 console.log(auto.marca);
 
 //Entrar a el metodo, que es la funcion que esta dentro del objeto:
-
 console.log(auto.detalleAuto());
 
 //Crear un nuevo objeto y añadirle propiedades:
-
 let persona = new Object();
 persona.nombre = 'hugo',
 persona.direccion = 'san francisco',
@@ -111,8 +108,7 @@ persona.telefono = '7711223344'
 
 console.log(persona);//{nombre: 'hugo', direccion: 'san francisco', telefono: '7711223344'}
 
-//otra forma:
-
+//Otra forma:
 let personaDos = {};
 personaDos.nombre = 'hugo',
 personaDos.direccion = 'san francisco',

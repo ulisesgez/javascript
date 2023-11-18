@@ -13,8 +13,6 @@ console.log(Boolean("a"));
 console.log(Boolean([]));
 console.log(Boolean({}));
 
-//Comprender los valores booleanos
-
 /*
 Otro tipo de datos es el booleano .
 Los valores booleanos solo pueden ser uno de dos valores: trueo false.
@@ -24,9 +22,9 @@ falseapagado. Estos dos estados son mutuamente excluyentes.
 Nota: los valores booleanos nunca se escriben entre comillas.
 Las cadenas "true"y "false"no son booleanas y no tienen un
 significado especial en JavaScript
-*/
 
-//Usando el constructor:
+Usando el constructor:
+*/
 
 let v = Boolean(true);
 let f = Boolean(false);

@@ -165,10 +165,11 @@ const secondName = "Ada";
 const lastLetter = secondName[secondName.length - 1];
 const thirdToLastLetter = secondName[secondName.length - 3];
 
-//lastLettertendría un valor de la cadena a.
-//thirdToLastLettertendría un valor de la cadena s.
 
 /* 
+lastLettertendría un valor de la cadena a.
+thirdToLastLettertendría un valor de la cadena s.
+
 Cuando está definiendo una cadena, debe comenzar y terminar con una comilla 
 simple o doble. ¿Qué sucede cuando necesita una cita literal: "o 'dentro de 
 su cadena?
