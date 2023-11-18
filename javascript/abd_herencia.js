@@ -183,7 +183,7 @@ class Carro {
 
 class Electrico extends Carro {
     constructor(modelo, anio, carga) {
-        //super manda a llamar el constructor de la clase padre:
+        //super manda a llamar el constructor de la clase padre, a diferencia de prototipos:
         super(modelo, anio);
         this.carga = carga;
     }
