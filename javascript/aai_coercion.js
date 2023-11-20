@@ -1,4 +1,11 @@
 /*
+Coerción:
+Cambio de un tipo de valor a otro tipo de valor (string a number, number a string, etc).
+Es el proceso en el cual JavaScript intenta convertir automáticamente un valor de un
+tipo a otro, para que puedan ser comparados o operados.
+Esto puede dar lugar a algunos resultados inesperados si no se tiene en cuenta.
+
+Tipos de datos:
 Primitivos: string, number, boolean, null, undefined, NaN.
 Compuestos: object, array, function, class, etc
 Ejemplo:
