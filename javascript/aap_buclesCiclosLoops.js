@@ -1,4 +1,13 @@
 /*
+Ciclos o bucles:
+Los ciclos son una herramienta esencial dentro de JavaScript.
+Sirven para repetir un bloque de código varias veces, dependiendo de una
+condición específica. Los ciclos son fundamentales para la automatización de tareas
+y la eficiencia en el código.
+
+Existen dos tipos de ciclos en JavaScript: los ciclos “for” y los ciclos “while”.
+Ambos tienen una sintaxis similar, pero se utilizan en situaciones diferentes.
+
 La elección de qué ciclo usar depende de la situación y de lo que se quiera lograr.
 Aquí hay algunas consideraciones generales:
 
@@ -14,8 +23,12 @@ se necesita que el ciclo se ejecute al menos una vez.
 Es útil cuando se necesita iterar sobre una estructura de datos, como un arreglo.
 
 En el código que has compartido, se utilizan los tres tipos de ciclos para iterar sobre un arreglo de carros. El ciclo `while` se utiliza para imprimir los elementos del arreglo, el ciclo `do while` se utiliza para hacer lo mismo, y el ciclo `for` se deja sin terminar.
+
+While:
+El ciclo while se utiliza para repetir un bloque de código mientras se cumpla una
+determinada condición. La condición se evalúa antes de ejecutar el código dentro
+del ciclo y si la condición es verdadera, el código se ejecutará de nuevo.
 */
-//While:
 const carros = [ "Ford", "Mazda", "Honda", "Toyota"];
 
 let i = 0;
@@ -25,7 +38,12 @@ while(i < carros.length){
     i++;
 }
 
-//Do while:
+/*
+Do while:
+Existe una extensión del while en javascript llamado do-while que tiene una pequeña
+diferencia, el código dentro del ciclo se ejecutará al menos una vez antes de evaluar
+la condición.
+*/
 
 let j = 0;
 
@@ -34,8 +52,14 @@ do {
     i++;
 } while(i < carros.length);
 
-//For:
-
+/*
+For:
+Es utilizado para repetir un bloque de código un número específico de veces.
+La inicialización se ejecuta una sola vez al principio del ciclo,
+la condición se evalúa en cada iteración antes de ejecutar el código dentro del ciclo y
+la actualización se ejecuta al final de cada iteración. Por ejemplo, el siguiente ciclo
+“for” imprimirá los números del 1 al 10 en la consola:
+*/
 for(let i = 0; i < carros.length; i++){
     console.log(carros[i]);//Ford Mazda Honda Toyota
 }
@@ -182,7 +206,12 @@ for (let i = 0; i < 20; i++){
     }
     document.write(i);
 };
-//For in y for of
+/*
+For in y for of:
+El ciclo for-in se utiliza para recorrer las propiedades de un objeto,
+mientras que el ciclo for-of se utiliza para recorrer los elementos de una colección
+como un array.
+*/
 
 let animales = ["gato", "perro", "pajaro"];
 

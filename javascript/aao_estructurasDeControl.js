@@ -1,4 +1,9 @@
-/* Estructuras de control:
+/*
+Condicionales:
+La estructura de control “if” sirve para tomar decisiones en función de si una
+determinada condición es verdadera o falsa. El código dentro de un bloque “if”
+sólo se ejecutará si la condición es verdadera, mientras que el código en un
+bloque “else” sólo se ejecutará si la condición es falsa.
 
 Las declaraciones se utilizan para tomar decisiones en el código.
 La palabra clave if le dice a JavaScript que ejecute el código entre llaves
@@ -274,7 +279,19 @@ console.log({nota, grado});//{ nota: 65, grado: 'D+' }
 
 /*
 Switch:
-El switchinstrucción evalúa una expresión, coincidiendo con el valor de la expresión
+La estructura de control switch permite ejecutar diferentes bloques de código en función
+de un valor específico. Es una alternativa a la estructura if-else para casos en los
+que hay varios valores posibles para una variable y se desea ejecutar diferentes
+acciones en función de cada valor manteniendo legible el código.
+
+La variable especificada en el “switch” se compara con cada uno de los casos
+especificados. Si se encuentra una coincidencia, se ejecutará el código dentro del
+bloque correspondiente. Es importante notar que se utiliza la palabra clave “break”
+al final de cada bloque de código para indicar que se debe salir del “switch” una
+vez que se ha ejecutado el código correspondiente. Si no se incluye “break”,
+el código seguirá ejecutándose en los siguientes casos.
+
+El switch instrucción evalúa una expresión, coincidiendo con el valor de la expresión
 a una cláusula case, y ejecuta declaraciones asociadas con esa cláusula case,
 así como las declaraciones en las cláusulas case que siguen.
 

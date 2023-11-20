@@ -17,7 +17,8 @@ Ejemplo:
 false - 3 // -3
 
 /*
-Coerción: La forma en la que podemos cambiar un tipo de valor a otro tipo de valor
+Coerción:
+La forma en la que podemos cambiar un tipo de valor a otro tipo de valor
 (valor tipo numero a valor tipo string).
 Coerción implicita: Es cuando el lenguaje nos ayuda y cambia de un tipo de valor a
 otro tipo de valor 
