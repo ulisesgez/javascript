@@ -1,4 +1,5 @@
 /*
+Tipo de dato Symbol:
 Symbol es un tipo de dato primitivo como el string, como el number, como el boolean,
 como null, como undefined.
 Una vez que creamos un Symbol su valor se va a mantener privado y para uso interno.

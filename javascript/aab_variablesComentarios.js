@@ -27,8 +27,25 @@ Variables:
 Una variable es un contenedor para un valor, como un número, una cadena o un objeto.
 En JavaScript, las variables se declaran con la palabra clave var.
 
-Declaraciones:
+Las variables son ubicaciones de almacenamiento en la memoria de la computadora que
+se utilizan para guardar valores que se pueden utilizar más tarde en el programa.
+En JavaScript, existen 3 formas de declarar variables: var, let y const.
+
+Las variables declaradas con var y let pueden cambiar su valor a lo largo del tiempo,
+mientras que las variables declaradas con const son constantes y no pueden cambiar su
+valor una vez asignado.
+
+Declara una variable:
+el proceso de declarar una variable es especificar su nombre sin asignarle ningún valor,
+esto solo se puede hacer con variables (let y var) debido a que const al no poder
+cambiar su valor, no podremos inicializarla sin declararla al mismo tiempo.
 JavaScript tiene tres tipos de declaraciones de variables.
+
+Inicialización de una variable:
+El proceso de inicialización de una variable es especificar su nombre y asignarle un
+valor inicial durante la declaración. Esto se puede hacer en la misma línea que se
+declara la variable o en líneas separadas, pero siempre antes de que se utilice la
+variable por primera vez. Inicializar una variable es el asignarles cualquier valor.
 
 Var:
 Declara una variable, opcionalmente inicializándola a un valor.

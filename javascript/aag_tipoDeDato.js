@@ -1,5 +1,5 @@
 /*
-Tipado:
+Tipo de datos:
 JavaScript toma prestada la mayor parte de su sintaxis de Java, C y C++, pero también ha sido
 influenciado por Awk, Perl y Python.
 
@@ -77,6 +77,9 @@ variable que no tiene valor, pero la gran diferencia es que mientras undefined e
 variable que no ha sido inicializada.
 
 Undefined:
+El valor undefined es un tipo de dato que representa un valor que aún no ha sido
+asignado o que no tiene un valor válido. En JavaScript, podemos utilizar la palabra
+clave undefined para representar el valor undefined.
 Indica que no se ha inicializado una variable y que el valor esta ausente.
 */
 let indefinida;
@@ -93,12 +96,21 @@ let numero = null;
 
 /*
 Null:
+El valor null es un tipo de dato que representa un valor vacío o nulo.
+En JavaScript, podemos utilizar la palabra clave null para representar el valor nulo.
+A menudo, utilizamos null para representar un valor que aún no ha sido inicializado o
+para representar un valor que no tiene sentido en el contexto actual.
 Es un valor especial que indica la ausecia de un valor numerico valido.
 */
 let nullo = null;
 console.log(nullo);//null
 
 /*
+Diferencias entre Null y Undefined
+Es importante tener en cuenta que null y undefined son valores diferentes en JavaScript.
+null representa un valor intencionalmente vacío, mientras que undefined representa
+un valor que aún no ha sido asignado o que no tiene un valor válido.
+
 Nan o no es un numero:
 Es un valor especial que indica que una operacion matematica no es valida.
 */
