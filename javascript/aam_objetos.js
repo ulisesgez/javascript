@@ -54,15 +54,19 @@ let accesoObjeto = {
   "dos": 2,
   tres: 3,
   "soy cuatro": 4,
-  "cinco": 5
+  "cinco": 5,
+  seis: 6
 }
 let posicionUno = 1
+const posicionSeis = "seis"
 console.log(accesoObjeto[posicionUno]);//1
 console.log(accesoObjeto["dos"]);//2
 console.log(accesoObjeto.tres);//3
 console.log(accesoObjeto["soy cuatro"]);//4
 console.log(accesoObjeto.cinco);//5
 console.log(accesoObjeto.tres[accesoObjeto.tres.length - 1]);//3
+console.log(accesoObjeto[posicionSeis]);//6
+console.log(accesoObjeto['posicionSeis']);//undefined, ya que no existe la propiedad posicionSeis en el objeto accesoObjeto.
 
 //Otro ejemplo:
 
