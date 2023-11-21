@@ -1,11 +1,12 @@
 /*
+Expressiones regulares:
 Secuencia de caracteres que forman un patron de busqueda y que principalmente es utilizado
 en la busqueda de patrones de  cadenas de texto.
 */
 
 const regex = /(\d{4})-(\d{2})-(\d{2})/;
 const matchers = regex.exec('2022-01-01');
-console.table(matchers);
+console.table(matchers);//Devuelve un arreglo con los resultados de la busqueda.
 
 let cadena = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium sapiente voluptate eaque quia aut, perferendis nostrum harum reiciendis, maxime aliquid magni beatae voluptas! Laboriosam, dolorem? Alias dicta expedita ipsam incidunt."
 
