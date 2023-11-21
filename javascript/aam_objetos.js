@@ -1,6 +1,16 @@
 /*
-Objeto: Algo fisico al paradigma de javascript.
-Acceder de distintas formas:
+Objeto:
+Los objetos en JavaScript son un tipo de dato que permite almacenar una colección de
+pares clave-valor. Estos pares representan las propiedades y sus valores
+correspondientes de un objeto. Los objetos son similares a los arrays en cuanto a que
+también son una forma de almacenar y manejar datos, pero en lugar de tener un índice
+numérico, tienen una clave de string.
+
+Acceder a las propiedades de un objeto:
+Para acceder a las propiedades de un objeto, se utiliza la notación de punto
+o la notación de corchetes. Además de las propiedades, los objetos también pueden
+tener métodos, que son funciones asociadas a un objeto.
+Para llamar a un método de un objeto, se utiliza la notación de punto
 */
 
 let a = new String("Hola");

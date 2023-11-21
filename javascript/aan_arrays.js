@@ -1,5 +1,15 @@
 /*
-Array: Estructura de datos - lista de datos. Conjunto de datos, alos que despues podemos llamar, estos estan asociados a un indice, el primer elemento se encuentra en la posicion 0
+Array:
+Estructura de datos - lista de datos. Conjunto de datos, alos que despues podemos llamar,
+estos estan asociados a un indice, el primer elemento se encuentra en la posicion 0.
+
+Los arrays en JavaScript son un tipo de objeto que permite almacenar una colección
+de valores. Estos valores pueden ser de cualquier tipo, como números, cadenas, objetos,
+incluso otros arrays. Los arrays son muy útiles para almacenar y manejar datos en
+una sola estructura.
+
+Los arrays tienen un índice numérico que comienza en 0. Por lo tanto, el primer elemento
+del array tiene el índice 0, el segundo tiene el índice 1, y así sucesivamente.
 Ejemplo:
 */
 let numeros = ["uno", 2, "tres", 4];

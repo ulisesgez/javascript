@@ -230,6 +230,43 @@ inmutables y mutables en desafíos posteriores. También en desafíos posteriore
 verá ejemplos de identificadores de variables en mayúsculas, minúsculas o
 camelCase.
 
+Reasignación y redeclaración:
+
+En JavaScript, la reasignación y la redeclaración son dos conceptos diferentes
+relacionados con las variables.
+Reasignación se refiere al proceso de darle un nuevo valor a una variable existente.
+*/
+let nombre = 'Juan';
+nombre = 'Pedro';
+console.log(nombre);//Pedro
+//Con const no podemos reasignar valores, pero si podemos mutarlos:
+const nombre2 = 'Juan';
+nombre2 = 'Pedro';//Esto no va a funcionar
+console.log(nombre2);//Juan
+//Pero si podemos mutarlos:
+const nombre3 = [];
+nombre3.push('Juan');
+console.log(nombre3);//["Juan"]
+nombre3.push('Pedro');
+console.log(nombre3);//["Juan", "Pedro"]
+/*
+Redeclaración se refiere al proceso de crear una nueva variable con el mismo
+nombre de una variable existente.
+
+let nombre4 = 'Juan';
+let nombre4 = 'Pedro';
+console.log(nombre4);//Esto no va a funcionar
+//Con const tampoco podemos redeclarar:
+const nombre5 = 'Juan';
+const nombre5 = 'Pedro';
+console.log(nombre5);//Esto no va a funcionar
+//Pero si podemos redeclarar con var:
+var nombre6 = 'Juan';
+var nombre6 = 'Pedro';
+console.log(nombre6);//Pedro
+*/
+/*
+
 Template literals:
 Nos va a permitir concatenar strings de una forma mas amigable,
 jugar con variables, elementos:
