@@ -1,3 +1,17 @@
+//Metodos para introducir o mostrar texto en la ventana del navegador del Objeto Window:
+console.log(window);//Window Object
+window.alert('alerta');
+window.confirm('confirmación');
+window.prompt('aviso');
+
+let alerta = alert("Hola, soy una alerta");//No es necesario guardar el valor en una variable.
+let confirmacion = confirm("Hola, soy una confirmación");
+let aviso = prompt("Hola, soy un aviso");
+
+console.log(alerta);//undefined
+console.log(confirmacion);//true o false
+console.log(aviso);//vacio, null o string
+
 //Metodos que nos van a permitir transformar textos:
 
 var numero = 444;
@@ -82,6 +96,8 @@ let x = 1,//Si lo remplazamos por ejemplo con un 3 marca error e imprime el mens
     testXY = "Se espera que X siempre sea menor que Y";
 
 console.assert(x < y, {x, y, testXY});
+
+//Objeto Math, Date y sus metodos:
 
 console.log(Math);//Imprime los metodos disponibles del objeto
 console.log(Math.PI);//3.1416
