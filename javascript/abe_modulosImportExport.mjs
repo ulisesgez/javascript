@@ -1,4 +1,11 @@
 /*
+Import - export:
+Import y export son dos conceptos que se introdujeron en ES6 (EcmaScript 6) para
+manejar módulos en JavaScript. Antes de ES6, JavaScript no tenía módulos, y el
+concepto de import y export no existía. Sin embargo, los módulos han existido
+desde hace mucho tiempo en JavaScript, ya que JavaScript está basado en ECMAScript,
+y ECMAScript 3 (ES3) ya tenía módulos.
+
 Los programas JavaScript comenzaron siendo bastante pequeños — la mayor parte de
 su uso en los primeros días era para realizar tareas de scripting aisladas,
 proporcionando un poco de interactividad a tus páginas web donde fuera necesario,
