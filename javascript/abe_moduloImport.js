@@ -1,3 +1,5 @@
+import { NAME, user } from "./abe_moduloExport.js";
+
 /*
 Import - export:
 Import y export son dos conceptos que se introdujeron en ES6 (EcmaScript 6) para
@@ -85,18 +87,8 @@ se convierte en
 
 Otro ejemplo:
 */
-import { PlatziClass } from "./abb_gettersSetters.mjs";
+console.log("Modules file");
 
-const clase67 = new PlatziClass({
-  name: "JavaScript: orientado a objetos, basado en prototipos",
-  videoID: "wertyuio;p87htreghtyuioouyjtrh",
-});
-
-clase67.reproducir();
-clase67.pausar();
-
-clase67.reproducir();
-clase67.pausar();
-
-clase67.reproducir();
-clase67.pausar();
+console.log(NAME);
+console.log(user);//ulises
+console.log(password);//No se puede acceder a user porque no se exportó ni se importó.
