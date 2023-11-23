@@ -1,4 +1,4 @@
-import { NAME, user } from "./abe_moduloExport.js";
+import { NAME, user, sayHi } from "./abe_moduloExport.js";
 
 /*
 Import - export:
@@ -92,3 +92,4 @@ console.log("Modules file");
 console.log(NAME);
 console.log(user);//ulises
 console.log(password);//No se puede acceder a user porque no se exportó ni se importó.
+sayHi(user);//Hola ulises
