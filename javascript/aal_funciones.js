@@ -1,7 +1,3 @@
-//metodos del objeto window
-alert('uno')
-prompt('dos')//value o null
-confirm('tres')//true o false
 /*
 Funciones:
 Conjunto de sentencias que nosotros podemos utilizar para generar ciertas
@@ -10,29 +6,28 @@ En JavaScript, podemos dividir nuestro código en partes reutilizables llamadas
 funciones. Las funciones son consideradas objetos.
 He aquí un ejemplo de una función:
  */
-
 function functionName() {
     console.log("Hello World");
 }
 
 /*
-Puede llamar o invocar esta función usando su nombre seguido de paréntesis, así: functionName();
-Cada vez que se llame a la función, se imprimirá el mensaje Hello Worlden la consola de desarrollo.
+Puede llamar o invocar esta función usando su nombre seguido de paréntesis, así:
+functionName();
+Cada vez que se llame a la función, se imprimirá el mensaje Hello World en la consola de desarrollo.
 Todo el código entre llaves se ejecutará cada vez que se llame a la función.
 
-Funcion declarativa / funcion declarada:
-A diefrencia de una funcion expresada esta puede ser llamada en cualquier parte y funcionara:
+Funcion declarada:
+A diferencia de una funcion expresada esta puede ser llamada en cualquier parte y funcionara:
 */
-funcionDeclarada();
+funcionDeclarada();//Puedo invocarme en cualquier parte del codigo, incluso antes.
 
 function funcionDeclarada() {
     console.log("Puedo invocarme en cualquier parte del codigo, incluso antes");//Puedo invocarme en cualquier parte del codigo, incluso antes
 };
 
-funcionDeclarada();
+funcionDeclarada();//Puedo invocarme en cualquier parte del codigo, incluso antes.
 
-//Funcion declarativa / declarada, ademas de que devuelve un valor por el return:
-
+//Funcion declarada, ademas de que devuelve un valor por el return:
 function miFuncion(){
     return 3;
 }
@@ -41,7 +36,6 @@ let result = miFuncion();
 console.log(result);
 
 //Es muy diferente a esto:
-
 function imprimeLogs() {
     console.log("a");
     console.log("b");
@@ -50,7 +44,6 @@ function imprimeLogs() {
 }
 
 //Tambien es muy diferente a esto:
-
 function imprimirLogReturn() {
     console.log("a");
     return "d";
@@ -61,7 +54,7 @@ function imprimirLogReturn() {
 let imprimir = imprimirLogReturn();
 console.log(imprimir);//Solo imprimira a
 
-//Otro ejemplo de función:
+//Otro ejemplo de función declarada:
 function saludar(){
     respuesta = prompt("hello, how is your day today?");
     if (respuesta == "bien"){
@@ -72,23 +65,22 @@ function saludar(){
 }
 
 //Invocacion de funcion. Se repetira 3 veces:
+saludar();//hello, how is your day today?
+saludar();//hello, how is your day today?
+saludar();//hello, how is your day today?
 
-saludar();
-saludar();
-saludar();
-
-//Función expresada / funcion anonima:
-
+/*
+Función expresada (función de expresión, función anonima, no tiene nombre):
+Es una función que se le asigna a una variable, es decir que ese conjunto de instrucciones
+no va a tener ningun nombre y nosotros lo podemos guardar dentro de una variable.
+*/
 const funcionExpresada = function() {
     console.log("No puedo invocarme en cualquier parte del codigo como una funcion declarada");//No puedo invocarme en cualquier parte del codigo como una funcion declarada
 };
 
 funcionExpresada();
 
-/*
-Función de expresión / funcion expresada / funcion anonima, no tiene nombre:
-Nota, se hace uso de parametros
-*/
+//Funcion anonima, otro ejemplo:
 const miFuncionDos = function(a, b){
     return a + b;
 }
@@ -98,7 +90,7 @@ miFuncionDos();
 //Funcion anonima usando el constructor funcion:
 const miFuncionTres = new Function ("a", "b", "return a*b");
 const resultadoTres = miFuncionTres(5, 7);
-alert(resultadoTres);
+alert(resultadoTres);//35
 
 //Funcion anonima autoinvocada:
 (function () {alert("helloWorld");}());
@@ -121,13 +113,15 @@ alert(resultadoTres);
     c.log("Este es un console log")
 })(document, window, console);//Estamos pasando esto a los parametros
 
-//Formas de escribir las funciones anonimas autoejecutables:
-//Clasica:
+/*
+Formas de escribir las funciones anonimas autoejecutables:
+Clasica:
+*/
 (function(){
     console.log("versión clásica");
 })();
 
-//Crockford (Javascript The Good Parts)
+//Crockford (Javascript The Good Parts):
 ((function() {
     console.log("versión crockford");
 })());
@@ -172,16 +166,13 @@ function (dato) {
 }
 )
 
-/*
-Asignar valor a los parametros || parametros opcionales:
-*/
+//Asignar valor a los parametros || parametros opcionales:
 function saludo (nombre = "jesus", edad = 24) {
     console.log(`hola mi nombre es ${nombre} y tengo ${edad} años`);
 }
 saludo();//hola mi nombre es jesus y tengo 24 años
 
 //Asigar funcion en variable:
-
 saludar = function(){
     respuesta = prompt("hello, how is your day today?");
     if (respuesta == "bien"){
@@ -199,7 +190,6 @@ y el control vuelve a la ubicación de llamada.
 
 Ejemplo
 */
-
 function myFun() {
     console.log("Hello");
     return "World";
@@ -215,7 +205,6 @@ finaliza en la returndeclaración.
 Return en funciones, sin la linea return "exit", marca undefined:
 saludo es igual a lo que retorna.
 */
-
 function saludardos(){
     alert("hola");
     return "exit"
@@ -226,7 +215,6 @@ let saludo = saludardos();
 document.write(saludo);
 
 //Parametros:
-
 function suma(num1, num2){
     let res = num1 + num2;
     document.write(res);
@@ -243,7 +231,6 @@ en una función cuando se llama se conocen como argumentos .
 
 Aquí hay una función con dos parámetros, param1y param2:
 */
-
 function testFun(param1, param2) {
     console.log(param1, param2);
 }
@@ -255,8 +242,7 @@ a la cadena Helloy param2será igual a la cadena World. Tenga en cuenta que podr
  a llamar con diferentes argumentos y los parámetros tomarían el valor de los nuevos argumentos.
 
 Usando return:
- */
-
+*/
 function resta(num3, num4){
     let res = num3 - num4;
     return res;
@@ -270,7 +256,6 @@ Devolver un valor de una función con retorno.
 Podemos pasar valores a una función con argumentos .
 Puede usar una returndeclaración para enviar un valor de vuelta fuera de una función.
 */
-
 function plusThree(num) {
     return num + 3;
 }
@@ -287,7 +272,6 @@ Una función puede incluir la returndeclaración pero no tiene que hacerlo.
 En el caso de que la función no tenga una returndeclaración, cuando la llama,
 la función procesa el código interno pero el valor devuelto es undefined.
 */
-
 let sum = 0;
 
 function addSum(num) {
@@ -302,7 +286,6 @@ La función cambiará la sumvariable global pero el valor devuelto de la funció
 
 Parámetros por exceso:
 */
-
 function pasarValores() {
     alert("El numero de valores es "+arguments.length);
     for (let i = 0; i < arguments.length; i++) {
@@ -441,7 +424,6 @@ adios();
 Recibir parametros en funciones flecha, aqui podemos quitar los parentesis: () => ,
 esto solo ocurre si tenemos un parametro:
 */
-
 const miNombre = otroNombre => console.log(`Hola me llamo Ulises y tu nombre es ${otroNombre}`);//Hola me llamo Ulises y tu nombre es Irma
 miNombre('Irma');
 
