@@ -57,7 +57,23 @@ Runtime: Se encuentra en los navegadores.
 Event loop: Observador
 
 callback queue = Bandeja de espera de tareas terminadas
+
+Ejemplo de asincronia (Single thread):
 */
+console.log("Taco 1");
+console.log("Taco 2");
+console.log("Taco 3");
+console.log("Torta");
+console.log("Taco 4");
+
+// Ejemplo de asincronia (Multi thread):
+console.log("Taco 1");
+console.log("Taco 2");
+console.log("Taco 3");
+setTimeout(() => {
+    console.log("Torta");
+}, 4000);// 4 segundos
+console.log("Taco 4");
 
 //Codigo sincrono bloqueante:
 
