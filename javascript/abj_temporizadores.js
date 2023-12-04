@@ -1,9 +1,16 @@
 /*
 Temporizadores:
-set time out: recibe una callback, recibe una funcion que va a ejecutar y recibe un
-tiempo expresado en milisegundos.
+Un temporizador es una funcion que se ejecuta en un tiempo determinado o
+cada cierto tiempo.
 
-set interval: recibe una funcion y un intervalo de tiempo
+Set time out:
+Recibe una callback, recibe una funcion que va a ejecutar y recibe un
+tiempo expresado en milisegundos. El tiempo que se le pasa es el tiempo
+que tardara en ejecutarse la funcion.
+
+Set interval:
+Recibe una funcion y un intervalo de tiempo. La funcion se ejecutara
+indefinidamente cada cierto intervalo de tiempo.
 
 console.log("set time out");
 setTimeout(() => {
