@@ -17,7 +17,8 @@ al generar este entorno global que hace 3 cosas, 2 de ellas muy imporatntes:
 this es igual a WINDOW. This es es una variable que hace referencia a window,
 window == this -> true
 
-Execution Context: Ya que genero este contexto global o este entorno global,
+Execution Context:
+Ya que genero este contexto global o este entorno global,
 corre nuestro codigo a traves de un stack de tareas que las va a ir apilando de una en una.
 
 js -> Parser -> AST(Abstract Syntax Tree) -> Interpreter -> (*) -> Bytecode
@@ -32,19 +33,21 @@ de cada proceso que realiza nuestra maquina. 1 hilo o multiples hilos, javascrip
 Memory heap: Donde se van a almacenar los valores de las variables y las funciones.
 Basicamente se podria ver como una repisa para almacenar datos.
 
-Call stack: Como se van a mandar a llamar los valores 
-de las variables y las funciones (Global Object).
+Call stack:
+Como se van a mandar a llamar los valores de las variables y las funciones (Global Object).
 Tenemos una pila y las tareas se van a empezar a apilar de abajo hacia arriba, de
 una hacia la ultima, y tenemos que sar la ultima que mandamos a llamar.
 El objeto global se encuentra hasta abajo, que este es el objeto que nos da el
 navegador una vez que se inicializa nuestro javascript (sincronia, 1 tarea a la vez)
 
-Garbage collection: Una vez que ya no se esta usando el callstack, simplemente
+Garbage collection:
+Una vez que ya no se esta usando el callstack, simplemente
 se hace un mark y despues sweep. Tomando como ejemplo tenemos una variable
 en la que le asignamos un valor y depues lo cambiamos, asi que ese valor pasado
 se elimina, cuidado con el overstack.
 
-stackoverflow: Tienes tu callstack , en donde se inicia tu lista de tareas y
+stackoverflow:
+Tienes tu callstack , en donde se inicia tu lista de tareas y
 empiezan a apilarse las tareas, empezamos con el objeto global que es el
 primer objeto que nos genera la pagina al momento de que se inicializa
 nuestro codigo js y todo el codigo que ya empieza a ejecutar, empieza a
