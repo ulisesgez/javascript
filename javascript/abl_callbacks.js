@@ -1,4 +1,6 @@
 /*
+Callback:
+Es una funcion que se pasa a otra funcion como un argumento.
 Llamada de vueltas o funcion de devolucion: Es una función que se va a ejecutar después
 de que la otra lo haga. Es una función que le puedes pasar a otra como argumento y
 que se ejecuta despues de que se haya completado cualquier operacion o alguna
