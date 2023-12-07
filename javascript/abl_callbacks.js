@@ -12,7 +12,7 @@ Es una funcion que se pasa a otra funcion como argumento para su ejecucion poste
 //Ejemplo basico:
 
  setTimeout(() => {
-    console.log('hola mundo');
+    console.log('hola mundo');//hola mundo
  }, 1000);
 
 //Otro ejemplo:
@@ -55,7 +55,7 @@ function requestHandler(req, res) {
 //Otro ejemplo:
 
 function saludo(nombre) {
-    console.log(`Hola ${nombre}`);
+    console.log(`Hola ${nombre}`);//Hola ulises
 }
 
 setTimeout(saludo, 2000, 'ulises');//Hola ulises
@@ -73,8 +73,8 @@ const getUsuarioById = (id, callback) => {
 }
 //la funcion es el callback que recibe getUsuarioById
 getUsuarioById(10, ( usuario ) => {
-    console.log(usuario.id);
-    console.log(usuario.nombre);
+    console.log(usuario.id);//10
+    console.log(usuario.nombre);//ulises
 });
 
 /*
@@ -90,7 +90,7 @@ function modify(array, callback) {
 const names = ['gartiel', 'vedaskies', 'tomimelo']
 
 modify(names, function() {
-    console.log('he modificado el array');
+    console.log('he modificado el array');//he modificado el array
 })
 //he modificado el array
 
@@ -109,7 +109,7 @@ function modify(array, callback) {
 const names = ['gartiel', 'vedaskies', 'tomimelo']
 
 modify(names, function(array) {
-    console.log(`he modificado el array y ahora es de ${array.length} elementos`);
+    console.log(`he modificado el array y ahora es de ${array.length} elementos`);//he modificado el array y ahora es de 4 elementos
 })
 
 //he modificado el array y ahora es de 4 elementos
@@ -117,11 +117,11 @@ modify(names, function(array) {
 //Otro ejemplo, aqui no es callback:
 
 function one() {
-    console.log("step 1");
+    console.log("step 1");//step 1
 }
 
 function two() {
-    console.log("step 2");
+    console.log("step 2");//step 2
 }
 
 one();//step 1
@@ -130,12 +130,12 @@ two();//step 2
 //Ahora lo convertimos:
 
 function one(callback) {
-    console.log("step 1");
+    console.log("step 1");//step 1
     callback();
 }
 
 function two() {
-    console.log("step 2");
+    console.log("step 2");//step 2
 }
 
 one(two);//step 1 / step 2
@@ -147,7 +147,7 @@ function miFuncion(fn) {
 }
 
 function saludar() {
-    console.log("holaMundo");
+    console.log("holaMundo");//holaMundo
 }
 
 miFuncion(saludar);//holaMundo
@@ -156,7 +156,7 @@ miFuncion(saludar);//holaMundo
 
 const frutas = ['manzana', 'pera', 'sandia', 'uvas', 'fresas'];
 frutas.forEach(frutas => {
-    console.log(frutas);
+    console.log(frutas);//manzana / pera / sandia / uvas / fresas
 })
 /*
 'manzana'
@@ -173,7 +173,7 @@ let order = (callback) => {
     callback();
 }
 
-let production = () => console.log("order received, starting production");
+let production = () => console.log("order received, starting production");//order received, starting production
 
 //order placed, please call production / order received, starting production
 
@@ -186,22 +186,22 @@ let stocks = {
     toppings: ["chocolate", "peanuts"]
 }
 
-console.log("start");
+console.log("start");//start / end
 
 function order(fruitName, callback) {
     setTimeout(function() {
-        console.log(`${stocks.fruits[fruitName]} was selected`);
+        console.log(`${stocks.fruits[fruitName]} was selected`);//strawberry was selected
     },2000);
     callback();
 }
 
 function production(){
     setTimeout(function() {
-        console.log("production has started");
+        console.log("production has started");//production has started
     },0);
 }
 
-console.log("end");
+console.log("end");//start / end
 
 order(0, production);
 
@@ -213,14 +213,14 @@ let stocks = {
 }
 let order = (fruitName, callback) => {
     setTimeout(() => {
-        console.log(`${stocks.fruits[fruitName]} was selected`);
+        console.log(`${stocks.fruits[fruitName]} was selected`);//strawberry was selected
     },2000);
     callback();
 };
 
 let production = () => {
     setTimeout(() => {
-        console.log("production has started");
+        console.log("production has started");//production has started
     },0000);
 };
 
@@ -242,18 +242,18 @@ console.log("start");
 
 function order(fruitName, callback) {
     setTimeout(function() {
-        console.log(`${stocks.fruits[fruitName]} was selected`);
+        console.log(`${stocks.fruits[fruitName]} was selected`);//strawberry was selected
         callback();
     },2000);
 }
 
 function production(){
     setTimeout(function() {
-        console.log("production has started");
+        console.log("production has started");//production has started
     },0);
 }
 
-console.log("end");
+console.log("end");//start / end
 
 order(0, production);
 
@@ -274,18 +274,18 @@ function cuadradoCallback(value, callback) {
 //callbackhell, mala idea para manejo de errores, mejor recurrir a las promesas.
 
 cuadradoCallback(0, (value, result) => {
-    console.log("Inicia callback");
-    console.log(`Callback: ${value}, ${result}`);
+    console.log("Inicia callback");//Inicia callback
+    console.log(`Callback: ${value}, ${result}`);//Callback: 0, 0
     cuadradoCallback(1, (value, result) => {
-        console.log(`Callback: ${value}, ${result}`);
+        console.log(`Callback: ${value}, ${result}`);//Callback: 1, 1
         cuadradoCallback(2, (value, result) => {
-            console.log(`Callback: ${value}, ${result}`);
+            console.log(`Callback: ${value}, ${result}`);//Callback: 2, 4
             cuadradoCallback(3, (value, result) => {
-                console.log(`Callback: ${value}, ${result}`);
+                console.log(`Callback: ${value}, ${result}`);//Callback: 3, 9
                 cuadradoCallback(4, (value, result) => {
-                    console.log(`Callback: ${value}, ${result}`);
+                    console.log(`Callback: ${value}, ${result}`);//Callback: 4, 16
                     cuadradoCallback(5, (value, result) => {
-                        console.log(`Callback: ${value}, ${result}`);
+                        console.log(`Callback: ${value}, ${result}`);//Callback: 5, 25
                     });
                 });
             });
@@ -392,18 +392,18 @@ const id = 1;//Aqui modificamos:
 //err para que no siga la ejecucion si es que no existe el empleado con determinado id:
 getEmpleado( id, (err, empleado) => {
     if(err) {
-        console.log('Error!');
-        return console.log(err);
+        console.log('Error!');//Error!
+        return console.log(err);//Empleado 1 no existe
     }
-    console.log('Empleado existe');
-    console.log(empleado.nombre);
+    console.log('Empleado existe');//Empleado existe
+    console.log(empleado.nombre);//ulises
 });
 
 getSalario( id, (err, salario) => {
     if(err) {
-        return console.log(err);
+        return console.log(err);//Empleado 1 no existe
     }
-    console.log(salario);
+    console.log(salario);//1000
 });
 
 //Peticiones a APIs usando Callbacks:
