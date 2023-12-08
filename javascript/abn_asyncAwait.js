@@ -71,7 +71,7 @@ async function dataFunction() {
         const data = await getDatos();
         console.log(data);
     } catch(error) {
-        console.log(error);
+        console.log(error.message);//No existen datos
     }
 }
 
