@@ -1,4 +1,7 @@
 /*
+Async Await:
+Async Await es una forma de escribir código asíncrono que es más fácil de leer y
+mantener.
 Van a esperar a que algo se cumpla para poder seguir ejecutando el proceso.
 */
 

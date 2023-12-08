@@ -1,4 +1,5 @@
 /*
+Promises:
 Una Promise (promesa en castellano) es un objeto que representa la terminación o el
 fracaso de una operación asíncrona. Dado que la mayoría de las personas consumen promises
 ya creadas, esta guía explicará primero cómo consumirlas, y luego cómo crearlas.
