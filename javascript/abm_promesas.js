@@ -20,10 +20,12 @@ anotherFunction()
     .then(response => console.log(response))
     .catch(err => console.log(err));
 
-//Hey!, lo logramos
-//Si cambiamos a false imprimira Whooops!, no funciono
+/*
+Hey!, lo logramos
+Si cambiamos a false imprimira Whooops!, no funciono
 
-//otro ejemplo:
+Otro ejemplo:
+*/
 function requestHandler(req, res) {
     User.findByYd(req.userId)
     .then(function (user) {
