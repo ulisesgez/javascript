@@ -26,30 +26,6 @@ function calc(num1, num2, callback) {
 
 console.log(calc(2, 2, sum));//4
 
-//Otro ejemplo, con un callbackhell:
-function requestHandler(req, res) {
-    User.findById(req,userId, function(err, user) {
-        if(err) {
-            res.send(err);
-        } else {
-            Task.findById(user.tasksId, function(err, task) {
-                if(err) {
-                    return res.send(err);
-                } else {
-                    task.completed = true;
-                    task.save(function(err) {
-                        if (err) {
-                            return res.send(err);
-                        } else {
-                            res.send('task completed');
-                        }
-                    })
-                }
-            })
-        }
-    })
-}
-
 //Otro ejemplo:
 function saludo(nombre) {
     console.log(`Hola ${nombre}`);//Hola ulises
@@ -257,6 +233,30 @@ function cuadradoCallback(value, callback) {
     setTimeout(() => {
         callback(value, value*value);
     }, 0 | Math.random()*100);
+}
+
+//Otro ejemplo, con un callbackhell:
+function requestHandler(req, res) {
+    User.findById(req,userId, function(err, user) {
+        if(err) {
+            res.send(err);
+        } else {
+            Task.findById(user.tasksId, function(err, task) {
+                if(err) {
+                    return res.send(err);
+                } else {
+                    task.completed = true;
+                    task.save(function(err) {
+                        if (err) {
+                            return res.send(err);
+                        } else {
+                            res.send('task completed');
+                        }
+                    })
+                }
+            })
+        }
+    })
 }
 
 //callbackhell, mala idea para manejo de errores, mejor recurrir a las promesas.
