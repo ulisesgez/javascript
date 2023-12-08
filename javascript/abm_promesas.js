@@ -113,4 +113,4 @@ cuadradoPromise(0)
     console.log(`Promise: ${obj.value}, ${obj.result}`);
     console.log("Fin promise");
 })
-.catch(err => console.error("err"));
+.catch(err => console.error(err));
