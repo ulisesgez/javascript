@@ -6,7 +6,6 @@ ya creadas, esta guía explicará primero cómo consumirlas, y luego cómo crear
 Esencialmente, una promesa es un objeto devuelto al cual se adjuntan funciones callback,
 en lugar de pasar callbacks a una función.
 */
-
 const anotherFunction = () => {
     return new Promise((resolve, reject) => {
         if(true) {
@@ -25,7 +24,6 @@ anotherFunction()
 //Si cambiamos a false imprimira Whooops!, no funciono
 
 //otro ejemplo:
-
 function requestHandler(req, res) {
     User.findByYd(req.userId)
     .then(function (user) {
@@ -43,8 +41,7 @@ function requestHandler(req, res) {
     })
 }
 
-//otro ejemplo:
-
+//otro ejemplo:f
 const datos = [
     {
         id: 1,
@@ -75,8 +72,7 @@ getDatos()
     .then((datos) => console.log(datos))
     .catch(error => console.log(error));
 
-//otro ejemplo:
-
+//Otro ejemplo:
 function cuadradoPromise(value) {
     if(typeof value !== "number") {
         return Promise.reject(`Èrror, el valor ${value} no es un numero`);
