@@ -7,16 +7,15 @@ que se ejecuta despues de que se haya completado cualquier operacion o alguna
 operacion pero no tiene por que ser asincrona.
 
 Es una funcion que se pasa a otra funcion como argumento para su ejecucion posterior.
-*/
 
-//Ejemplo basico:
+Ejemplo basico:
+*/
 
  setTimeout(() => {
     console.log('hola mundo');//hola mundo
  }, 1000);
 
 //Otro ejemplo:
-
 function sum(num1, num2) {
     return num1 + num2;
 }
@@ -28,7 +27,6 @@ function calc(num1, num2, callback) {
 console.log(calc(2, 2, sum));//4
 
 //Otro ejemplo, con un callbackhell:
-
 function requestHandler(req, res) {
     User.findById(req,userId, function(err, user) {
         if(err) {
@@ -53,7 +51,6 @@ function requestHandler(req, res) {
 }
 
 //Otro ejemplo:
-
 function saludo(nombre) {
     console.log(`Hola ${nombre}`);//Hola ulises
 }
@@ -61,7 +58,6 @@ function saludo(nombre) {
 setTimeout(saludo, 2000, 'ulises');//Hola ulises
 
 //Otro ejemplo:
-
 const getUsuarioById = (id, callback) => {
     const usuario = {
         id,
@@ -94,9 +90,8 @@ modify(names, function() {
 })
 //he modificado el array
 
-//asincrono:
+Asincrono:
 */
-
 function modify(array, callback) {
     //hacemos algo ...
     array.push('midu')
@@ -112,9 +107,7 @@ modify(names, function(array) {
     console.log(`he modificado el array y ahora es de ${array.length} elementos`);//he modificado el array y ahora es de 4 elementos
 })
 
-//he modificado el array y ahora es de 4 elementos
-
-//Otro ejemplo, aqui no es callback:
+//he modificado el array y ahora es de 4 elementos. Otro ejemplo, aqui no es callback:
 
 function one() {
     console.log("step 1");//step 1
@@ -128,7 +121,6 @@ one();//step 1
 two();//step 2
 
 //Ahora lo convertimos:
-
 function one(callback) {
     console.log("step 1");//step 1
     callback();
@@ -141,7 +133,6 @@ function two() {
 one(two);//step 1 / step 2
 
 //Otro ejemplo:
-
 function miFuncion(fn) {
     fn()
 }
@@ -153,7 +144,6 @@ function saludar() {
 miFuncion(saludar);//holaMundo
 
 //Otro ejemplo:
-
 const frutas = ['manzana', 'pera', 'sandia', 'uvas', 'fresas'];
 frutas.forEach(frutas => {
     console.log(frutas);//manzana / pera / sandia / uvas / fresas
@@ -167,7 +157,6 @@ frutas.forEach(frutas => {
 */
 
 //Otro ejemplo:
-
 let order = (callback) => {
     console.log("order placed, please call production");
     callback();
@@ -175,10 +164,10 @@ let order = (callback) => {
 
 let production = () => console.log("order received, starting production");//order received, starting production
 
-//order placed, please call production / order received, starting production
-
-//Otro ejemplo:
 /*
+order placed, please call production / order received, starting production
+Otro ejemplo:
+
 let stocks = {
     fruits: ["strawberry", "grapes", "banana"],
     liquid: ["water", "ice"],
@@ -264,7 +253,6 @@ order(0, production);
 */
 
 //Otro ejemplo:
-
 function cuadradoCallback(value, callback) {
     setTimeout(() => {
         callback(value, value*value);
@@ -272,7 +260,6 @@ function cuadradoCallback(value, callback) {
 }
 
 //callbackhell, mala idea para manejo de errores, mejor recurrir a las promesas.
-
 cuadradoCallback(0, (value, result) => {
     console.log("Inicia callback");//Inicia callback
     console.log(`Callback: ${value}, ${result}`);//Callback: 0, 0
@@ -293,9 +280,9 @@ cuadradoCallback(0, (value, result) => {
     });
 });
 
-//callbackhell:
-
 /*
+Callbackhell:
+
 const empleados = [
     {
         id: 1,
@@ -364,7 +351,6 @@ const salarios = [
 ];
 
 //funcion que nos permite traer la informacion de un empleado:
-
 const getEmpleado = (id, callback) => {
     const empleado = empleados.find(e => e.id === id)?.nombre;
     //validar que existe el empleado:
