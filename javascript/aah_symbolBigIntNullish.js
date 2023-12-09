@@ -38,6 +38,11 @@ persona.NOMBRE = 'ulises gutierrez'//{NOMBRE: ulises gutierrez, Symbol(): 'ulise
 console.log(persona.NOMBRE);//ulises gutierrez
 console.log(persona[NOMBRE]);//ulises
 
+for (let i in persona) {
+    console.log(i);//NOMBRE
+    console.log(persona[i]);//ulises gutierrez
+}
+
 //metodos, funciones:
 
 const SALUDAR = Symbol();
