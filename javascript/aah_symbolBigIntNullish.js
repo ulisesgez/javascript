@@ -43,10 +43,10 @@ console.log(persona[NOMBRE]);//ulises
 const SALUDAR = Symbol();
 
 persona[SALUDAR] = function() {
-    console.log('hola');
+    console.log('hola');//hola
 }
 
-persona[SALUDAR]();
+persona[SALUDAR]();//hola
 
 /*
 Tipos de datos BigInt:
