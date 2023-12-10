@@ -392,10 +392,20 @@ let valor3 = { "valor3": 3 };
 ws.add(valor1);
 ws.add(valor2);
 
-console.log(ws);
+console.log(ws);//WeakSet { {…}, {…} }
 
-//weak map:
+console.log(ws.has(valor1));//true
+console.log(ws.has(valor3));//false
+
+ws.delete(valor1);
+console.log(ws.has(valor1));//false
+
+setInterval(() => console.log(ws), 1000);//WeakSet { {…}, {…} }
+//Al pasar los 5 segundos, el garbage collector elimina los valores almacenados en el weakset.
+setTimeout(() => console.log(ws), 5000);//WeakSet { {…}, {…} }
+
 /*
+Weak map:
 NO es posible:
 const wm = new WeakMap()([
     ["nombre", "jesus"],
