@@ -1,4 +1,7 @@
 /*
+Proxies:
+Un proxy es un objeto que envuelve a otro y le permite interceptar operaciones
+como la lectura de propiedades, antes de que se lleven a cabo.
 Es un nuevo mecanismo de js, que te permite crear un
 objeto basado en un objeto literal inicial.
 */
