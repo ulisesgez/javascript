@@ -306,6 +306,7 @@ console.log(mapa.size);//3
 
 //Evaluar si existe la llave o no?
 console.log(mapa.has("correo"));//false
+console.log(mapa.has("nombre"));//true
 
 //Mandar a consola el nombre:
 console.log(mapa.get("nombre"));//ulises
@@ -314,7 +315,7 @@ console.log(mapa.get("nombre"));//ulises
 mapa.set("nombre", "jose");
 console.log(mapa.get("nombre"));//jose
 
-//Eliminar elementos de una coleccion:
+//Eliminar elementos de una coleccion / mapa:
 mapa.delete("apellido");//Solo quedara nombre y edad.
 
 //Recorrer mapa(es un elemento iterable):
@@ -323,7 +324,6 @@ for(let [key, value] of mapa) {
 }
 
 //Caracteristica de los maps:
-
 mapa.set(19, "diecinueve");
 mapa.set(false, "falso");
 mapa.set({}, {});
@@ -331,7 +331,6 @@ mapa.set({}, {});
 console.log(mapa);
 
 //Otra forma de inicializar los valores para un mapa:
-
 const mapaDos = new Map()([
     ["nombre", "jesus"],
     ["apellido", "lopez"],
@@ -341,14 +340,16 @@ const mapaDos = new Map()([
 
 console.log(mapaDos);
 
-const llaves = [...mapaDos.keys()];
-const valores = [...mapaDos.values()];
+const llaves = [...mapaDos.keys()];//Nos va a generar un nuevo array con las llaves de nuestro mapa.
+const valores = [...mapaDos.values()];//Nos va a generar un nuevo array con los valores de nuestro mapa.
 
-console.log(llaves);
-console.log(valores);
+console.log(llaves);//[ 'nombre', 'apellido', 'edad', null ]
+console.log(valores);//[ 'jesus', 'lopez', 20, 'nulo' ]
 
-//Map: Nos ayudara a mapear ciertos articulos, de igual forma, este metodo nos va a generar un nuevo array, no va a modificar el array que ya tenemos:
-
+/*
+Map: Nos ayudara a mapear ciertos articulos, de igual forma, este metodo nos va a
+generar un nuevo array, no va a modificar el array que ya tenemos:
+*/
 let computers = [
     { brand: "apple", cost: 50000 },
     { brand: "dell", cost: 15000 },
@@ -359,10 +360,57 @@ let computers = [
     { brand: "asus", cost: 25000 }
 ];
 
-// Con esto le pedimos que nos regrese de todos los articulos el nombre de los articulos:
- 
+//Con esto le pedimos que nos regrese de todos los articulos el nombre de los articulos:
 let brandComputers = computers.map(function(computer){
     return computer.brand
 });
 
 console.log(brandComputers);
+
+/*
+WeakSet y WeakMap:
+WeakSet y WeakMap son colecciones de datos que nos permiten almacenar valores de
+forma debil, es decir que no evitan que el garbage collector elimine los valores
+almacenados en ellas.
+WeakSet y WeakMap son muy parecidos a Set y Map, con la diferencia de que solo
+pueden almacenar valores de tipo objeto y no son iterables.
+Conjuntos debiles, debiles se refiere a solamnete pueden almacenar referencias debiles,
+es decir que las llaves deben ser de tipo objeto.
+
+Tienen algunas craencias, no son iterables, no podemos utilizar el metodo clear,
+tampoco podemos verificar su tamaño o size.
+
+No es posible como un set:
+const ws = new WeakSet([1, 2, 3, 3, 4, 5, true, false, false, {}, "hola", "HOLA"]);
+*/
+
+const ws = new WeakSet();
+let valor1 = { "valor1": 1 };
+let valor2 = { "valor2": 2 };
+let valor3 = { "valor3": 3 };
+
+ws.add(valor1);
+ws.add(valor2);
+
+console.log(ws);
+
+//weak map:
+/*
+NO es posible:
+const wm = new WeakMap()([
+    ["nombre", "jesus"],
+    ["apellido", "lopez"],
+    ["edad", 20],
+    [null, "nulo"]
+]);
+*/
+
+const wm = new WeakMap();
+let llave1 = {};
+let llave2 = {};
+let llave3 = {};
+
+wm.set(llave1, 1);
+wm.set(llave2, 2);
+
+console.log(wm);
