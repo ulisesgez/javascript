@@ -479,13 +479,13 @@ que nos permite trabajar de una manera mas amigable con la interface de los iter
 un elemento iterabel.
 Convertir el codigo de una funcion en iterable.
 */
-function* iterate(array) {
+function* iterableDos(array) {
     for(let value of array) {
         yield value;
     }
 }
 
-const it = iterate(['ulises', 'oscar', 'david', 'ana']);
+const it = iterableDos(['ulises', 'oscar', 'david', 'ana']);
 console.log(it.next().value);
 console.log(it.next().value);
 console.log(it.next().value);
@@ -497,7 +497,24 @@ oscar
 david
 ana
 undefined
+Cuando se termina de recorrer el iterable, nos va a devolver un valor undefined.
+
+Otro ejemplo:
 */
+
+function* countEmojis() {
+    const emojis = ['feliz', 'triste', 'enojado', 'sorprendido'];
+    for(let i = 0; i < emojis.length; i++) {
+        yield emojis[i];//Nos va a devolver el valor de cada uno de los emojis.
+    }
+}
+
+const genDos = countEmojis();
+console.log(genDos.next().value);//feliz
+console.log(genDos.next().value);//triste
+console.log(genDos.next().value);//enojado
+console.log(genDos.next().value);//sorprendido
+console.log(genDos.next().value);//undefined
 
 //Otro ejemplo:
 
