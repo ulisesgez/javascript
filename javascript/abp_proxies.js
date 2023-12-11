@@ -17,7 +17,7 @@ const persona = {
 const manejador = {
     //objeto, cada una de las propiedades, valor que va arecibir cada una de las propiedades.
     //set va a estar haciendo las validaciones que necesitemos para que no modifique la
-    //estrucutra del objeto de la cop8ia de lacula se esta basando
+    //estrucutra del objeto de la copia de lacula se esta basando
     set(obj, prop, valor) {
         //Validando que no exiista, como por ejemplo twitter:
         if(Object.keys(obj).indexOf(prop)===-1) {
