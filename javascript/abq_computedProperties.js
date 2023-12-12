@@ -1,7 +1,11 @@
-let aleatorio = Math.round(Math.random()*100 + 4);//mas 4 para no tomar los del array
+/*
+Computed Properties:
+Las propiedades computadas nos permiten generar llaves dinamicas en un objeto.
+*/
+let aleatorio = Math.round(Math.random()*100 + 4);//aleatorio entre 4 y 104
 const objUsuarios = {
-    propiedad: "Valor",
-    [`id_${aleatorio}`]: "Valor aleatorio"
+    propiedad: "Valor",//propiedad estatica.
+    [`id_${aleatorio}`]: "Valor aleatorio"//propiedad dinamica.
 }
 console.log(objUsuarios);//{}
 const usuarios = ["ulises", "irma", "miguel", "karla"];

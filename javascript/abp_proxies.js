@@ -5,15 +5,13 @@ como la lectura de propiedades, antes de que se lleven a cabo.
 Es un nuevo mecanismo de js, que te permite crear un
 objeto basado en un objeto literal inicial.
 */
-
 const persona = {
     nombre: "",
     apellido: "",
     edad: 0
 }
 
-//handler o manejador(similar al event loop),  que tambien debe ser un objeto:
-
+//Handler o manejador(similar al event loop),  que tambien debe ser un objeto:
 const manejador = {
     //objeto, cada una de las propiedades, valor que va arecibir cada una de las propiedades.
     //set va a estar haciendo las validaciones que necesitemos para que no modifique la
