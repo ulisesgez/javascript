@@ -50,10 +50,21 @@ const objTres = {
 
 objTres.imprimir();//Contexto global
 
+//Ejemplo siguiendo la programacion orientada a objetos:
+//funcion constructura que crea su propio scope:
 function Persona(nombre) {
-    //funcion constructura que crea su propio scope:
     this.nombre = nombre;
-    //return console.log(this.nombre);//ulises        1)
+    //return console.log(this.nombre);//ulises --> caso 1
+    //La siguiente funcion no funciona ya que this hace referencia al objeto global, es decir, window en el navegador o global en nodejs
+    //La siguiente funcion no tiene una propiedad nombre.
+    /*
+    return function() {
+        console.log(this.nombre);
+    } --> caso 2
+    */
+   return () => console.log(this.nombre);//ulises --> caso 3, recuerda las arrow function no manejan su propio scope.
 }
 
-let ulises = new Persona('ulises');//ulises
+//let ulises = new Persona('ulises');//ulises --> caso 1
+//ulises();//Contexto global, ya que this hace referencia al objeto global, es decir, window en el navegador o global en nodejs  --> caso 2
+ulises();//ulises --> caso 3, recuerda las arrow function no manejan su propio scope.
