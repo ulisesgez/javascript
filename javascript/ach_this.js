@@ -42,7 +42,7 @@ objDos.imprimir();//Contexto objetoDos, no imprime Contexto global como algunos 
 //this en el contexto de una arrow function:
 const objTres = {
     nombre: 'Contexto objetoTres',
-    //Las arrow function no manejan su propio scope:
+    //Las arrow function no manejan su propio scope, por eso a la hora de usarla this hara referencia al contexto global:
     imprimir: () => {
         console.log(this.nombre);
     }
