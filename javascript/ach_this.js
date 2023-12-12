@@ -1,3 +1,12 @@
+/*
+This:
+This es un objeto que hace referencia al contexto de ejecucion, es decir,
+al objeto que contiene el codigo que se esta ejecutando en este momento.
+En el contexto global, this hace referencia al objeto global, ya sea window
+en el navegador o global en nodejs.
+En el contexto de una funcion, this hace referencia al objeto que contiene
+la funcion, es decir, al objeto que esta ejecutando la funcion.
+*/
 console.log(this);//objeto window(contexto global) en javascript de los navegadores
 console.log(this);//objeto global en nodejs
 console.log(this === window);//true
