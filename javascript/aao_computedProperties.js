@@ -1,5 +1,5 @@
 /*
-Computed Properties:
+Computed Properties / Propiedades dinamicas:
 Las propiedades computadas nos permiten generar llaves dinamicas en un objeto.
 */
 let aleatorio = Math.round(Math.random()*100 + 4);//aleatorio entre 4 y 104
