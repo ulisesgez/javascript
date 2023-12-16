@@ -12,9 +12,9 @@ console.log(window.document);
 //es equivalente a este, no es necesario el window:
 console.log(document);//Imprime el #document
 console.log(document.head);//Devuelve cabeza del html
-console.log(document.body);//Devuleve lo que hay en body
+console.log(document.body);//Devuleve lo que hay en body del html
 console.log(document.html);//Esto genera undefined, no es como los anteriores.
-console.log(document.documentElement);//html, con esto si generamos el html.
+console.log(document.documentElement);//html, con esto si generamos el html o lo que hay en la etiqueta html.
 console.log(document.doctype);//Devuleve tipo de documento
 console.log(document.charset);//Juego de caracteres.
 console.log(document.title);//Devuelve el titulo
