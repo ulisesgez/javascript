@@ -1,3 +1,11 @@
+/*
+DOM (Document Object Model):
+Es una API para documentos HTML y XML.
+Es una representacion del documento.
+Define la estructura logica de los documentos y la forma de acceder y manipular
+un documento.
+Es un estandar, es decir, que todos los navegadores lo implementan.
+*/
 console.log('Elementos del documento');
 //Esto:
 console.log(window.document);
