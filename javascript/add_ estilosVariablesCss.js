@@ -1,3 +1,62 @@
+/*
+Estilos en el DOM:
+Acceder y modificar estilos CSS:
+Puedes acceder y modificar los estilos CSS de un elemento HTML utilizando
+la propiedad style del objeto del elemento.
+
+// Acceder al estilo de un elemento
+const miElemento = document.getElementById('miId');
+miElemento.style.color = 'red'; // Modificar el color del texto a rojo
+miElemento.style.fontSize = '20px'; // Modificar el tamaño de la fuente
+miElemento.style.backgroundColor = '#f0f0f0'; // Modificar el color de fondo
+
+Obtener estilos computados:
+También puedes obtener los estilos computados (ya calculados) de un elemento
+mediante window.getComputedStyle.
+
+const elemento = document.getElementById('miId');
+const estilosComputados = window.getComputedStyle(elemento);
+console.log(estilosComputados.color); // Acceder al color computado del elemento
+console.log(estilosComputados.fontSize); // Acceder al tamaño de la fuente computado
+
+const elemento = document.getElementById('miId');
+const estilosComputados = window.getComputedStyle(elemento);
+console.log(estilosComputados.color); // Acceder al color computado del elemento
+console.log(estilosComputados.fontSize); // Acceder al tamaño de la fuente computado
+
+Variables CSS (Custom Properties):
+Definir variables CSS:
+Las variables CSS (también conocidas como Custom Properties) se definen
+en CSS utilizando la sintaxis --nombre-variable: valor.
+
+:root {
+  --color-primario: #3498db;
+  --padding-horizontal: 10px;
+}
+
+Acceder y modificar variables CSS desde JavaScript:
+Puedes acceder y modificar las variables CSS definidas en el documento
+desde JavaScript mediante getComputedStyle y setProperty.
+
+// Acceder al valor de una variable CSS
+const rootStyles = getComputedStyle(document.documentElement);
+const colorPrimario = rootStyles.getPropertyValue('--color-primario');
+
+// Modificar el valor de una variable CSS
+document.documentElement.style.setProperty('--color-primario', 'green');
+
+Usar variables CSS en estilos de elementos:
+Una vez que tienes definidas las variables CSS,
+puedes usarlas en los estilos de los elementos.
+
+// Usar variables CSS en estilos de elementos
+const elemento = document.getElementById('miElemento');
+elemento.style.setProperty('color', rootStyles.getPropertyValue('--color-primario'));
+elemento.style.setProperty('padding-left', rootStyles.getPropertyValue('--padding-horizontal'));
+
+Estos métodos te permiten interactuar con los estilos CSS y las variables CSS
+desde JavaScript, brindándote flexibilidad para modificar dinámicamente la apariencia de los elementos en tu página web.
+*/
 //Interactuar con los estilos de nuestro html:
 const linkDom = document.querySelector(".link-dom");
 console.log(linkDom.style);
