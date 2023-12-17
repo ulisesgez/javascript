@@ -1,3 +1,35 @@
+/*
+Nodos:
+Los nodos son objetos que representan diferentes partes de un documento HTML.
+El DOM organiza estos nodos en una estructura de árbol, donde cada nodo puede
+ser un elemento HTML, un atributo, un fragmento de texto o algún otro tipo de entidad.
+Los tipos principales de nodos incluyen:
+Element nodes: Representan elementos HTML, como <div>, <p>, <ul>, etc.
+Text nodes: Contienen texto dentro de un elemento HTML.
+Attribute nodes: Representan atributos de un elemento HTML.
+
+Elementos:
+Los elementos son un tipo específico de nodo en el DOM que representa etiquetas HTML.
+Los elementos pueden tener atributos, pueden contener texto y pueden
+tener elementos secundarios anidados (hijos).
+Algunos métodos útiles para trabajar con elementos incluyen getElementById,
+getElementsByClassName, getElementsByTagName, querySelector y querySelectorAll.
+
+Selectores:
+Los selectores son patrones que permiten seleccionar uno o varios
+elementos dentro del DOM.
+Se utilizan en combinación con métodos como document.querySelector y
+document.querySelectorAll para encontrar y seleccionar elementos específicos
+en función de ciertos criterios, como el nombre de la etiqueta, la clase,
+el ID o incluso selectores más complejos como selectores CSS.
+Por ejemplo:
+document.getElementById('miId') selecciona un elemento por su ID.
+document.getElementsByClassName('miClase') selecciona elementos por su clase.
+document.getElementsByTagName('div') selecciona elementos por su nombre de etiqueta.
+document.querySelector('.miClase') selecciona el primer elemento que coincida con
+el selector CSS proporcionado.
+document.querySelectorAll('p') selecciona todos los elementos <p> del documento.
+*/
 //No es un arreglo, es una coleccion de cuantos li tenemos:
 console.log(document.getElementsByTagName("li"));//HTMLCollection(5) [li, li, li, li, li]
 //Coleccion de elementos con la clase card, no lleva el punto:
