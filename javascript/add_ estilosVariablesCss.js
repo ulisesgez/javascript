@@ -108,8 +108,8 @@ tiene $ al inicio por que son referencias.
 Hemos agregado estilos <style> :root { --yellow-color: #F7DF1E; --dark-color: #222; </style>
 */
 
-const $html = document.documentElement,
-$body = document.body;
+const $html = document.documentElement,//accedemos al html.
+$body = document.body;//accedemos al body del html.
 
 let varDarkColor = getComputedStyle($html).getPropertyValue("--dark-color"),
  varYellowColor = getComputedStyle($html).getPropertyValue("--yellow-color");
