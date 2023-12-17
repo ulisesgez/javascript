@@ -59,7 +59,7 @@ desde JavaScript, brindándote flexibilidad para modificar dinámicamente la apa
 */
 //Interactuar con los estilos de nuestro html:
 const linkDom = document.querySelector(".link-dom");
-console.log(linkDom.style);
+console.log(linkDom.style);//CSSStyleDeclaration {}
 /*
 CSSStyleDeclaration {0: 'color', 1: 'background-color', accentColor: '', additiveSymbols: '', alignContent: '', alignItems: '', alignSelf: '', …}
 0: "color"
@@ -72,7 +72,7 @@ console.log(linkDom.style.backgroundColor);//black
 console.log(linkDom.style.color);//white
 //Otra forma de acceder a las propiedades:
 console.log(window.getComputedStyle(linkDom));//Un mapa diferente al anterior.
-//No es necesario el window
+//No es necesario el window:
 console.log(getComputedStyle(linkDom).getPropertyValue("color"));//rgb(255, 255, 255)
 //Modificar propiedades:
 linkDom.style.setProperty("text-decoration", "none");
@@ -101,12 +101,13 @@ CSSStyleDeclaration {0: 'color', 1: 'background-color', 2: 'text-decoration-lin
 12: "border-top-right-radius"
 13: "border-bottom-right-radius"
 14: "border-bottom-left-radius"
+
+Variables CSS - Custom Propieries CSS:
+documentElement representa/accedemos html.
+tiene $ al inicio por que son referencias.
+Hemos agregado estilos <style> :root { --yellow-color: #F7DF1E; --dark-color: #222; </style>
 */
 
-//Variables CSS - Custom Propieries CSS:
-//documentElement representa/accedemos html.
-//tiene $ al inicio por que son referencias.
-//Hemos agregado estilos <style> :root { --yellow-color: #F7DF1E; --dark-color: #222; </style>
 const $html = document.documentElement,
 $body = document.body;
 
