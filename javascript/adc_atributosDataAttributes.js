@@ -1,3 +1,40 @@
+/*
+Data Attributes:
+Los atributos de datos (data attributes) en HTML permiten almacenar información
+personalizada o adicional dentro de los elementos HTML. Estos atributos se denominan
+"atributos de datos" porque su sintaxis comienza con "data-" seguido de un nombre
+que defines para representar el dato que deseas almacenar.
+Por ejemplo, en HTML puedes tener un elemento así:
+
+<div id="miElemento" data-valor="10" data-nombre="Ejemplo"></div>
+
+En este caso, el elemento <div> tiene dos atributos de datos: data-valor con
+el valor "10" y data-nombre con el valor "Ejemplo".
+
+En JavaScript, puedes acceder a estos atributos de datos utilizando el método
+dataset del elemento DOM correspondiente. Por ejemplo:
+
+const elemento = document.getElementById('miElemento');
+
+// Acceder a los atributos de datos
+const valor = elemento.dataset.valor; // valor será "10"
+const nombre = elemento.dataset.nombre; // nombre será "Ejemplo"
+
+
+Los atributos de datos son útiles para:
+
+Almacenar información adicional: Puedes adjuntar datos específicos a elementos HTML
+sin la necesidad de usar atributos estándar que tengan un significado predefinido
+para el navegador o el validador HTML.
+
+Manipulación y acceso a datos en JavaScript: Permiten acceder y manipular datos
+asociados con elementos HTML directamente desde JavaScript, facilitando el
+intercambio de información entre el HTML y el código JavaScript.
+
+Mejorar la legibilidad del código: A menudo se utilizan en aplicaciones web para
+almacenar configuraciones, identificadores o datos específicos necesarios para
+el funcionamiento de la interfaz de usuario.
+*/
 //Acceder al atributo lang que tiene la etiqueta html:
 console.log(document.documentElement.lang);//en
 //Aparentemente nos da el mismo resultado, pero no siempre pasa lo mismo:
