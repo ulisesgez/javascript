@@ -36,8 +36,6 @@ const miElemento = document.getElementById('miId');
 
 // Reemplazar todas las clases existentes con una nueva clase
 miElemento.className = 'nuevaClase otraClase';
-
-
 */
 const $card = document.querySelector(".card");
 console.log($card);//Hace referencia a la de Tech
