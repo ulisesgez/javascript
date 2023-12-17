@@ -1,3 +1,44 @@
+/*
+Clases CSS:
+En JavaScript, puedes manipular las clases CSS de los elementos HTML utilizando
+métodos que permiten agregar, eliminar o alternar clases en los elementos.
+Estos métodos te permiten cambiar dinámicamente el estilo de un elemento al
+agregar o eliminar clases CSS predefinidas. Los métodos clave para trabajar
+con clases CSS en JavaScript son:
+
+Métodos para manipular clases CSS:
+classList
+El objeto classList proporciona métodos para agregar, quitar y alternar clases
+en un elemento.
+
+add(className): Agrega una clase al elemento.
+remove(className): Elimina una clase del elemento.
+toggle(className): Si la clase existe, la elimina; si no existe, la agrega.
+
+// Obtener un elemento
+const miElemento = document.getElementById('miId');
+
+// Agregar una clase al elemento
+miElemento.classList.add('nuevaClase');
+
+// Eliminar una clase del elemento
+miElemento.classList.remove('otraClase');
+
+// Alternar una clase en el elemento (agrega o elimina según la existencia)
+miElemento.classList.toggle('toggleClase');
+
+Acceso directo a la propiedad className
+También puedes manipular las clases directamente a través de la propiedad
+className del elemento, aunque esta forma es menos flexible ya que requiere
+sobrescribir completamente las clases existentes del elemento.
+
+const miElemento = document.getElementById('miId');
+
+// Reemplazar todas las clases existentes con una nueva clase
+miElemento.className = 'nuevaClase otraClase';
+
+
+*/
 const $card = document.querySelector(".card");
 console.log($card);//Hace referencia a la de Tech
 console.log($card.className);//card
