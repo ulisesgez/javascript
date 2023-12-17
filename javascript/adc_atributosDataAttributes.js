@@ -27,7 +27,7 @@ console.log(linkDom.hasAttribute("rel"));//false
 
 //Data atributes (html5), los cuales empiezan con data-
 
-console.log(linkDom.getAttribute("data-description"));//Document Object Model
+console.log(linkDom.getAttribute("data-description"));//Document Object Model --> <a class="link-dom" href="./adc_atributosDataAttributes.html" data-id="1" data-description = "Document Object Model">DOM</a>
 console.log(linkDom.dataset);//Tipo de dato Mapa: DOMStringMap {description: 'Document Object Model'}
 /*
 Al agregar en el html data-id="1":
