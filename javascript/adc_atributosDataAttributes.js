@@ -25,7 +25,7 @@ console.log(linkDom.hasAttribute("rel"));//true, lo acabamos de añadir
 linkDom.removeAttribute("rel");//lo removemos
 console.log(linkDom.hasAttribute("rel"));//false
 
-//Data atributes (html5), los cuales empiezan data-
+//Data atributes (html5), los cuales empiezan con data-
 
 console.log(linkDom.getAttribute("data-description"));//Document Object Model
 console.log(linkDom.dataset);//Tipo de dato Mapa: DOMStringMap {description: 'Document Object Model'}
