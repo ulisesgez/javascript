@@ -63,6 +63,6 @@ $card.classList.toggle("rotate-45")//La añadimos
 $card.classList.replace("rotate-45", "rotate-135")//La reemplazamos
 console.log($card.className);//card rotate-135
 console.log($card.classList.contains("rotate-135"));//true, ademas ha rotado la card
-//Agregar otras clases:
+//Agregar otras clases a la vez:
 $card.classList.add("opacity-80", "sepia");//Se visualiza por estilos
 $card.classList.remove("opacity-80", "sepia");//Se pueden remover igual
