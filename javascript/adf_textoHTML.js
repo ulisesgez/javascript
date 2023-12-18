@@ -1,4 +1,13 @@
-//MOdificar texto:
+/*
+Texto HTML con Javascript:
+Para modificar el texto de un elemento HTML, tenemos varias opciones, las cuales son:
+- innerText
+- textContent
+- innerHTML
+- outerHTML
+*/
+
+//Modificar texto:
 const $whatIsDom = document.getElementById("que-es");
 console.log($whatIsDom);
 /*
