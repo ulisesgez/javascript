@@ -1,3 +1,8 @@
+/*
+Traversing:
+Es el recorrido entre los distintos elementos del DOM, es decir,
+como podemos ir de un elemento a otro.
+*/
 //Recorrer elementos tomando como referencia un nodo:
 const $cards = document.querySelector(".cards");
 console.log($cards);//Devuelve la section con la clase cards
@@ -18,8 +23,8 @@ Para que sea figure debe ser asi:
 <section class="cards"><figure class="card">
 console.log($cards.firstChild);//Ahora si es el primer hijo es figure: <figure class="card"> <img src="https://placeimg.com/200/200/tech" alt="Tech"> <figcaption>Tech</figcaption> </figure>
 */
-//Ahora bien con esto si ´podemos ver a figure:
-console.log($cards.firstElementChild);//Ahora si es el primer hijo es figure: <figure class="card"> <img src="https://placeimg.com/200/200/tech" alt="Tech"> <figcaption>Tech</figcaption> </figure>
+//Ahora bien con esto si podemos ver a figure:
+console.log($cards.firstElementChild);//Ahora si es el primer hijo es figure y no el salto de linea o tabulacion: <figure class="card"> <img src="https://placeimg.com/200/200/tech" alt="Tech"> <figcaption>Tech</figcaption> </figure>
 console.log($cards.lastChild);//#text
 console.log($cards.lastElementChild);//<figure class="card"> <img src="https://placeimg.com/200/200/nature" alt="Nature"> <figcaption>Nature</figcaption> </figure>
 //Hermanos:
