@@ -1,4 +1,12 @@
-//Crear elementos dinamicamente con jascript.
+/*
+Crear elementos dinamicamente con jascript:
+Para crear elementos dinamicamente con javascript, tenemos que crear un nodo,
+y luego incorporarlo al arbol del DOM.
+Para crear un nodo, tenemos que crear un elemento, y luego incorporarlo al arbol
+del DOM.
+Para crear un elemento, tenemos que crear un elemento, y luego incorporarlo
+al arbol del DOM.
+*/
 //Crear una nueva tarjeta de manera dinamica:
 const $figure = document.createElement("figure"),
 $img = document.createElement("img"),
@@ -7,7 +15,7 @@ $figcaptionText = document.createTextNode("Animals"),
 //Elemento padre donde vamos insertar esta tarjeta:
 $cards = document.querySelector(".cards");
 //Incorporarlas al arbol del Dom:
-//$cards.appendChild($figure);//En Elements podemos visualizar que se ha agragado una <figure></figure>
+//$cards.appendChild($figure);//En Inspect >> Elements podemos visualizar que se ha agragado una <figure></figure>
 //Incorporarlas al arbol del Dom, forma correcta, con esto creamos un nodo:
 $img.setAttribute("src", "https://placeimg.com/200/200/animals");
 $img.setAttribute("alt", "Animals");
@@ -24,6 +32,7 @@ $figureTwo.innerHTML = `
 `;
 $figureTwo.classList.add("card");//Por la parte de estilos
 $cards.appendChild($figureTwo);
+
 //Crear dinamicamente las list item del ul:
 const estaciones = ["primavera", "verano", "otoño", "invierno"],
 $ul = document.createElement("ul");
@@ -36,6 +45,7 @@ estaciones.forEach((el) => {
     $li.textContent = el;
     $ul.appendChild($li)
 });
+
 //Crear dinamicamente las list item del ul:
 const continenetes = ["africa", "america", "asia", "europa", "oceania"],
 $ulTwo = document.createElement("ul");
@@ -43,7 +53,8 @@ document.write("<h3>Continentes del Mundo</h3>");
 document.body.appendChild($ulTwo);
 $ulTwo.innerHTML = "";
 continenetes.forEach(el => $ulTwo.innerHTML += `<li>${el}</li>`);
-//Fragmentos:
+
+//Crear dinamicamente las list item del ul con fragmentos:
 const meses = [
     "Enero",
     "Febrero",
