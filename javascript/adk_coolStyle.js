@@ -1,10 +1,10 @@
 /*
 Elementos nuevos para modificar el DOM:
     .insertAdjacent...
-        .insertAdjacentElement(position, el)
-        .insertAdjacentHTML(position, html)
-        .insertAdjacentText(position, text)
-        
+        .insertAdjacentElement(position, el)(seria como un apendchild, insertbefore)
+        .insertAdjacentHTML(position, html)(seria como un innerHTML)
+        .insertAdjacentText(position, text)(seria como un textContent)
+
         //Posiciones:
         beforebegin(hermano anterior)
         afterbegin(primer hijo)
