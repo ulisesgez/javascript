@@ -1,4 +1,16 @@
 /*
+Elementos nuevos para modificar el DOM:
+    .insertAdjacent...
+        .insertAdjacentElement(position, el)
+        .insertAdjacentHTML(position, html)
+        .insertAdjacentText(position, text)
+        
+        //Posiciones:
+        beforebegin(hermano anterior)
+        afterbegin(primer hijo)
+        beforeend(ultimo hijo)
+        afterend(hermano posterior)
+
 Forma 1:
 
 const $cards = document.querySelector(".cards"),
