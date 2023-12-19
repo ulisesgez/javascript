@@ -1,8 +1,22 @@
+/*
+Elementos para modificar el DOM:
+    .innerHTML
+    .textContent
+    .createElement(element)
+    .createTextNode(text)
+    .appendChild(element)
+    .prepend(element)
+    .insertBefore(element, referenceElement)
+    .removeChild(element)
+    .replaceChild(newChild, oldChild)
+    .cloneNode(true | false)
+*/
+
 const $cards = document.querySelector(".cards"),
 $newCard = document.createElement("figure");
 //Para clonar:
 $cloneCards = $cards.cloneNode(true);
-//Si mandas false o se deja vacio has la prueba:
+//Si mandas false o se deja vacio no clona los hijos, solo el elemento padre:
 //$cloneCards = $cards.cloneNode(false);
 
 
