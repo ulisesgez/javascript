@@ -1,3 +1,20 @@
+/*
+Eventos con parametros y remover eventos:
+Para pasar parametros a una funcion manejadora de eventos, se puede hacer de dos formas:
+1.- Usando una funcion anonima
+2.- Usando una arrow function
+
+Para remover un evento, se usa el metodo removeEventListener, el cual recibe dos parametros:
+1.- El tipo de evento
+2.- La funcion manejadora del evento
+
+Para desabilitar un boton, se usa la propiedad disabled, la cual recibe un valor booleano:
+true: desabilita el boton
+false: habilita el boton
+
+Para ver los eventos que se pueden usar en un elemento, se puede usar el metodo getEventListeners, el cual recibe como parametro el elemento del cual se quiere ver los eventos.
+*/
+
 function holaMundo() {
     alert('hola mundo');
     console.log(event);//PointerEvent {isTrusted: true, pointerId: 1, width: 1, height: 1, pressure: 0, …}
