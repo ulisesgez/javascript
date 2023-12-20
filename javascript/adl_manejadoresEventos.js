@@ -9,8 +9,8 @@ function holaMundo() {
     console.log(event);//PointerEvent {isTrusted: true, pointerId: 1, width: 1, height: 1, pressure: 0, …}
 }
 
-const $eventoSemantico = document.getElementById("evento-semantico");
-const $eventoMultiple = document.getElementById("evento-multiple");//con esto podemos ejecutar varias funciones en un evento
+const $eventoSemantico = document.getElementById("evento-semantico");//Solo se puede ejecutar una funcion.
+const $eventoMultiple = document.getElementById("evento-multiple");//Con esto podemos ejecutar varias funciones en un evento.
 
 $eventoSemantico.onclick = holaMundo;//Sin parentesis, ya que se ejecutara cuando entremos a la pagina.
 //Ya no se ejecutara la funcion anterior, se reemplaza, veamos en accion los eventos multiples:
