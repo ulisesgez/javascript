@@ -1,3 +1,9 @@
+/*
+Manejadores de eventos;
+Los manejadores de eventos son funciones que se ejecutan automaticamente cuando
+ocurre un evento.
+*/
+
 function holaMundo() {
     alert('hola mundo');
     console.log(event);//PointerEvent {isTrusted: true, pointerId: 1, width: 1, height: 1, pressure: 0, …}
