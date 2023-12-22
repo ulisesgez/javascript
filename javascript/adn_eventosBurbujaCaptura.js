@@ -1,3 +1,9 @@
+/*
+Flujo de eventos (Burbuja y Captura):
+Burubuja: Se propaga desde el elemento mas interno al mas externo.
+Captura: Se propaga desde el elemento mas externo al mas interno.
+*/
+
 const $divEventos = document.querySelectorAll(".eventos-flujo div");
 
 function flujoEventos(e) {
