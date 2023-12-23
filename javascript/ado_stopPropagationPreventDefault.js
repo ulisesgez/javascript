@@ -1,3 +1,16 @@
+/*
+Stop Propagation:
+Detiene la propagación del evento en los elementos padres.
+
+Prevent Default:
+Evita que se ejecute la acción por defecto de un elemento.
+
+Ambos métodos son muy útiles para evitar comportamientos no
+deseados en nuestros eventos.
+
+Para detener la propagación de un evento se utiliza el método stopPropagation()
+del objeto Event.
+*/
 //Detener propagacion del tema anterior (burbuja o captura).
 const $divEventos = document.querySelectorAll(".eventos-flujo div"),
 $linkEventos = document.querySelector(".eventos-flujo a")
