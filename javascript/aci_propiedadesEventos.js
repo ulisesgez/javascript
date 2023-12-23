@@ -1,3 +1,10 @@
+/*
+Propiedades y Eventos en el BOM:
+El BOM es el Browser Object Model, es decir, el objeto que nos permite interactuar
+con el navegador.
+El BOM es un objeto global, por lo que no es necesario llamarlo para utilizarlo.
+*/
+
 window.addEventListener("resize", (e) => {
     console.clear();//Limpiear antes del resize
     console.log("----> Evento Resize <---");
