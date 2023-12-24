@@ -6,7 +6,7 @@ El BOM es un objeto global, por lo que no es necesario llamarlo para utilizarlo.
 */
 
 window.addEventListener("resize", (e) => {
-    console.clear();//Limpiear antes del resize
+    console.clear();//Limpiar antes del resize
     console.log("----> Evento Resize <---");
     //Propiedades dentro la ventana, ancho y alto de nuestra ventana:
     console.log(window.innerWidth);
