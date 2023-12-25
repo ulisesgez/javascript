@@ -1,10 +1,22 @@
 /*
 DOM (Document Object Model):
+El DOM representa a los elementos como nodos y objetos con los cuales podemos
+trabajar en javascript.
 Es una API para documentos HTML y XML.
 Es una representacion del documento.
 Define la estructura logica de los documentos y la forma de acceder y manipular
 un documento.
 Es un estandar, es decir, que todos los navegadores lo implementan.
+Representar el documento html a traves del dom nos permite acceder
+a sus elementos y manipularlos.
+
+Nodo:
+Un punto especifico del diagrama o arbol de nodos del DOM. Los nodos
+el DOM incluyen:
+- Documento.
+- Elementos HTML.
+- Texto.
+- Comentarios.
 */
 console.log('Elementos del documento');
 //Esto:
