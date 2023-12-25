@@ -1,13 +1,13 @@
 console.log('---> url <---');
 console.log(location);
-console.log(location.origin);
-console.log(location.protocol);
-console.log(location.host);
-console.log(location.hostname);
-console.log(location.port);
-console.log(location.href);
-console.log(location.hash);
-console.log(location.pathname);
+console.log(location.origin);//ruta completa
+console.log(location.protocol);//http o https
+console.log(location.host);//dominio
+console.log(location.hostname);//dominio
+console.log(location.port);//puerto
+console.log(location.href);//ruta completa
+console.log(location.hash);//#hash
+console.log(location.pathname);//ruta
 
 console.log('---> history <---');
 console.log(history);
