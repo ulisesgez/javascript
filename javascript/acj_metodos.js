@@ -28,7 +28,7 @@ let ventana;//undefined
 
 $abrirVentana.addEventListener("click", (e) => {
     //De igual forma no es necesario añadir el window, ejem open("https://www.youtube.com/");
-    ventana = window.open("https://www.youtube.com/");
+    ventana = window.open("https://www.youtube.com/");//Hacemos uso de la variable ventana para almacenar la ventana que previamente abrimos (guardar la referencia)
 });
 $cerrarVentana.addEventListener("click", (e) => {
     //window.close();//Se cierra la ventana en la que nos encontramos
