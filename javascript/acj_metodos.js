@@ -1,8 +1,25 @@
-//Metodos:
-//window.alert('alerta');
-//window.confirm('confirmación');
-//window.prompt('aviso');
+/*
+Metodos del BOM:
+    alert()
+    confirm()
+    prompt()
+    print()
+    addEventListener()
+    navigator
+    geolocation
+    localStorage
+    sessionStorage
+    fetch()
+    getComputedStyle()
+    scrollTo()
+    setInterval()
+    setTimeout()
 
+Metodos previamente vistos:
+window.alert('alerta');
+window.confirm('confirmación');
+window.prompt('aviso');
+*/
 const $abrirVentana = document.getElementById("abrirVentana"),
 $cerrarVentana = document.getElementById("cerrarVentana"),
 $imprimirVentana = document.getElementById("imprimirVentana");
