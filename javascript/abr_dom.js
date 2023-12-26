@@ -17,6 +17,32 @@ el DOM incluyen:
 - Elementos HTML.
 - Texto.
 - Comentarios.
+
+Root Node (Nodo raiz):
+Nodo ubicado en la parte superior de la jerarquia de nodos del DOM.
+En HTML es <html> y representa a todo el documento.
+
+Parent Node (Nodo padre):
+Nodo que contiene a otro nodo de la jerarquia de nodos del DOM.
+En HTML, el nodo padre de un elemento es el elemento que lo contiene,
+por ejemplo, el nodo padre de <h1> es <body>, el nodo padre de title es <head>.
+
+Child Node (Nodo hijo):
+Nodo contenido directamente dentro de otro nodo.
+En HTML por ejemplo, <p> es un nodo hijo de <body>.
+
+Descendant Node (Nodo descendiente):
+Nodo contenido dentro de otro nodo en la jerarquia de DOM(directa o indirectamente).
+En HTML por ejemplo de <body> descienden <h1> <p> y <div> y a su vez de <div> descienden
+<h2> y <p>, por lo tanto <h2> y <p> son nodos descendientes de <body>.
+
+Sibling Node (Nodo hermano):
+Nodos ubicados en el mismo nivel de jerarquia de nodos del DOM.
+En HTML por ejemplo <head> y <body> son nodos hermanos(comparten el mismo nodo padre).
+
+Nodo vs Elemento:
+El concepto de nodo es mas amplio que el de elemento.
+Un nodo puede ser un elemento HTML, pero tambien puede ser texto o comentarios en el documento.
 */
 console.log('Elementos del documento');
 //Esto:
