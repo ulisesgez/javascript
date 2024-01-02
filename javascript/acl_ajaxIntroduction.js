@@ -1,4 +1,8 @@
  /*
+Ajax:
+Es una tecnología que permite actualizar una parte de la página sin necesidad
+de recargarla.
+
 Ajax se puede comunicar coin el servidor, intercambiar datos,
 actualizar la interfaz del usuario sin necesidad de recargar el navegador.
 
