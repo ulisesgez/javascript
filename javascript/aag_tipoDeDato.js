@@ -1,5 +1,5 @@
 /*
-Tipo de datos:
+Tipo de datos(Datatypes):
 JavaScript toma prestada la mayor parte de su sintaxis de Java, C y C++, pero también ha sido
 influenciado por Awk, Perl y Python.
 

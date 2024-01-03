@@ -1,4 +1,7 @@
-//Destructuración: Nueva forma de asignar valores a arreglos y objetos
+/*
+Destructuración:
+Nueva forma de asignar valores a arreglos y objetos
+*/
 
 let numeros = [1, ,2, 3];
 

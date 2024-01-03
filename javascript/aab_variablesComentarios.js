@@ -1,5 +1,5 @@
 /*
-Comentarios
+Comentarios:
 Los comentarios se comportan como espacios en blanco y se descartan durante la
 ejecución del script. La sintaxis de los comentarios es la misma que en C++
 y en muchos otros lenguajes:
