@@ -2,7 +2,6 @@
 Ajax:
 Es una tecnología que permite actualizar una parte de la página sin necesidad
 de recargarla.
-
 Ajax se puede comunicar coin el servidor, intercambiar datos,
 actualizar la interfaz del usuario sin necesidad de recargar el navegador.
 
@@ -15,7 +14,6 @@ READY_STATE_INTERACTIVE = 3
 READY_STATE_COMPLETE = 4
 
 Codigos de estado de respuesta HTTP:
-
 Respuestas informativas (100–199),
 Respuestas satisfactorias (200–299),
 Redirecciones (300–399),
