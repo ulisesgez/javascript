@@ -3,7 +3,7 @@ XmlHttpRequest:
 Es un objeto que nos permite intercambiar datos entre el cliente y el servidor, 
 es la base de Ajax.
 
-funciones anonimas autoejecutables:
+Funciones anonimas autoejecutables:
 */
 (() => {
     const xhr = new XMLHttpRequest(),//instanciael objeto XMLHttpRequest
