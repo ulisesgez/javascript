@@ -6,7 +6,7 @@ es la base de Ajax.
 Funciones anonimas autoejecutables:
 */
 (() => {
-    const xhr = new XMLHttpRequest(),//instanciael objeto XMLHttpRequest
+    const xhr = new XMLHttpRequest(),//instanciar el objeto XMLHttpRequest
     $xhr = document.getElementById("xhr"),
     $fragment = document.createDocumentFragment();
 
@@ -14,13 +14,13 @@ Funciones anonimas autoejecutables:
     
     //Con readystatechange se lanza cuando detecta cualquier cambio de estado:
     xhr.addEventListener("readystatechange", e => {
-        if(xhr.readyState !== 4) return;//No retorna nada si no esta en 4
+        if(xhr.readyState !== 4) return;//No retorna nada si no esta en estado 4, de no hacer esta validacion la info podria mostrarse hasta 4 veces.
         //console.log(xhr);
         if(xhr.status >= 200 && xhr.status <300) {
             console.log("done");
             //console.log(xhr.responseText);//imprime todo el codigo del json en consola
             //Convertir
-            let $json = JSON.parse(xhr.responseText);
+            let $json = JSON.parse(xhr.responseText);//Convertir la respuesta de un string a un objeto
             //console.log($json);//Luego de convertir de json a object lo imprimos en consola.
 
             $json.forEach(el => {
