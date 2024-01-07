@@ -1,4 +1,7 @@
-(() => {
+/*
+Fetch con Async Await:
+ES una forma de consumir promesas de una forma mas sencilla y legible.
+*/(() => {
     const $fetchAsync = document.getElementById("fetch-async"),
     $fragment = document.createDocumentFragment();
 
