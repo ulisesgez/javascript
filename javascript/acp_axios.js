@@ -1,3 +1,9 @@
+/*
+Axios
+Axios es una librería que nos permite hacer peticiones a servidores externos
+desde nuestro código JavaScript. En este reto vamos a utilizar Axios para
+hacer una petición a la API de Escuela de JavaScript.
+*/
 (() => {
     const $axios = document.getElementById("axios"),
     $fragment = document.createDocumentFragment();
