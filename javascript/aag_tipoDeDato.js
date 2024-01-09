@@ -230,8 +230,13 @@ const anotherBigNUmber = BigInt(12098734650912874365);//despues
 console.log(aBigNUmber);//12098734650912874365n
 console.log(anotherBigNUmber);//12098734650912874365n
 
-//Nullish
+/*
+Nullish:
+Es un operador logico que nos va a permitir validar si un valor es null o undefined.
 
+?? -> Nullish coalescing operator:
+Es un operador logico que nos va a permitir validar si un valor es null o undefined.
+*/
 const anotherNUmber = 1;
 const validate = anotherNUmber ?? 5;//Si este valor es null
 console.log(validate);//1
