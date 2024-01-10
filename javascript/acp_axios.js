@@ -25,6 +25,6 @@ hacer una petición a la API de Escuela de JavaScript.
         $axios.innerHTML = `error ${err.response.status}: ${message}`;
     })
     .finally(() => {
-        console.log("ejcutado independientemente del resultado.");
+        console.log("Es ejecutado independientemente del resultado.");
     })
 })();
