@@ -1,3 +1,8 @@
+/*
+Axios Async Await:
+Axios es una librería que nos permite hacer peticiones a servicios externos
+de una manera muy sencilla.
+*/
 (() => {
     const $axiosAsync = document.getElementById("axios-async"),
     $fragment = document.createDocumentFragment();
