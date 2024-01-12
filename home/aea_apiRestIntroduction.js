@@ -1,6 +1,6 @@
 /*
-API REST:
-API: Application Program Interface -> Interfaz
+API:
+Application Program Interface -> Interfaz
 Una interfaz es el medio por el cual la computadora se conecta con los humanos.
 Es lo visible para el usuario que interactúe con una app, por ejemplo.
 
@@ -33,12 +33,12 @@ Son una, no la única, de las formas en que el backend puede identificar quien e
 haciendo cada solicitud.
 Debemos entender dos conceptos importantes, la Autenticación y la Autorización.
 
-Autenticación
+Autenticación:
 Consiste en identificar quien es cada quien. No sabe que permisos tiene fulano, 
 No sabe que puede o no hacer fulano, Solamente sabe que él es fulano, que ella 
 es pamela o que esa es una persona sin identificar.
 
-Autorización
+Autorización:
 Es la que nos dice que permisos tiene cada quien, es decir,
 si fulano quiere ir a la nevera para comerse un pastel, es la que dice,
 espérate fulano, tienes permisos para abrir la nevera?, a listo ábrela,
@@ -75,19 +75,19 @@ pueda hacer solicitudes al backend, pero hay aplicaciones donde no solamente nec
 una Application-based authentication, también hay apps que necesitamos usar esta con 
 una User-based authentication.
 
-HTTP
-Un protocolo especifica reglas en la comunicación entre dos entes, en este caso entre dos computadoras.
-
+HTTP:
+Un protocolo especifica reglas en la comunicación entre dos entes,
+en este caso entre dos computadoras.
 HTTP (Hyper Text Transfer Protocol) fue creado específicamente para la web.
 
-Verbos
+Verbos:
 Una de las cosas que especifica el protocolo HTTP son los verbos:
 
-GET: solicitar datos o algún recurso.
 HEAD: traer headers (como una peticion GET pero sin contenidos). Es util cuando vamos a utilizar APIs, para comprobar si lo que vamos a enviar esta correcto y puede ser procesado.
-POST: enviar datos a un recurso para la creación.
-PUT: reemplazar por completo un recurso.
+GET - Select: solicitar datos o algún recurso.
+POST - Insert: enviar datos a un recurso para la creación.
+PUT - Update: reemplazar por completo un recurso.
 PATCH: reemplazar parcialmente un recurso.
-DELETE: eliminar un recurso.
+DELETE - Delete: eliminar un recurso.
 La infografia del compañero Juan sebastian explica todo super bien!
 */
