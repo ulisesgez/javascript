@@ -1,5 +1,4 @@
 /*
-
 API REST:
 API: Application Program Interface -> Interfaz
 Una interfaz es el medio por el cual la computadora se conecta con los humanos.
