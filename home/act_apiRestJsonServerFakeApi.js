@@ -7,6 +7,6 @@ Crear el archivo json como db.json
 Ejecutar estando dentro en la terminal:
 json-server --watch db.json
 En nuestro caso:
-json-server --watch aeb_jsonServerFakeApi
+json-server --watch act_apiRestJsonServerFakeApi
 Nos permitira verlo en el navegador
 */
