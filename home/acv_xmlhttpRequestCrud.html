@@ -13,12 +13,33 @@
             <form class="crud-form">
                 <input type="text" name="nombre" placeholder="nombre" required>
                 <br>
-                <input type="text" name="constelacion" placeholder="constelacion" required>
+                <input type="text" name="color" placeholder="color" required>
                 <br>
                 <input type="submit" value="Enviar">
+                <input type="hidden" name="action">
             </form>
         </article>
         <article>
+            <h2>Ver usuario</h2>
+            <table class="crud-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Color</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>nueve</td>
+                        <td>cafe</td>
+                        <td>
+                            <button>Editar</button>
+                            <button>Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </article>
     </section>
 </body>
