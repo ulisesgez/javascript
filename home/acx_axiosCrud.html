@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Api Rest Ajax</title>
+</head>
+<body>
+    <h1>Crud Api Rest Ajax</h1>
+    <section class="crud">
+        <article>
+            <h2 class="crud-title">Agregar usuario</h2>
+            <form class="crud-form">
+                <input type="text" name="nombre" placeholder="nombre" required>
+                <br>
+                <input type="text" name="color" placeholder="color" required>
+                <br>
+                <input type="submit" value="Enviar">
+                <input type="hidden" name="action">
+            </form>
+        </article>
+        <article>
+            <h2>Ver usuario</h2>
+            <table class="crud-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Color</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </article>
+    </section>
+    <template id="crud-template">
+        <tr>
+            <td class="name">nueve</td>
+            <td class="color">cafe</td>
+            <td>
+                <button class="edit">Editar</button>
+                <button class="delete">Eliminar</button>
+            </td>
+        </tr>
+    </template>
+    <script src="./acv_xmlhttpRequestCrud.js"></script>
+</body>
+</html>
