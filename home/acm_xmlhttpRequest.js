@@ -4,6 +4,8 @@ Es un objeto que nos permite intercambiar datos entre el cliente y el servidor,
 es la base de Ajax.
 
 Funciones anonimas autoejecutables:
+Una funcion anonima es una funcion que no tiene nombre, y una
+funcion autoejecutable es una funcion que se ejecuta automaticamente.
 */
 (() => {
     const xhr = new XMLHttpRequest(),//instanciar el objeto XMLHttpRequest
