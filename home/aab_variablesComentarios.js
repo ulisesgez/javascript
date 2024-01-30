@@ -102,7 +102,7 @@ console.log('El valor de a es ' + a); // El valor de a es undefined
 console.log('El valor de b es ' + b); // El valor de b es undefined
 var b;
 
-//Esto puede desconcertarte hasta que leas 'Elevación de variable' a continuación
+//Esto puede desconcertarte hasta que leas 'Elevación de variable' a continuación:
 console.log('El valor de c es ' + c); // Error de referencia no detectado: c no está definida
 
 let x;
