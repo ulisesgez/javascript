@@ -80,6 +80,10 @@ Un protocolo especifica reglas en la comunicación entre dos entes,
 en este caso entre dos computadoras.
 HTTP (Hyper Text Transfer Protocol) fue creado específicamente para la web.
 
+CRUD:
+Crud es un acrónimo que significa Create, Read, Update, Delete.
+Son las 4 operaciones básicas que se pueden hacer con una base de datos.
+
 Verbos:
 Una de las cosas que especifica el protocolo HTTP son los verbos:
 
