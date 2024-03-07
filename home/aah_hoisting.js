@@ -1,7 +1,7 @@
 /*
 Hoisting:
 Cuando las variables y las funciones se declaran antes que se procese cualquier
-tipo de codigo.
+tipo de código.
 El hoisting es un comportamiento de JavaScript en el que las declaraciones de
 variables y funciones son movidas al comienzo del ámbito actual antes de que
 cualquier otro código sea ejecutado. Esto significa que las declaraciones de
