@@ -1,4 +1,9 @@
 /*
+Operadores:
+Los operadores son símbolos que realizan operaciones en variables y valores.
+Los operadores son usados para realizar operaciones aritméticas, de comparación,
+lógicas, de asignación, etc.
+
 Aritméticos:
 Toman valores numéricos( ya sean literales o variables)
 como sus operandos y retornan un valor numérico único.

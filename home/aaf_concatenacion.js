@@ -1,5 +1,5 @@
 /*
-Concatenacion:
+Concatenación:
 La concatenación es la unión de dos o más cadenas.
 En JavaScript, cuando los valores primitivos se unen con cadenas, el resultado
 es una nueva cadena.
