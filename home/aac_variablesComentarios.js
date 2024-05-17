@@ -26,6 +26,17 @@ Por ejemplo, al insertar una barra invertida:
 Variables:
 Una variable es un contenedor para un valor, como un número, una cadena o un objeto.
 En JavaScript, las variables se declaran con la palabra clave var.
+Los nombres de las variables, llamados identificadores , se ajustan a ciertas reglas.
+
+Un identificador de JavaScript generalmente comienza con una letra,
+un guión bajo ( _) o un signo de dólar ( $). Los caracteres subsiguientes también pueden
+ser dígitos ( 0- 9).
+Dado a que JavaScript distingue entre mayúsculas y minúsculas, las letras incluyen los
+caracteres Ahasta Z(mayúsculas) y ahasta z(minúsculas). Puedes utilizar la mayoría de
+las letras ISO 8859-1 o Unicode, como åy üen los identificadores. (Para obtener más
+detalles, consulte esta publicación de blog o la referencia de gramática léxica ).
+También puede usar las secuencias de escape Unicode como caracteres en los identificadores.
+Algunos ejemplos de nombres legales son Number_hits, temp99, $credity _name.
 
 Las variables son ubicaciones de almacenamiento en la memoria de la computadora que
 se utilizan para guardar valores que se pueden utilizar más tarde en el programa.
@@ -36,7 +47,7 @@ mientras que las variables declaradas con const son constantes y no pueden cambi
 valor una vez asignado.
 
 Declara una variable:
-el proceso de declarar una variable es especificar su nombre sin asignarle ningún valor,
+El proceso de declarar una variable es especificar su nombre sin asignarle ningún valor,
 esto solo se puede hacer con variables (let y var) debido a que const al no poder
 cambiar su valor, no podremos inicializarla sin declararla al mismo tiempo.
 JavaScript tiene tres tipos de declaraciones de variables.
@@ -55,41 +66,6 @@ Declara una variable local con ámbito de bloque y opcionalmente, la inicializa 
 
 Const:
 Declara una constante con nombre de solo lectura y ámbito de bloque.
-
-Variables:
-Utiliza variables como nombres simbólicos para valores en su aplicación.
-Los nombres de las variables, llamados identificadores , se ajustan a ciertas reglas.
-
-Un identificador de JavaScript generalmente comienza con una letra,
-un guión bajo ( _) o un signo de dólar ( $). Los caracteres subsiguientes también pueden
-ser dígitos ( 0- 9).
-Dado a que JavaScript distingue entre mayúsculas y minúsculas, las letras incluyen los
-caracteres Ahasta Z(mayúsculas) y ahasta z(minúsculas). Puedes utilizar la mayoría de
-las letras ISO 8859-1 o Unicode, como åy üen los identificadores. (Para obtener más
-detalles, consulte esta publicación de blog o la referencia de gramática léxica ).
-También puede usar las secuencias de escape Unicode como caracteres en los identificadores.
-
-Algunos ejemplos de nombres legales son Number_hits, temp99, $credity _name.
-
-Declaración de variables:
-Puede declarar una variable de dos maneras:
-> Con la palabra clave var. Por ejemplo, var x = 42. Esta sintaxis se puede utilizar para
-declarar variables locales y globales , según el contexto de ejecución.
-
-> Con la palabra clave consto let. Por ejemplo, let y = 13. Esta sintaxis se puede utiliza
-para declarar una variable local de ámbito de bloque. (Consulte Alcance variable a continuación).
-
-También puedes simplemente asignar un valor a una variable. Por ejemplo, x = 42.
-Este formulario crea una variable global no declarada. También genera una advertencia estricta
-de JavaScript. Las variables globales no declaradas a menudo pueden provocar un comportamiento
-inesperado. Por lo tanto, se desaconseja utilizar variables globales no declaradas.
-
-Puede declarar variables para desempaquetar valores utilizando la sintaxis de asignación de
-desestructuración . Por ejemplo, const { bar } = foo. Esto creará una variable nombrada bary
-le asignará el valor correspondiente a la clave del mismo nombre de nuestro objeto foo.
-Las variables siempre deben declararse antes de que se utilicen. JavaScript solía permitir la
-asignación a variables no declaradas, lo que crea una variable global no declarada.
-Este es un error en modo estricto y debe evitarse por completo.
 
 Evaluar variables:
 Una variable declarada usando la instrucción var o let sin un valor asignado especificado
@@ -141,7 +117,7 @@ var n = null;
 console.log(n * 32); // Registrará 0 en la consola
 
 /*
-Ámbito de variables
+Ámbito de variables:
 Cuando declaras una variable fuera de cualquier función, se denomina variable global,
 porque está disponible para cualquier otro código en el documento actual. Cuando declaras una
 variable dentro de una función, se llama variable local, porque solo está disponible dentro
@@ -184,7 +160,6 @@ constlas declaraciones siempre necesitan un inicializador, porque prohíben cual
 
 Declaración de variables: var, let, const:
 */
-
 let numerodos;
 
 //Inicializarla dándole valor:
@@ -231,7 +206,6 @@ verá ejemplos de identificadores de variables en mayúsculas, minúsculas o
 camelCase.
 
 Reasignación y redeclaración:
-
 En JavaScript, la reasignación y la redeclaración son dos conceptos diferentes
 relacionados con las variables.
 Reasignación se refiere al proceso de darle un nuevo valor a una variable existente.
@@ -239,16 +213,19 @@ Reasignación se refiere al proceso de darle un nuevo valor a una variable exist
 let nombre = 'Juan';
 nombre = 'Pedro';
 console.log(nombre);//Pedro
+
 //Con const no podemos reasignar valores, pero si podemos mutarlos:
 const nombre2 = 'Juan';
 nombre2 = 'Pedro';//Esto no va a funcionar
 console.log(nombre2);//Juan
+
 //Pero si podemos mutarlos:
 const nombre3 = [];
 nombre3.push('Juan');
 console.log(nombre3);//["Juan"]
 nombre3.push('Pedro');
 console.log(nombre3);//["Juan", "Pedro"]
+
 /*
 Redeclaración se refiere al proceso de crear una nueva variable con el mismo
 nombre de una variable existente.
@@ -264,8 +241,6 @@ console.log(nombre5);//Esto no va a funcionar
 var nombre6 = 'Juan';
 var nombre6 = 'Pedro';
 console.log(nombre6);//Pedro
-*/
-/*
 
 Template literals:
 Nos va a permitir concatenar strings de una forma mas amigable,
