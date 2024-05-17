@@ -1,5 +1,5 @@
 /*
-Tipo de datos(Datatypes):
+Tipos de datos (Datatypes):
 JavaScript toma prestada la mayor parte de su sintaxis de Java, C y C++, pero también ha sido
 influenciado por Awk, Perl y Python.
 
@@ -10,7 +10,7 @@ de variable.
 const Früh = "foobar";
 console.log(Früh);//foobar
 /*
-Pero, la variable frühno es la misma Frühporque JavaScript distingue entre mayúsculas y
+Pero, la variable frühno es la misma Früh porque JavaScript distingue entre mayúsculas y
 minúsculas.
 En JavaScript, las instrucciones se llaman sentencias y están separadas por punto y coma (;).
 No es necesario un punto y coma después de una declaración si se escribe en su propia línea.
@@ -18,7 +18,6 @@ Pero si se desea más de una declaración en una línea, entonces deben estar se
 punto y coma.
 
 Tipos de datos:
-
 Primitivos:
 Se accede directamente al valor.
 - number
