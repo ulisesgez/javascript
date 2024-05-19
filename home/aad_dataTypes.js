@@ -79,13 +79,11 @@ Las cadenas "true"y "false"no son booleanas y no tienen un
 significado especial en JavaScript
 
 Truthy y Falsy:
-En JavaScript, un valor booleano se conoce como un valor de verdad o falsedad. Los valores
+Un valor booleano se conoce como un valor de verdad o falsedad. Los valores
 que no son estrictamente booleanos también tienen un valor de verdad o falsedad.
 Cuando se evalúan en un contexto booleano, estos valores se consideran verdaderos o falsos.
 Los valores que se consideran falsos se conocen como valores falsos, mientras que los valores
 que se consideran verdaderos se conocen como valores verdaderos.
-
-Tipo de valor verdadero y falso:
 */
 
 console.log(Boolean(0));//falso
@@ -102,7 +100,6 @@ console.log(Boolean([]));
 console.log(Boolean({}));
 
 //Usando el constructor:
-
 let v = Boolean(true);
 let f = Boolean(false);
 
@@ -142,7 +139,6 @@ console.log(false || (true && false));//false
 console.log((false || true) && (true && true));//true
 
 //Asignaciones:
-
 const soyUndefined = undefined;
 const soyNull = null;
 const soyFalso = false;
@@ -166,7 +162,6 @@ console.log(a2);
 
 /*
 Undefined, Nan y null:
-
 Tanto null como undefined van a representar un valor ausente, es decir una
 variable que no tiene valor, pero la gran diferencia es que mientras undefined es una
 variable que no ha sido inicializada.
@@ -261,7 +256,6 @@ for (let i in persona) {
 }
 
 //metodos, funciones:
-
 const SALUDAR = Symbol();
 
 persona[SALUDAR] = function() {
