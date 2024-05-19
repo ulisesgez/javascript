@@ -23,30 +23,28 @@ Ejemplo:
 false - 3 // -3
 
 /*
-Coerción implicita:
+Coerción Implicita:
+Proceso mediante el cual el lenguaje convierte automáticamente un valor de un tipo a
+otro tipo. Este proceso puede ocurrir en diversas situaciones, como en operaciones
+aritméticas, comparaciones y contextos de verdad.
 */
-
 var a = 4 + "7";// Si en la terminal damos typeof a nos dira que es un string
-
 var b = 4 * "7";// Nos dira que es un number
 
-//Coerción explicita:
-
+/*
+Coerción Explicita:
+conversión de un tipo de dato a otro tipo de manera intencionada y controlada,
+utilizando métodos y funciones específicas. Esto se hace para evitar comportamientos
+inesperados y mejorar la legibilidad del código.
+*/
 var c = 10;
 var d = c + "";
-
 console.log(d);// Nos dira que es un string
-
-//otro forma:
-
 var e = String(c);// Nos dira que es un string
-
 var f = Number(e);// Nos dira que es un number
 
-//Covertir un string a un number:
-
+//Covertir un String a un Number:
 let falseNumber = "33";
-
 console.log(Number(falseNumber) + 7);//40
 //console.log(parseInt(falseNumber) + 7); numero entero, tambien lo convierte
 //console.log(parseFloat(falseNumber) + 7); l0o convierte a decimal
