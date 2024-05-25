@@ -6,7 +6,7 @@ El hoisting es un comportamiento de JavaScript en el que las declaraciones de
 variables y funciones son movidas al comienzo del ámbito actual antes de que
 cualquier otro código sea ejecutado. Esto significa que las declaraciones de
 variables y funciones pueden ser utilizadas antes de haber sido declaradas en el código.
- */
+*/
 
 console.log(x);
 var x = 1;

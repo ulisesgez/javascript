@@ -36,6 +36,7 @@ function holaMundo(texto) {
     console.log(hola_mundo);//Imprime Texto dentro de funcion
 }
 holaMundo(texto);
+
 /*
 ¡Que pasaria si quisieramos acceder a numero dentro de la función?
 function holaMundo(texto) {

@@ -68,7 +68,7 @@ frase = "mi nombre es 'Ulises'y soy el mejor";
 Es posible imprimirse con comillas simples ahora con comillas dobles:
 frase = "mi nombre es "Ulises"y soy el mejor";
 Como vemos marca error asi que:
- */
+*/
 
 //Escape de comillas dobles:
 frase = 'mi nombre es "Ulises"y soy el mejor';
@@ -165,7 +165,6 @@ const secondName = "Ada";
 const lastLetter = secondName[secondName.length - 1];
 const thirdToLastLetter = secondName[secondName.length - 3];
 
-
 /* 
 lastLettertendría un valor de la cadena a.
 thirdToLastLettertendría un valor de la cadena s.
@@ -177,7 +176,6 @@ su cadena?
 En JavaScript, puede evitar que una comilla se considere como una comilla de 
 fin de cadena colocando una barra invertida ( \) delante de la comilla.
 */
-
 const sampleStr = "Alan said, \"Peter is learning JavaScript\".";
 
 /*
