@@ -531,18 +531,15 @@ console.log(iteradorDos.next());// { value: "hola 4", done: false }
 console.log(iteradorDos.next());// { value: undefined, done: true }
 
 //De forma optimizada:
-
 for(let y of iteradorDos) {
     console.log(y);
 }
 
 //Recolectar los yied en un arreglo para despues trabajarlos:
-
 const arrDos = [...iterable()];
 console.log(arrDos);//["hola", "hola 2", "hola 3", "hola 4"]
 
 //Otro ejemplo de forma asincrona:
-
 function cuadrado(valor) {
     setTimeout(() => {
         return console.log({valor, result: valor*valor});
@@ -559,7 +556,6 @@ function generador() {
     yield cuadrado(5);
     console.log("termina generador");
 }
-
 let gen = generador();
 
 for(let y of gen) {

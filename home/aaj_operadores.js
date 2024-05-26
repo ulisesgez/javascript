@@ -335,7 +335,6 @@ Cuando el valor de la izquierda en la expresion siempre pueda validar a false,
 es el valor que se cargara por defecto
 */
 //Tomando este ejemplo:
-
 function saludoUno(nombre = "Desconocido") {
     console.log(`Buenos dias ${nombre}`);
 }
