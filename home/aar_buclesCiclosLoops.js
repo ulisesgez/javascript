@@ -73,7 +73,6 @@ for (let i = 0; i < heroes.length; i++){
 }
 
 //Ejemplo con for:
-
 let estudiantes = ["Maria", "Sergio", "Rosa", "Daniel"];
 
 function saludarEstudiantes(estudiante){
@@ -108,7 +107,6 @@ for (let estudiante of estudiantes){
  */
 
 //While:
-
 let frutas = ["Manzana", "Pera", "Uva", "Cereza"];
 
 function comprarFrutas(fruta){
@@ -159,7 +157,6 @@ while (numerotres < 6) {
 }
 
 //Do while, hacer mientras:
-
 let numerocuatro = 0;
 
 do {
@@ -169,7 +166,6 @@ do {
 while (numerocuatro <= 6);
 
 //Otro ejemplo:
-
 let numeroCinco = 0;
 
 do {
