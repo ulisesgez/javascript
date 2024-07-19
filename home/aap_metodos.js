@@ -200,7 +200,6 @@ console.log(cortarUno);
 
 //Metodos en arrays y objetos:
 
-
 //Recorridos con arrays:
 
 let products = [
