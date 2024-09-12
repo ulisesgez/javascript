@@ -18,7 +18,8 @@ aprendizaje, y cuenta con una amplia comunidad de desarrolladores que contribuye
 evolución constante.
 
 ECMAScript:
-ECMAScript es un estándar de programación para lenguajes de scripting. Fue creado por la organización ECMA International y es el estándar subyacente para JavaScript, el lenguaje de programación más utilizado en el desarrollo web.
+ECMAScript es un estándar de programación para lenguajes de scripting. Fue creado por la organización ECMA International
+y es el estándar subyacente para JavaScript, el lenguaje de programación más utilizado en el desarrollo web.
 ECMAScript tiene como objetivo lo siguiente:
 
 Define la sintaxis y las funciones básicas de JavaScript
