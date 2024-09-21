@@ -231,7 +231,6 @@ console.log(id === id2);//true
 console.log(id3 === id4);//false
 
 //identificador/referencia:
-
 let id5 = Symbol("id5");
 let id6 = Symbol("id6");
 
