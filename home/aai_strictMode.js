@@ -28,7 +28,6 @@ valorPi = 3.14; // Esto causará un error
 console.log(valorPi); // Esto no se ejecutará
 
 //Otro ejemplo:
-
 function myFunction() {
     "use strict";
     return y = 3.14; // Esto causará un error
