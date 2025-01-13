@@ -1,6 +1,6 @@
 /*
 Javascript:
-L   enguaje de programación ampliamente utilizado en el desarrollo web.
+Lenguaje de programación ampliamente utilizado en el desarrollo web.
 Creado originalmente en 1995, se ha convertido en un pilar fundamental de la
 programación en el lado del cliente en la web.
 
