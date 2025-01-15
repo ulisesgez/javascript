@@ -36,11 +36,9 @@ de JavaScript fuera de los navegadores web, como Node.js, que utilizan la especi
 En resumen, ECMAScript es el estándar subyacente para JavaScript y define las reglas y las características básicas del
 lenguaje. Cada versión de ECMAScript agrega nuevas características y mejoras al lenguaje, y es ampliamente compatible
 con los navegadores web y otros entornos de ejecución.
-
 TC39:
 Es el comité técnico de ECMAScript, el estándar de javascript. Este comité está compuesto por expertos en el lenguaje
 y es responsable de su evolución y mantenimiento.
-
 La labor de TC39 se divide en varias etapas, las cuales son las siguientes:
 
 Stage 0: Strawman. En esta etapa, cualquier miembro de TC39 puede proponer una idea o mejora para javascript.
