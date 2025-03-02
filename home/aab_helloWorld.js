@@ -1,2 +1,2 @@
 //Mi primer programa en javascript
-console.log("¡Hello World!")
+console.log("Hello World!")
