@@ -568,6 +568,6 @@ inicia generator
 {valor: 3, result: 9}
 {valor: 4, result: 16}
 {valor: 5, result: 25}
-termina generador
+Termina generador
 */
 }
